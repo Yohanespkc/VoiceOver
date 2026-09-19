@@ -208,5 +208,35 @@
     "vibe": "Anggun, Kharismatik, Megah Sinematik",
     "game_context": "Prolog Sinematik Pembuka Gerbang Misi Babilonia",
     "duration": 21.62
+  },
+  {
+    "filename": "15_AT_Marcia_Trainer_Tutor_Matematika.mp3",
+    "category": "Karakter Pendukung Game SO",
+    "character": "AT Marcia Trainer (Full Master)",
+    "role": "Trainer Asli GASING & Narator Tanya Marcia",
+    "voice": "Suara Asli Rekaman Trainer (Normalized Broadcast)",
+    "pitch": "Natural",
+    "rate": "Natural",
+    "volume": "+17.6dB Normalized",
+    "dsp_filter": "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=11",
+    "text": "Penjelasan interaktif metode GASING, penguatan konsep matematika ramah anak, panduan langkah demi langkah modul Tanya Marcia di Sacred Octagon.",
+    "vibe": "Hangat, Ramah, Sabar, Mengayomi",
+    "game_context": "Video Pembelajaran Interaktif Tanya Marcia (Zona 2 s/d Zona 5)",
+    "duration": 361.64
+  },
+  {
+    "filename": "16_AT_Marcia_Trainer_Highlight_Tanya_Marcia.mp3",
+    "category": "Karakter Pendukung Game SO",
+    "character": "AT Marcia Trainer (Highlight 35s)",
+    "role": "Cuplikan Pembuka Tanya Marcia",
+    "voice": "Suara Asli Rekaman Trainer (Normalized Broadcast)",
+    "pitch": "Natural",
+    "rate": "Natural",
+    "volume": "+17.6dB Normalized",
+    "dsp_filter": "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=11",
+    "text": "Halo adik-adik pintar! Hari ini kita akan belajar matematika gasing bersama, gampang, asyik, dan menyenangkan!",
+    "vibe": "Ceria, Dekat, Penuh Semangat Edukasi",
+    "game_context": "Sapaan Pembuka Modul Tanya Marcia",
+    "duration": 35.0
   }
 ]

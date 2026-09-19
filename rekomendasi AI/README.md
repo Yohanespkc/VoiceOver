@@ -120,6 +120,54 @@ Karakter suara bariton rendah, berat, dominan, sinis, dan mengintimidasi. Dileng
 
 ---
 
+### 5. 👩‍🏫 Suara Asli AT Marcia Trainer (Tutor Pembelajaran SO)
+Karakter vokal asli Trainer Marcia (Columbia) yang membawakan modul video interaktif *Tanya Marcia* pada game Sacred Octagon (Zona 2 Penjumlahan hingga Zona 5 Pembagian).
+
+* **[15_AT_Marcia_Trainer_Tutor_Matematika.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/15_AT_Marcia_Trainer_Tutor_Matematika.mp3)** (Durasi: 361.64s / 6 Menit Lengkap)
+  * *Peran*: Rekaman Master Utuh Penjelasan Interaktif Modul Matematika GASING
+  * *Ciri Khas*: Suara asli hangat, mengayomi, tempo bicara teratur dan sangat sabar, ramah anak.
+  * *Normalisasi*: Ditingkatkan +17.6 dB ke standar broadcast EBU R128 (-16 LUFS) bebas distorsi.
+
+* **[16_AT_Marcia_Trainer_Highlight_Tanya_Marcia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/16_AT_Marcia_Trainer_Highlight_Tanya_Marcia.mp3)** (Durasi: 35.0s)
+  * *Peran*: Cuplikan Pembuka & Sapaan Hangat Tanya Marcia
+  * *Ciri Khas*: Ringkas, ceria, mendekatkan hati siswa sebelum masuk ke pemecahan soal rumit.
+  * *Naskah*:
+    > *"Halo adik-adik pintar! Hari ini kita akan belajar matematika gasing bersama, gampang, asyik, dan menyenangkan!"*
+
+---
+
+## 💡 Analisis Karakter Vokal & Rekomendasi Situasi Penggunaan (Use Cases)
+
+Berdasarkan analisis akustik dan dinamika vokal **AT Marcia Trainer**, warna suaranya tergolong **Warm Mezzo-Soprano** dengan tempo tuturan stabil, artikulasi fonem Indonesia sangat bersih, serta resonansi yang menumbuhkan rasa aman (*psychological safety*).
+
+### ✅ 5 Situasi Paling Ideal & Sangat Direkomendasikan:
+
+1. **Bimbingan Remedial & Tombol Interaktif "Tanya Marcia"**:
+   * *Situasi*: Ketika pemain berkali-kali salah menjawab, kebingungan membaca nilai tempat, atau menekan tombol bantuan *Tanya Marcia*.
+   * *Alasan*: Suara Marcia tidak pernah bernada menyalahkan. Pendekatannya yang menenangkan meredakan kecemasan anak (*math anxiety*) dan membangun kembali kepercayaan diri mereka: *"Tenang ya, kita perhatikan kembali langkahnya bersama Marcia..."*
+
+2. **Video Penjelasan Konsep Langkah-demi-Langkah (*Step-by-Step Explainer*)**:
+   * *Situasi*: Materi berhitung yang memerlukan konsentrasi runut seperti penjumlahan bersimpan (Zona 2 Level 4–5), teknik coretan, perkalian bertingkat (Zona 3), dan pembagian porogapit/bagi kurung (Zona 5).
+   * *Alasan*: Ritme bicaranya yang stabil dan tidak tergesa-gesa mengurangi beban kognitif anak (*cognitive load reduction*), sehingga konsep abstrak dapat dicerna secara runut.
+
+3. **Pemandu Masuk (*Onboarding Guide*) Siswa Baru ke Game SO**:
+   * *Situasi*: Layar pembuka saat pertama kali siswa mengunduh/membuka game Sacred Octagon (Zona 1 s/d Zona 2).
+   * *Alasan*: Bertindak sebagai figur "Kakak Pengayom" yang memperkenalkan fungsi HUD game: apa itu fragmen Octagon, arti 5 nyawa hati, dan cara bermain tanpa rasa tertekan.
+
+4. **Pembacaan Soal Cerita Kontekstual (*Word Problems Narrator*)**:
+   * *Situasi*: Soal-soal cerita terapan seperti transaksi koin emas di Pasar Babilonia atau penimbangan hasil panen.
+   * *Alasan*: Membantu anak-anak kelas awal (SD kelas 1–3) yang belum lancar membaca (*early readers*) agar tetap memahami esensi soal matematika lewat pendengaran yang jernih.
+
+5. **Apresiasi Ketekunan & Penutup Sesi Bermain (*Gentle Encouragement*)**:
+   * *Situasi*: Layar selesai bermain ketika anak lelah atau saat skor belum maksimal.
+   * *Alasan*: Jika Prof. Gasing memberikan pujian yang menggelegar dan berapi-api ("Kasih WOW!"), Marcia memberikan dorongan hangat yang membesarkan hati: *"Hebat! Hari ini kamu sudah berusaha luar biasa. Istirahat sejenak, dan kita lanjutkan lagi besok ya!"*
+
+### ⚠️ Situasi yang Kurang Cocok:
+* **Ejekan atau Ancaman**: Jangan gunakan suara Marcia untuk karakter antagonis (peran ini mutlak milik **Blaze**).
+* **Alarm Darurat Panik**: Jangan gunakan untuk countdown timer detik-detik terakhir yang butuh nuansa panik robotik (peran ini milik **Piko Robot**).
+
+---
+
 ## 🎛️ Tabel Parameter DSP Studio Audio
 
 | File | Karakter | Voice Model | Pitch | Rate | Profil Filter FFmpeg DSP |
@@ -133,11 +181,13 @@ Karakter suara bariton rendah, berat, dominan, sinis, dan mengintimidasi. Dileng
 | `07` | Blaze Timeout | `id-ID-ArdiNeural` | -14Hz | -8% | Sub-bass punch +5dB @120Hz, Dark Chamber Echo |
 | `08` | Blaze Ejekan Salah | `id-ID-ArdiNeural` | -13Hz | -7% | Low-mid growl +4.5dB @120Hz, Taunt Echo |
 | `09` | Blaze Boss Arena | `id-ID-ArdiNeural` | -15Hz | -10% | Demonic Boss Reverb, Bass shelf +6dB @110Hz |
-| `10` | Guru Marcia | `id-ID-GadisNeural` | +2Hz | +2% | Gentle voice warmth +2dB @2.8kHz |
+| `10` | Guru Marcia (AI) | `id-ID-GadisNeural` | +2Hz | +2% | Gentle voice warmth +2dB @2.8kHz |
 | `11` | Ksatria Xander | `id-ID-ArdiNeural` | +12Hz | +15% | Boy Hero youth pitch shift, Bright +2.5dB @3.5kHz |
 | `12` | Master Tutor | `id-ID-ArdiNeural` | +2Hz | +8% | Rapid drill articulation +2.2dB @3kHz |
 | `13` | Piko Robot | `id-ID-GadisNeural` | +18Hz | +18% | Robotic ring flanger, high resonance filter |
 | `14` | Sang Ratu Babilon | `id-ID-GadisNeural` | -4Hz | -6% | Ethereal Hall Reverb (aecho), Silky High-Shelf |
+| `15` | AT Marcia Trainer (Full) | Audio Asli Master | Asli | Asli | Highpass 80Hz, Normalisasi EBU R128 (-16 LUFS, +17.6dB) |
+| `16` | AT Marcia (Highlight) | Audio Asli Cuplikan | Asli | Asli | Highpass 80Hz, Normalisasi EBU R128 (-16 LUFS) 35 detik |
 
 ---
 
@@ -149,9 +199,10 @@ Karakter suara bariton rendah, berat, dominan, sinis, dan mengintimidasi. Dileng
    - `04_Prof_Gasing_Pujian_Kasih_WOW.mp3` & `05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3`: Mainkan saat combo streak mencapai 5 atau 10 berturut-turut.
    - `06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3`: Mainkan saat overlay kemenangan terbuka dan sisa nyawa pemain = 5.
    - `13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3`: Mainkan saat waktu tersisa $\le 5$ detik untuk memicu urgensi berhitung.
+   - `15` & `16` (AT Marcia Trainer): Integrasikan ke modal video/audio pendamping pada tombol *Tanya Marcia* di setiap level Zona 2 s/d Zona 5.
 
 2. **Modul Asyiknya Belajar**:
    - Pasangkan `01`, `02`, dan `03` sebagai narasi pendamping pada video animasi konsep dasar matematika GASING di setiap awal bab Zona 1 s/d 8.
 
 3. **Kloning Suara F5-TTS**:
-   - Seluruh file di folder ini dapat langsung dimuat ke **Tab F5-TTS Indo Studio** pada aplikasi VoiceOver Studio SO untuk menjadi **audio referensi kloning** (*Voice Cloning Reference Audio*) bagi pembuatan dialog-dialog baru lainnya!
+   - File `16_AT_Marcia_Trainer_Highlight_Tanya_Marcia.mp3` dapat langsung dimuat ke **Tab F5-TTS Indo Studio** pada aplikasi VoiceOver Studio SO untuk menjadi **audio referensi kloning** (*Voice Cloning Reference Audio*) bagi pembuatan dialog-dialog bimbingan baru lainnya dengan suara asli Trainer Marcia!

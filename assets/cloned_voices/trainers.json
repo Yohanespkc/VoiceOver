@@ -22,5 +22,19 @@
     "ref_text": "Salam Ksatria Gaber, saya Profesor GASING Yosu dari masa depan.",
     "avatar": "👨‍🏫",
     "description": "Suara asli Prof. Yohanes Surya yang hangat, inspiratif, dan membangkitkan semangat berhitung."
+  },
+  {
+    "id": "at_c04618f8",
+    "name": "AT Marcia Trainer",
+    "role": "Narator Modul Matematika SO",
+    "category": "trainer_gasing",
+    "gender": "Wanita",
+    "region": "Columbia",
+    "specialty": "Tutor Modul Hitung",
+    "ref_audio": "/assets/cloned_voices/at_c04618f8.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_c04618f8.wav",
+    "ref_text": "Halo adik-adik pintar! Hari ini kita akan belajar matematika gasing bersama, gampang, asyik, dan menyenangkan!",
+    "avatar": "👩‍🏫",
+    "description": "Trainer GASING (Columbia) — Narator Modul Matematika SO"
   }
 ]
