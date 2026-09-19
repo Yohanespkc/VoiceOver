@@ -1,0 +1,36 @@
+# Python / Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Pretrained Models & Checkpoints (>100MB cannot be pushed to GitHub)
+models/
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.onnx
+
+# Output & Temporary Audio Generation
+output/
+scratch/
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log

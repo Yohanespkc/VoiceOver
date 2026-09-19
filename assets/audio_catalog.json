@@ -1,0 +1,770 @@
+{
+  "pujian_gasing": [
+    {
+      "id": "01_BAGUS.mp3",
+      "title": "Bagus",
+      "transcript": "Bagus",
+      "filename": "01_BAGUS.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/01_BAGUS.mp3",
+      "duration": 0.88,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "02_MANTAP.mp3",
+      "title": "Mantap",
+      "transcript": "Mantap",
+      "filename": "02_MANTAP.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/02_MANTAP.mp3",
+      "duration": 0.88,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "03_HEBAT.mp3",
+      "title": "Hebat!",
+      "transcript": "Hebat!",
+      "filename": "03_HEBAT.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/03_HEBAT.mp3",
+      "duration": 0.74,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "04_WOW.mp3",
+      "title": "WOW!",
+      "transcript": "WOW!",
+      "filename": "04_WOW.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/04_WOW.mp3",
+      "duration": 0.7,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "05_TEPAT.mp3",
+      "title": "Tepat",
+      "transcript": "Tepat",
+      "filename": "05_TEPAT.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/05_TEPAT.mp3",
+      "duration": 0.74,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "06_BENAR.mp3",
+      "title": "Benar",
+      "transcript": "Benar",
+      "filename": "06_BENAR.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/06_BENAR.mp3",
+      "duration": 0.93,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "07_BETUL.mp3",
+      "title": "Betul",
+      "transcript": "Betul",
+      "filename": "07_BETUL.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/07_BETUL.mp3",
+      "duration": 0.93,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "08_KEREN.mp3",
+      "title": "Keren",
+      "transcript": "Keren",
+      "filename": "08_KEREN.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/08_KEREN.mp3",
+      "duration": 0.86,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "09_Bagus_Kamu_sudah_menjawabnya_dengan_BENAR.mp3",
+      "title": "Bagus Kamu Sudah Menjawabnya Dengan Benar",
+      "transcript": "Bagus Kamu Sudah Menjawabnya Dengan Benar",
+      "filename": "09_Bagus_Kamu_sudah_menjawabnya_dengan_BENAR.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/09_Bagus_Kamu_sudah_menjawabnya_dengan_BENAR.mp3",
+      "duration": 4.37,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "10_Jawaban_yang_TEPAT.mp3",
+      "title": "Jawaban Yang Tepat",
+      "transcript": "Jawaban Yang Tepat",
+      "filename": "10_Jawaban_yang_TEPAT.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/10_Jawaban_yang_TEPAT.mp3",
+      "duration": 1.63,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "11_Bagus_SEKALI.mp3",
+      "title": "Bagus Sekali",
+      "transcript": "Bagus Sekali",
+      "filename": "11_Bagus_SEKALI.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/11_Bagus_SEKALI.mp3",
+      "duration": 1.3,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "12_Kamu_memang_HEBAT.mp3",
+      "title": "Hebat!",
+      "transcript": "Hebat!",
+      "filename": "12_Kamu_memang_HEBAT.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/12_Kamu_memang_HEBAT.mp3",
+      "duration": 1.58,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "13_Kamu_anak_yang_CERDAS.mp3",
+      "title": "Kamu Anak Yang Cerdas",
+      "transcript": "Kamu Anak Yang Cerdas",
+      "filename": "13_Kamu_anak_yang_CERDAS.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/13_Kamu_anak_yang_CERDAS.mp3",
+      "duration": 1.95,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "14_Kamu_memang_PINTAR.mp3",
+      "title": "Kamu Memang Pintar",
+      "transcript": "Kamu Memang Pintar",
+      "filename": "14_Kamu_memang_PINTAR.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/14_Kamu_memang_PINTAR.mp3",
+      "duration": 1.86,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "15_Kamu_LUAR_BIASA.mp3",
+      "title": "Kamu Luar Biasa",
+      "transcript": "Kamu Luar Biasa",
+      "filename": "15_Kamu_LUAR_BIASA.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/15_Kamu_LUAR_BIASA.mp3",
+      "duration": 1.76,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "16_HEBAT_SEKALI.mp3",
+      "title": "Hebat Sekali!",
+      "transcript": "Hebat Sekali!",
+      "filename": "16_HEBAT_SEKALI.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/16_HEBAT_SEKALI.mp3",
+      "duration": 1.35,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "17_Wah_Ternyata_kamu_KEREN_ya.mp3",
+      "title": "Wah Ternyata Kamu Keren Ya",
+      "transcript": "Wah Ternyata Kamu Keren Ya",
+      "filename": "17_Wah_Ternyata_kamu_KEREN_ya.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/17_Wah_Ternyata_kamu_KEREN_ya.mp3",
+      "duration": 1.99,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "18_HEBAT_banget_sih_kamu.mp3",
+      "title": "Hebat!",
+      "transcript": "Hebat!",
+      "filename": "18_HEBAT_banget_sih_kamu.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/18_HEBAT_banget_sih_kamu.mp3",
+      "duration": 1.76,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "19_PINTAR_sekali_kamu.mp3",
+      "title": "Pintar Sekali Kamu",
+      "transcript": "Pintar Sekali Kamu",
+      "filename": "19_PINTAR_sekali_kamu.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/19_PINTAR_sekali_kamu.mp3",
+      "duration": 1.95,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "20_Wess_MANTAP.mp3",
+      "title": "Wess Mantap",
+      "transcript": "Wess Mantap",
+      "filename": "20_Wess_MANTAP.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/20_Wess_MANTAP.mp3",
+      "duration": 1.44,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "21_Wow_Wow_Wow_KEREN.mp3",
+      "title": "WOW!",
+      "transcript": "WOW!",
+      "filename": "21_Wow_Wow_Wow_KEREN.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/21_Wow_Wow_Wow_KEREN.mp3",
+      "duration": 1.93,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "22_Kasih_We_o_We_WOW.mp3",
+      "title": "Kasih W O W",
+      "transcript": "Kasih We O We... WOW!",
+      "filename": "22_Kasih_We_o_We_WOW.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/22_Kasih_We_o_We_WOW.mp3",
+      "duration": 2.55,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "23_Kasih_We_kasih_o_kasih_We_WOW.mp3",
+      "title": "Kasih We Kasih O Kasih We WOW",
+      "transcript": "Kasih We... kasih O... kasih We... WOW!",
+      "filename": "23_Kasih_We_kasih_o_kasih_We_WOW.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/23_Kasih_We_kasih_o_kasih_We_WOW.mp3",
+      "duration": 4.27,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "24_FANTASTIC.mp3",
+      "title": "Fantastic",
+      "transcript": "Fantastic",
+      "filename": "24_FANTASTIC.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/24_FANTASTIC.mp3",
+      "duration": 1.07,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "25_LUAR_BIASA.mp3",
+      "title": "Luar Biasa",
+      "transcript": "Luar Biasa",
+      "filename": "25_LUAR_BIASA.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/25_LUAR_BIASA.mp3",
+      "duration": 1.25,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "26_Kamu_LUAR_BIASA.mp3",
+      "title": "Kamu Luar Biasa",
+      "transcript": "Kamu Luar Biasa",
+      "filename": "26_Kamu_LUAR_BIASA.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/26_Kamu_LUAR_BIASA.mp3",
+      "duration": 1.49,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "27_Kamu_HEBAT_SEKALI.mp3",
+      "title": "Hebat Sekali!",
+      "transcript": "Hebat Sekali!",
+      "filename": "27_Kamu_HEBAT_SEKALI.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/27_Kamu_HEBAT_SEKALI.mp3",
+      "duration": 1.81,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    },
+    {
+      "id": "28_Kamu_PINTAR_SEKALI.mp3",
+      "title": "Kamu Pintar Sekali",
+      "transcript": "Kamu Pintar Sekali",
+      "filename": "28_Kamu_PINTAR_SEKALI.mp3",
+      "rel_path": "/assets/audio/pujian_gasing/28_Kamu_PINTAR_SEKALI.mp3",
+      "duration": 1.72,
+      "character": "Bowo (Pujian GASING)",
+      "vibe": "Ceria & Apresiasi"
+    }
+  ],
+  "prof_gasing": [
+    {
+      "id": "01_prof_gasing_misi_babilon.wav",
+      "title": "Prof. Gasing (Misi Babilonia)",
+      "transcript": "Salam Ksatria Octagon yang cerdas dan pemberani! Kamu luar biasa... Mampu mengalahkan mutan-mutan utusan Blaze di level pertama. Selamat!",
+      "filename": "01_prof_gasing_misi_babilon.wav",
+      "rel_path": "/assets/audio/prof_gasing/01_prof_gasing_misi_babilon.wav",
+      "duration": 42.24,
+      "character": "Prof. Gasing",
+      "vibe": "Petualangan"
+    },
+    {
+      "id": "prof_gasing_anime.wav",
+      "title": "Prof. Gasing (Gaya Anime Semangat)",
+      "transcript": "Bagus sekali, Ksatria Gaber! Untuk menghadapi Piko Mutant, ajarkan matematika pada anak-anak petani lokal di Sungai Nil! Ingat, kekuatan sejati kita adalah berempati dan menolong sesama!",
+      "filename": "prof_gasing_anime.wav",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_anime.wav",
+      "duration": 11.78,
+      "character": "Prof. Gasing",
+      "vibe": "Semangat Membara"
+    },
+    {
+      "id": "prof_gasing_intro_pesan.wav",
+      "title": "Prof. Gasing (Pesan Misi Penuh)",
+      "transcript": "Pesan penting dari masa depan untuk para ksatria matematika.",
+      "filename": "prof_gasing_intro_pesan.wav",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_intro_pesan.wav",
+      "duration": 93.05,
+      "character": "Prof. Gasing",
+      "vibe": "Futuristik"
+    },
+    {
+      "id": "prof_gasing_narasi.wav",
+      "title": "Prof. Gasing (Gaya Narasi Tenang)",
+      "transcript": "Bagus... Untuk menghadapi Piko Mutant, ajarkanlah konsep dasar matematika kepada anak-anak petani di sepanjang Sungai Nil.",
+      "filename": "prof_gasing_narasi.wav",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_narasi.wav",
+      "duration": 14.52,
+      "character": "Prof. Gasing",
+      "vibe": "Tenang & Berwibawa"
+    },
+    {
+      "id": "prof_gasing_prolog_bab2.mp3",
+      "title": "Prof. Gasing (Prolog Bab 2 - Penjumlahan)",
+      "transcript": "Prolog Bab 2: Membuka rahasia penjumlahan bersama Master Tutor.",
+      "filename": "prof_gasing_prolog_bab2.mp3",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_prolog_bab2.mp3",
+      "duration": 38.04,
+      "character": "Prof. Gasing",
+      "vibe": "Edukasi"
+    },
+    {
+      "id": "prof_gasing_prolog_bab3.mp3",
+      "title": "Prof. Gasing (Prolog Bab 3 - Perkalian)",
+      "transcript": "Prolog Bab 3: Menguasai seni perkalian metode GASING.",
+      "filename": "prof_gasing_prolog_bab3.mp3",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_prolog_bab3.mp3",
+      "duration": 76.49,
+      "character": "Prof. Gasing",
+      "vibe": "Edukasi"
+    },
+    {
+      "id": "prof_gasing_prolog_bab4.mp3",
+      "title": "Prof. Gasing (Prolog Bab 4 - Pengurangan)",
+      "transcript": "Prolog Bab 4: Memecahkan teka-teki pengurangan.",
+      "filename": "prof_gasing_prolog_bab4.mp3",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_prolog_bab4.mp3",
+      "duration": 70.87,
+      "character": "Prof. Gasing",
+      "vibe": "Edukasi"
+    },
+    {
+      "id": "prof_gasing_prolog_bab5.mp3",
+      "title": "Prof. Gasing (Prolog Bab 5 - Pembagian)",
+      "transcript": "Prolog Bab 5: Menaklukkan tantangan pembagian tingkat lanjut.",
+      "filename": "prof_gasing_prolog_bab5.mp3",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_prolog_bab5.mp3",
+      "duration": 76.3,
+      "character": "Prof. Gasing",
+      "vibe": "Edukasi"
+    },
+    {
+      "id": "prof_gasing_vo_intro.mp3",
+      "title": "Prof. Gasing (Intro Belajar)",
+      "transcript": "Selamat datang di petualangan Asyiknya Belajar bersama Profesor Gasing.",
+      "filename": "prof_gasing_vo_intro.mp3",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_vo_intro.mp3",
+      "duration": 129.02,
+      "character": "Prof. Gasing",
+      "vibe": "Ceria & Mendidik"
+    },
+    {
+      "id": "prof_gasing_yosu_0_asli.ogg",
+      "title": "Prof. Gasing Asli (Sapaan Pembuka)",
+      "transcript": "Halo anak-anak dan sahabat semua! Saya Profesor Gasing... Selamat datang di petualangan matematika!",
+      "filename": "prof_gasing_yosu_0_asli.ogg",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_yosu_0_asli.ogg",
+      "duration": 28.0,
+      "character": "Prof. Gasing (Asli)",
+      "vibe": "Bijak & Hangat"
+    },
+    {
+      "id": "prof_gasing_yosu_1_asli.ogg",
+      "title": "Prof. Gasing Asli (Penutup & Pujian)",
+      "transcript": "Kalian luar biasa! Tetap semangat belajar matematika yang gampang, asyik, dan menyenangkan!",
+      "filename": "prof_gasing_yosu_1_asli.ogg",
+      "rel_path": "/assets/audio/prof_gasing/prof_gasing_yosu_1_asli.ogg",
+      "duration": 10.29,
+      "character": "Prof. Gasing (Asli)",
+      "vibe": "Semangat Inspiratif"
+    }
+  ],
+  "blaze": [
+    {
+      "id": "blaze_0.mp3",
+      "title": "Blaze 0",
+      "transcript": "Dialog karakter Blaze: Blaze 0",
+      "filename": "blaze_0.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_0.mp3",
+      "duration": 1.9,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_1.mp3",
+      "title": "Blaze 1",
+      "transcript": "Dialog karakter Blaze: Blaze 1",
+      "filename": "blaze_1.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_1.mp3",
+      "duration": 1.86,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_10.mp3",
+      "title": "Blaze 10",
+      "transcript": "Dialog karakter Blaze: Blaze 10",
+      "filename": "blaze_10.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_10.mp3",
+      "duration": 2.97,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_11.mp3",
+      "title": "Blaze 11",
+      "transcript": "Dialog karakter Blaze: Blaze 11",
+      "filename": "blaze_11.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_11.mp3",
+      "duration": 1.44,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_12.mp3",
+      "title": "Blaze 12",
+      "transcript": "Dialog karakter Blaze: Blaze 12",
+      "filename": "blaze_12.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_12.mp3",
+      "duration": 1.9,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_2.mp3",
+      "title": "Blaze 2",
+      "transcript": "Dialog karakter Blaze: Blaze 2",
+      "filename": "blaze_2.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_2.mp3",
+      "duration": 3.3,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_3.mp3",
+      "title": "Blaze 3",
+      "transcript": "Dialog karakter Blaze: Blaze 3",
+      "filename": "blaze_3.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_3.mp3",
+      "duration": 3.02,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_4.mp3",
+      "title": "Blaze 4",
+      "transcript": "Dialog karakter Blaze: Blaze 4",
+      "filename": "blaze_4.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_4.mp3",
+      "duration": 2.97,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_5.mp3",
+      "title": "Blaze 5",
+      "transcript": "Dialog karakter Blaze: Blaze 5",
+      "filename": "blaze_5.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_5.mp3",
+      "duration": 2.93,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_6.mp3",
+      "title": "Blaze 6",
+      "transcript": "Dialog karakter Blaze: Blaze 6",
+      "filename": "blaze_6.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_6.mp3",
+      "duration": 4.78,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_7.mp3",
+      "title": "Blaze 7",
+      "transcript": "Dialog karakter Blaze: Blaze 7",
+      "filename": "blaze_7.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_7.mp3",
+      "duration": 2.41,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_8.mp3",
+      "title": "Blaze 8",
+      "transcript": "Dialog karakter Blaze: Blaze 8",
+      "filename": "blaze_8.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_8.mp3",
+      "duration": 3.39,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_9.mp3",
+      "title": "Blaze 9",
+      "transcript": "Dialog karakter Blaze: Blaze 9",
+      "filename": "blaze_9.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_9.mp3",
+      "duration": 3.39,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_dnd_1.mp3",
+      "title": "Blaze Dnd 1",
+      "transcript": "Dialog karakter Blaze: Blaze Dnd 1",
+      "filename": "blaze_dnd_1.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_dnd_1.mp3",
+      "duration": 1.53,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_dnd_2.mp3",
+      "title": "Blaze Dnd 2",
+      "transcript": "Dialog karakter Blaze: Blaze Dnd 2",
+      "filename": "blaze_dnd_2.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_dnd_2.mp3",
+      "duration": 1.35,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_dnd_3.mp3",
+      "title": "Blaze Dnd 3",
+      "transcript": "Dialog karakter Blaze: Blaze Dnd 3",
+      "filename": "blaze_dnd_3.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_dnd_3.mp3",
+      "duration": 1.3,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blaze_takut.mp3",
+      "title": "Blaze Panik / Takut",
+      "transcript": "Dialog karakter Blaze: Blaze Panik / Takut",
+      "filename": "blaze_takut.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_takut.mp3",
+      "duration": 1.67,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Terkejut & Panik"
+    },
+    {
+      "id": "blaze_xander_1.mp3",
+      "title": "Blaze Xander 1",
+      "transcript": "Dialog karakter Blaze: Blaze Xander 1",
+      "filename": "blaze_xander_1.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_xander_1.mp3",
+      "duration": 6.46,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Konfrontasi Blaze vs Xander"
+    },
+    {
+      "id": "blaze_xander_2.mp3",
+      "title": "Blaze Xander 2",
+      "transcript": "Dialog karakter Blaze: Blaze Xander 2",
+      "filename": "blaze_xander_2.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_xander_2.mp3",
+      "duration": 11.89,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Konfrontasi Blaze vs Xander"
+    },
+    {
+      "id": "blaze_xander_3.mp3",
+      "title": "Blaze Xander 3",
+      "transcript": "Dialog karakter Blaze: Blaze Xander 3",
+      "filename": "blaze_xander_3.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_xander_3.mp3",
+      "duration": 8.31,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Konfrontasi Blaze vs Xander"
+    },
+    {
+      "id": "blaze_xander_4.mp3",
+      "title": "Blaze Xander 4",
+      "transcript": "Dialog karakter Blaze: Blaze Xander 4",
+      "filename": "blaze_xander_4.mp3",
+      "rel_path": "/assets/audio/blaze/blaze_xander_4.mp3",
+      "duration": 4.83,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Konfrontasi Blaze vs Xander"
+    },
+    {
+      "id": "blazev1.mp3",
+      "title": "Blazev1",
+      "transcript": "Dialog karakter Blaze: Blazev1",
+      "filename": "blazev1.mp3",
+      "rel_path": "/assets/audio/blaze/blazev1.mp3",
+      "duration": 1.49,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blazev2.mp3",
+      "title": "Blazev2",
+      "transcript": "Dialog karakter Blaze: Blazev2",
+      "filename": "blazev2.mp3",
+      "rel_path": "/assets/audio/blaze/blazev2.mp3",
+      "duration": 2.53,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blazev3.mp3",
+      "title": "Blazev3",
+      "transcript": "Dialog karakter Blaze: Blazev3",
+      "filename": "blazev3.mp3",
+      "rel_path": "/assets/audio/blaze/blazev3.mp3",
+      "duration": 1.49,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blazev4.mp3",
+      "title": "Blazev4",
+      "transcript": "Dialog karakter Blaze: Blazev4",
+      "filename": "blazev4.mp3",
+      "rel_path": "/assets/audio/blaze/blazev4.mp3",
+      "duration": 1.67,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    },
+    {
+      "id": "blazev5.mp3",
+      "title": "Blazev5",
+      "transcript": "Dialog karakter Blaze: Blazev5",
+      "filename": "blazev5.mp3",
+      "rel_path": "/assets/audio/blaze/blazev5.mp3",
+      "duration": 1.28,
+      "character": "Blaze (Penguasa Dimensi)",
+      "vibe": "Antagonis Menantang"
+    }
+  ],
+  "karakter_lain": [
+    {
+      "id": "ksatria_gaber_motivasi.wav",
+      "title": "Ksatria Gaber (Motivasi Ceria)",
+      "transcript": "Tetap semangat pantang menyerah! Bersama GASING kita bisa menembus segala rintangan!",
+      "filename": "ksatria_gaber_motivasi.wav",
+      "rel_path": "/assets/audio/karakter_lain/ksatria_gaber_motivasi.wav",
+      "duration": 12.29,
+      "character": "Ksatria Gaber",
+      "vibe": "Semangat Muda"
+    },
+    {
+      "id": "ksatria_octagon_xander.wav",
+      "title": "Ksatria Octagon & Xander",
+      "transcript": "Jangan khawatir, Xander! Kita akan selesaikan teka-teki penjumlahan ini bersama-sama. Ayo bantu kami menghitung!",
+      "filename": "ksatria_octagon_xander.wav",
+      "rel_path": "/assets/audio/karakter_lain/ksatria_octagon_xander.wav",
+      "duration": 10.06,
+      "character": "Ksatria Octagon",
+      "vibe": "Pahlawan Muda"
+    },
+    {
+      "id": "master_tutor_lirik_kanan.wav",
+      "title": "Master Tutor (Trik Lirik Kanan)",
+      "transcript": "Anak-anak yang hebat! Mari kita pelajari trik cepat Penjumlahan Dua Angka dengan metode GASING! Eits, sebelum menulis... Lirik kanan!",
+      "filename": "master_tutor_lirik_kanan.wav",
+      "rel_path": "/assets/audio/karakter_lain/master_tutor_lirik_kanan.wav",
+      "duration": 48.41,
+      "character": "Master Tutor GASING",
+      "vibe": "Ceria & Mengajar"
+    },
+    {
+      "id": "narator_petualangan_babilon.wav",
+      "title": "Narator Sinematik Babilon",
+      "transcript": "Ksatria Octagon melintasi gerbang waktu menuju Dimensi Babilon. Di hadapannya, terbentang denah Zona Dua yang misterius.",
+      "filename": "narator_petualangan_babilon.wav",
+      "rel_path": "/assets/audio/karakter_lain/narator_petualangan_babilon.wav",
+      "duration": 26.95,
+      "character": "Narator Sinematik",
+      "vibe": "Dramatis"
+    },
+    {
+      "id": "piko_intro.mp3",
+      "title": "Piko (Suara Robot Imut)",
+      "transcript": "Piko siap membantu petualangan menghitung!",
+      "filename": "piko_intro.mp3",
+      "rel_path": "/assets/audio/karakter_lain/piko_intro.mp3",
+      "duration": 11.88,
+      "character": "Piko Si Robot",
+      "vibe": "Imut & Ceria"
+    },
+    {
+      "id": "profoctav1.mp3",
+      "title": "Profoctav1",
+      "transcript": "Profoctav1",
+      "filename": "profoctav1.mp3",
+      "rel_path": "/assets/audio/karakter_lain/profoctav1.mp3",
+      "duration": 2.87,
+      "character": "Karakter Pendukung",
+      "vibe": "Dinamis"
+    },
+    {
+      "id": "profoctav2.mp3",
+      "title": "Profoctav2",
+      "transcript": "Profoctav2",
+      "filename": "profoctav2.mp3",
+      "rel_path": "/assets/audio/karakter_lain/profoctav2.mp3",
+      "duration": 1.62,
+      "character": "Karakter Pendukung",
+      "vibe": "Dinamis"
+    },
+    {
+      "id": "profoctav3.mp3",
+      "title": "Profoctav3",
+      "transcript": "Profoctav3",
+      "filename": "profoctav3.mp3",
+      "rel_path": "/assets/audio/karakter_lain/profoctav3.mp3",
+      "duration": 1.57,
+      "character": "Karakter Pendukung",
+      "vibe": "Dinamis"
+    },
+    {
+      "id": "profoctav4.mp3",
+      "title": "Profoctav4",
+      "transcript": "Profoctav4",
+      "filename": "profoctav4.mp3",
+      "rel_path": "/assets/audio/karakter_lain/profoctav4.mp3",
+      "duration": 1.52,
+      "character": "Karakter Pendukung",
+      "vibe": "Dinamis"
+    },
+    {
+      "id": "profoctav5.mp3",
+      "title": "Profoctav5",
+      "transcript": "Profoctav5",
+      "filename": "profoctav5.mp3",
+      "rel_path": "/assets/audio/karakter_lain/profoctav5.mp3",
+      "duration": 1.99,
+      "character": "Karakter Pendukung",
+      "vibe": "Dinamis"
+    },
+    {
+      "id": "sang_ratu_istana.wav",
+      "title": "Sang Ratu Babilon",
+      "transcript": "Selamat datang, Ksatria Octagon. Aku mendengar kehebatanmu dalam ilmu matematika. Pergilah ke gua rahasia dan selamatkan kerajaan!",
+      "filename": "sang_ratu_istana.wav",
+      "rel_path": "/assets/audio/karakter_lain/sang_ratu_istana.wav",
+      "duration": 27.89,
+      "character": "Sang Ratu Babilon",
+      "vibe": "Anggun & Karismatik"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "so_marcia",
+    "name": "Guru Marcia (Pemandu Tanya Marcia)",
+    "role": "Pemandu & Tutor Game SO",
+    "category": "so_character",
+    "gender": "Wanita",
+    "ref_audio": "/assets/cloned_voices/marcia_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/marcia_ref.wav",
+    "ref_text": "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam.",
+    "avatar": "/assets/cloned_voices/marcia_avatar.png",
+    "description": "Suara hangat, bersahabat, penuh empati, memandu siswa dalam petualangan matematika SO."
+  },
+  {
+    "id": "prof_yosu_asli",
+    "name": "Prof. Yohanes Surya (GASING Asli)",
+    "role": "Pendiri & Mentor Utama GASING",
+    "category": "so_character",
+    "gender": "Pria",
+    "ref_audio": "/assets/cloned_voices/prof_yosu_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/prof_yosu_ref.wav",
+    "ref_text": "Salam Ksatria Gaber, saya Profesor GASING Yosu dari masa depan.",
+    "avatar": "👨‍🏫",
+    "description": "Suara asli Prof. Yohanes Surya yang hangat, inspiratif, dan membangkitkan semangat berhitung."
+  }
+]

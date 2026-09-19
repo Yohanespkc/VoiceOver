@@ -1,0 +1,10 @@
+{
+  "name": "voiceover-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VoiceOver Studio - Karakter & Asset Asli",
+  "scripts": {
+    "dev": "./start.sh",
+    "start": "./start.sh"
+  }
+}

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoiceOver Studio — Karakter Asyiknya Belajar & Asset Asli GASING</title>
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
+
+  <!-- Main Header -->
+  <header class="border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-3 flex flex-wrap items-center justify-between gap-3">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center space-x-3.5">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-violet-600 to-fuchsia-500 flex items-center justify-center shadow-lg shadow-indigo-500/25 ring-1 ring-white/20">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-base sm:text-lg font-bold bg-gradient-to-r from-white via-indigo-100 to-purple-200 bg-clip-text text-transparent">
+              VoiceOver Studio SO
+            </h1>
+            <span class="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+              v2.0 Asyiknya Belajar
+            </span>
+          </div>
+          <p class="text-xs text-slate-400">Generator Narasi Karakter & Resampler Asset Asli Prof. GASING, Blaze, Bowo</p>
+        </div>
+      </div>
+
+      <!-- Engine Status & Quick Stats -->
+      <div class="flex items-center space-x-3">
+        <div class="hidden sm:flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-slate-900/80 border border-slate-800 text-xs">
+          <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse-dot"></span>
+          <span class="text-slate-300 font-mono" id="engineStatusText">FastAPI + Edge Neural TTS</span>
+        </div>
+        <div class="flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>76+ Asset Asli Siap</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Navigation Tab Bar -->
+  <div class="border-b border-slate-800/60 bg-slate-900/40 backdrop-blur-md sticky top-18 z-30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <nav class="flex space-x-1 sm:space-x-2 py-2 overflow-x-auto no-scrollbar" aria-label="Tabs">
+        <!-- Tab 1: AI Narration Generator -->
+        <button
+          type="button"
+          id="tabBtnTTS"
+          class="nav-tab active flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-indigo-600 text-white shadow-md shadow-indigo-600/30"
+        >
+          <span>🎙️</span>
+          <span>Generator Narasi AI (Asyiknya Belajar)</span>
+        </button>
+
+        <!-- Tab 2: Soundboard & Original Asset Resampler -->
+        <button
+          type="button"
+          id="tabBtnSoundboard"
+          class="nav-tab flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 transition-all"
+        >
+          <span>🎵</span>
+          <span>Papan Asset Asli (Bukan Digenerate)</span>
+          <span class="px-1.5 py-0.2 rounded-full text-[10px] bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">76</span>
+        </button>
+
+        <!-- Tab 3: F5-TTS Indo Studio (Finetune V2 & Voice Cloning) -->
+        <button
+          type="button"
+          id="tabBtnF5"
+          class="nav-tab flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-indigo-500/15 shadow-sm shadow-amber-500/10"
+        >
+          <span class="text-base">🇮🇩</span>
+          <span class="bg-gradient-to-r from-amber-300 via-yellow-200 to-indigo-200 bg-clip-text text-transparent font-bold">F5-TTS Indo Studio</span>
+          <span class="px-1.5 py-0.5 rounded-md text-[9px] font-extrabold bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 uppercase tracking-wider shadow-sm">V2 Cloner</span>
+        </button>
+      </nav>
+
+      <!-- Quick Search Bar for Assets -->
+      <div class="hidden md:flex items-center relative w-64">
+        <input
+          id="globalSearchInput"
+          type="text"
+          placeholder="Cari asset asli (Kasih WOW, Hebat...)"
+          class="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-8 pr-3 py-1.5 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+        >
+        <svg class="w-3.5 h-3.5 text-slate-500 absolute left-2.5 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+      <!-- ======================================================== -->
+      <!-- LEFT SECTION (TABS): AI Generator OR Soundboard Catalog  -->
+      <!-- ======================================================== -->
+      <div class="lg:col-span-7 flex flex-col space-y-6">
+
+        <!-- ==================== TAB 1: AI TTS STUDIO ==================== -->
+        <div id="tabContentTTS" class="flex flex-col space-y-5">
+          
+          <!-- Character Selector Grid -->
+          <div class="glass-panel p-5 space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-800/80">
+              <div class="flex items-center space-x-2">
+                <span class="p-1.5 rounded-lg bg-indigo-500/10 text-indigo-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </span>
+                <h2 class="text-sm font-semibold text-slate-200">Pilih Karakter Voice Over (Video Asyiknya Belajar)</h2>
+              </div>
+              <span id="selectedCharBadge" class="text-xs text-indigo-400 font-medium">Prof. Gasing (Mentor)</span>
+            </div>
+
+            <!-- Character Cards Grid -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+              
+              <!-- 1. Prof Gasing Mentor -->
+              <div class="character-card active" data-char="prof_gasing_mentor" data-voice="id-ID-ArdiNeural" data-pitch="+2Hz" data-rate="+8%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">👨‍🏫</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Prof. Gasing</h3>
+                    <p class="text-[10px] text-indigo-300 font-medium">Mentor Masa Depan</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Bijak, futuristik, dan menginspirasi.</p>
+              </div>
+
+              <!-- 2. Prof Gasing Anime -->
+              <div class="character-card" data-char="prof_gasing_anime" data-voice="id-ID-ArdiNeural" data-pitch="+10Hz" data-rate="+22%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">⚡</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Prof. Gasing</h3>
+                    <p class="text-[10px] text-amber-400 font-medium">Anime Semangat</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Cepat, dinamis, membakar semangat.</p>
+              </div>
+
+              <!-- 3. Master Tutor GASING -->
+              <div class="character-card" data-char="master_tutor" data-voice="id-ID-ArdiNeural" data-pitch="+3Hz" data-rate="+6%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">📐</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Master Tutor</h3>
+                    <p class="text-[10px] text-emerald-400 font-medium">Trik Lirik Kanan</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Artikulasi jelas & ramah anak-anak.</p>
+              </div>
+
+              <!-- 4. Ksatria Octagon / Xander -->
+              <div class="character-card" data-char="ksatria_octagon" data-voice="id-ID-ArdiNeural" data-pitch="+12Hz" data-rate="+18%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">🛡️</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Ksatria Octagon</h3>
+                    <p class="text-[10px] text-blue-400 font-medium">Pahlawan Muda</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Heroik muda & penuh energi ceria.</p>
+              </div>
+
+              <!-- 5. Sang Ratu Babilon -->
+              <div class="character-card" data-char="sang_ratu" data-voice="id-ID-GadisNeural" data-pitch="-3Hz" data-rate="-5%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">👑</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Sang Ratu</h3>
+                    <p class="text-[10px] text-pink-400 font-medium">Istana Babilon</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Suara wanita anggun, berwibawa.</p>
+              </div>
+
+              <!-- 6. Blaze Antagonis -->
+              <div class="character-card" data-char="blaze" data-voice="id-ID-ArdiNeural" data-pitch="-12Hz" data-rate="-8%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">😈</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Blaze</h3>
+                    <p class="text-[10px] text-rose-400 font-medium">Penguasa Jahat</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Berat, sinis, menantang para ksatria.</p>
+              </div>
+
+              <!-- 7. Narator Sinematik -->
+              <div class="character-card" data-char="narator" data-voice="id-ID-ArdiNeural" data-pitch="-6Hz" data-rate="-2%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">📜</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Narator Game</h3>
+                    <p class="text-[10px] text-purple-400 font-medium">Sinematik Babilon</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Dramatis, pembawa alur petualangan.</p>
+              </div>
+
+              <!-- 8. Prof. Gasing Narasi -->
+              <div class="character-card" data-char="prof_gasing_narasi" data-voice="id-ID-ArdiNeural" data-pitch="-4Hz" data-rate="-5%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">🎙️</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Prof. Gasing</h3>
+                    <p class="text-[10px] text-teal-400 font-medium">Narasi Bijak</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Tenang, mendidik dengan empati.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Narration Textarea Card -->
+          <div class="glass-panel p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-800/80">
+              <div class="flex items-center space-x-2">
+                <span class="p-1.5 rounded-lg bg-indigo-500/10 text-indigo-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                  </svg>
+                </span>
+                <h2 class="text-sm font-semibold text-slate-200">Kolom Narasi (Tanpa Batas Karakter)</h2>
+              </div>
+
+              <!-- Quick Dialogue Preset Buttons -->
+              <div class="flex items-center space-x-1.5 text-xs">
+                <span class="text-slate-400 hidden sm:inline">Contoh Naskah:</span>
+                <button type="button" id="btnPresetBabilon" class="btn-subtle px-2.5 py-1 text-xs">
+                  Misi Babilon
+                </button>
+                <button type="button" id="btnPresetLirikKanan" class="btn-subtle px-2.5 py-1 text-xs">
+                  Trik Lirik Kanan
+                </button>
+                <button type="button" id="btnPresetPujianCeria" class="btn-subtle px-2.5 py-1 text-xs">
+                  Pujian Hebat
+                </button>
+                <button type="button" id="btnClearText" title="Hapus Naskah" class="p-1.5 rounded-lg bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 transition-colors">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Main Textarea -->
+            <div class="relative">
+              <textarea
+                id="narrationInput"
+                rows="7"
+                class="w-full bg-slate-950/70 text-slate-100 placeholder-slate-500 text-sm leading-relaxed p-4 rounded-xl border border-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent resize-y min-h-[160px]"
+                placeholder="Ketik atau tempelkan narasi naskah video Anda di sini... Contoh: Salam Ksatria Gaber! Saya Profesor Gasing dari masa depan..."
+              ></textarea>
+
+              <!-- Smart Match Badge (Appears when text matches authentic soundboard clip!) -->
+              <div id="smartMatchBanner" class="hidden mt-2 p-2.5 rounded-xl bg-gradient-to-r from-emerald-950/40 via-indigo-950/30 to-slate-900 border border-emerald-500/30 flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span class="text-xs text-emerald-300 font-medium">Asset Asli Ditemukan:</span>
+                  <span id="smartMatchTitle" class="text-xs font-bold text-white font-mono">Kasih W O W</span>
+                </div>
+                <button
+                  type="button"
+                  id="btnLoadSmartMatch"
+                  class="px-2.5 py-1 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-[11px] transition-all"
+                >
+                  Pakai Asset Asli Ini ⚡
+                </button>
+              </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400 pt-2 border-t border-slate-800/60">
+              <div class="flex items-center space-x-4">
+                <span>Karakter: <strong id="charCount" class="text-indigo-400 font-mono">0</strong></span>
+                <span>Kata: <strong id="wordCount" class="text-indigo-400 font-mono">0</strong></span>
+                <span>Estimasi Durasi: <strong id="estDuration" class="text-slate-200 font-mono">~0 dtk</strong></span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <button type="button" id="btnPasteText" class="text-indigo-400 hover:text-indigo-300 flex items-center space-x-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                  </svg>
+                  <span>Tempel Teks</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mood / Vibe Selector Cards -->
+          <div class="glass-panel p-5 space-y-3">
+            <div class="flex items-center justify-between pb-2 border-b border-slate-800/80">
+              <h3 class="text-xs font-semibold text-slate-300">Suasana Hati / Mood Karakter:</h3>
+              <span id="vibeBadge" class="text-xs text-amber-400 font-medium">Semangat (Optimis)</span>
+            </div>
+            
+            <div class="grid grid-cols-3 sm:grid-cols-6 gap-2 pt-1">
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center active" data-vibe="semangat">
+                <span class="text-lg block">🔥</span>
+                <span class="text-[11px] font-medium block mt-1">Semangat</span>
+              </button>
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center" data-vibe="ceria">
+                <span class="text-lg block">✨</span>
+                <span class="text-[11px] font-medium block mt-1">Ceria</span>
+              </button>
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center" data-vibe="puitis">
+                <span class="text-lg block">📜</span>
+                <span class="text-[11px] font-medium block mt-1">Puitis</span>
+              </button>
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center" data-vibe="dramatis">
+                <span class="text-lg block">⚡</span>
+                <span class="text-[11px] font-medium block mt-1">Dramatis</span>
+              </button>
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center" data-vibe="misterius">
+                <span class="text-lg block">🌌</span>
+                <span class="text-[11px] font-medium block mt-1">Misterius</span>
+              </button>
+              <button type="button" class="vibe-btn btn-subtle p-2.5 text-center" data-vibe="netral">
+                <span class="text-lg block">🎙️</span>
+                <span class="text-[11px] font-medium block mt-1">Netral</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Generate Speech Action -->
+          <div class="flex items-center space-x-3">
+            <button
+              type="button"
+              id="btnGenerateTTS"
+              class="flex-1 btn-primary py-3.5 px-6 text-sm font-bold flex items-center justify-center space-x-2.5"
+            >
+              <svg class="w-5 h-5 text-indigo-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z" />
+              </svg>
+              <span id="btnGenerateTTSText">Hasilkan Suara AI (Generate Audio)</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ==================== TAB 2: SOUNDBOARD ASSET ASLI ==================== -->
+        <div id="tabContentSoundboard" class="hidden flex flex-col space-y-5">
+          
+          <!-- Soundboard Header & Category Filter Bar -->
+          <div class="glass-panel p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800/80">
+              <div>
+                <h2 class="text-sm font-semibold text-slate-200 flex items-center space-x-2">
+                  <span class="p-1.5 rounded-lg bg-emerald-500/10 text-emerald-400">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+                    </svg>
+                  </span>
+                  <span>Koleksi Asset Asli (Asyiknya Bermain & Belajar)</span>
+                </h2>
+                <p class="text-xs text-slate-400 mt-0.5">Asset rekaman asli (bukan digenerate) siap dimuat ke Studio Tuner untuk diatur pitch & speed-nya.</p>
+              </div>
+
+              <!-- Total Count Badge -->
+              <span id="catalogFilteredCount" class="text-xs font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-3 py-1 rounded-full">
+                Memuat catalog...
+              </span>
+            </div>
+
+            <!-- Category Filter Buttons -->
+            <div class="flex flex-wrap items-center gap-2">
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-sm transition-all" data-cat="all">
+                Semua Asset (76)
+              </button>
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="pujian_gasing">
+                🏆 Pujian GASING (Kasih WOW, Hebat)
+              </button>
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="prof_gasing">
+                👨‍🏫 Prof. Gasing Asli (Prof. Yohanes Surya)
+              </button>
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="blaze">
+                😈 Blaze Asli (Dialog & Reaksi)
+              </button>
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="karakter_lain">
+                🛡️ Karakter Pendukung & Master Tutor
+              </button>
+            </div>
+
+            <!-- Search Field inside Soundboard -->
+            <div class="relative">
+              <input
+                id="soundboardSearchInput"
+                type="text"
+                placeholder="Ketik kata kunci untuk menyaring (contoh: 'Kasih', 'Hebat', 'Babilon', 'Blaze', 'Luar Biasa')..."
+                class="w-full bg-slate-950/80 border border-slate-800 rounded-xl pl-9 pr-4 py-2.5 text-xs text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500"
+              >
+              <svg class="w-4 h-4 text-slate-500 absolute left-3 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+          </div>
+
+          <!-- Soundboard Cards Grid Container -->
+          <div id="soundboardGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[640px] overflow-y-auto pr-1">
+            <!-- Dynamically populated by app.js -->
+            <div class="p-8 text-center text-slate-500 col-span-full">Memuat daftar asset suara asli...</div>
+          </div>
+
+        </div>
+
+        <!-- ==================== TAB 3: F5-TTS INDO STUDIO & CLONING ==================== -->
+        <div id="tabContentF5" class="hidden flex flex-col space-y-5">
+
+          <!-- F5-TTS Model Header Card -->
+          <div class="glass-panel p-5 space-y-4 border-amber-500/20 bg-gradient-to-b from-slate-900/90 via-slate-900/60 to-slate-950/80">
+            <div class="flex flex-wrap items-center justify-between gap-3 pb-3 border-b border-slate-800/80">
+              <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-xl shadow-lg shadow-amber-500/20">
+                  🇮🇩
+                </div>
+                <div>
+                  <div class="flex items-center space-x-2">
+                    <h2 class="text-sm sm:text-base font-bold text-white">
+                      F5-TTS Indo Finetune V2 Studio
+                    </h2>
+                    <a
+                      href="https://huggingface.co/Eempostor/F5-TTS-INDO-FINETUNE-V2"
+                      target="_blank"
+                      class="px-2 py-0.5 rounded-full text-[10px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30 hover:bg-amber-500/30 transition-all flex items-center space-x-1"
+                    >
+                      <span>Eempostor V2</span>
+                      <svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    </a>
+                  </div>
+                  <p class="text-xs text-slate-400 mt-0.5">Flow Matching Zero-Shot Voice Cloner Bahasa Indonesia & Karakter Game Sacred Octagon.</p>
+                </div>
+              </div>
+
+              <!-- Hardware Acceleration Badge -->
+              <div class="flex items-center space-x-2">
+                <span class="flex items-center space-x-1.5 px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span id="f5DeviceBadge">Apple Silicon MPS</span>
+                </span>
+                <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                  1.28 GB Model
+                </span>
+              </div>
+            </div>
+
+            <!-- Quick Action Action Bar: Auto-Cloners & Record Buttons -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-1">
+              <!-- Action 1: Auto Clone Marcia -->
+              <button
+                type="button"
+                id="btnAutoCloneMarcia"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-gradient-to-r from-pink-950/50 to-purple-950/40 border border-pink-500/30 hover:border-pink-500/60 text-left transition-all group"
+              >
+                <span class="text-2xl group-hover:scale-110 transition-transform">👩‍🏫</span>
+                <div class="truncate">
+                  <span class="block text-[11px] font-bold text-pink-200 truncate">Kloning Guru Marcia</span>
+                  <span class="block text-[9px] text-pink-400">Auto Ekstrak Video SO</span>
+                </div>
+              </button>
+
+              <!-- Action 2: Prof Yohanes Surya -->
+              <button
+                type="button"
+                id="btnAutoCloneProf"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-gradient-to-r from-amber-950/50 to-yellow-950/40 border border-amber-500/30 hover:border-amber-500/60 text-left transition-all group"
+              >
+                <span class="text-2xl group-hover:scale-110 transition-transform">👨‍🏫</span>
+                <div class="truncate">
+                  <span class="block text-[11px] font-bold text-amber-200 truncate">Prof. Yohanes Surya</span>
+                  <span class="block text-[9px] text-amber-400">Suara Autentik GASING</span>
+                </div>
+              </button>
+
+              <!-- Action 3: Record Voice / AT -->
+              <button
+                type="button"
+                id="btnOpenVoiceRecorder"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-gradient-to-r from-indigo-950/60 to-blue-950/40 border border-indigo-500/40 hover:border-indigo-500/80 text-left transition-all group shadow-sm shadow-indigo-500/10"
+              >
+                <span class="text-2xl group-hover:scale-110 transition-transform">🎙️</span>
+                <div class="truncate">
+                  <span class="block text-[11px] font-bold text-indigo-200 truncate">Rekam Suara Saya / AT</span>
+                  <span class="block text-[9px] text-indigo-400">Mikrofon Browser</span>
+                </div>
+              </button>
+
+              <!-- Action 4: Upload Training Audio -->
+              <button
+                type="button"
+                id="btnOpenAudioUpload"
+                class="flex items-center space-x-2 p-2.5 rounded-xl bg-gradient-to-r from-emerald-950/50 to-teal-950/40 border border-emerald-500/30 hover:border-emerald-500/60 text-left transition-all group"
+              >
+                <span class="text-2xl group-hover:scale-110 transition-transform">📁</span>
+                <div class="truncate">
+                  <span class="block text-[11px] font-bold text-emerald-200 truncate">Unggah Suara AT</span>
+                  <span class="block text-[9px] text-emerald-400">WAV / MP3 / Video</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Character Selector & Filter Bar -->
+          <div class="glass-panel p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-slate-800/80">
+              <div class="flex items-center space-x-2">
+                <span class="p-1.5 rounded-lg bg-amber-500/10 text-amber-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 100-6 3 3 0 000 6z"/></svg>
+                </span>
+                <h3 class="text-sm font-semibold text-slate-200">Pilih Model Suara Karakter / AT Trainer</h3>
+                <button
+                  type="button"
+                  id="btnReloadF5Voices"
+                  class="text-[10px] text-slate-400 hover:text-amber-300 px-2 py-0.5 rounded-lg bg-slate-800/80 hover:bg-slate-700 border border-slate-700/60 transition-all flex items-center space-x-1 cursor-pointer"
+                  title="Segarkan daftar model suara dari server"
+                >
+                  <span>🔄</span>
+                  <span>Segarkan</span>
+                </button>
+              </div>
+              <span id="f5SelectedVoiceBadge" class="text-xs text-amber-400 font-bold">Guru Marcia (Pemandu Tanya Marcia)</span>
+            </div>
+
+            <!-- Category Filter Tabs for Voices -->
+            <div class="flex flex-wrap items-center gap-1.5 text-xs">
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-amber-500 text-slate-950 shadow-sm transition-all" data-f5cat="all">
+                Semua Suara
+              </button>
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="so_character">
+                ⭐ Karakter Sacred Octagon
+              </button>
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="trainer_gasing">
+                👨‍🏫 Suara AT / Trainer GASING
+              </button>
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="standard_indo">
+                🎙️ Standar Indonesia (Eempostor)
+              </button>
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="custom">
+                ✨ Suara Kustom / Rekaman Saya
+              </button>
+            </div>
+
+            <!-- Dynamic Voice Cards Grid Container -->
+            <div id="f5VoiceGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-h-[360px] overflow-y-auto pr-1">
+              <!-- Dynamically populated by app.js -->
+              <div class="p-6 text-center text-slate-500 col-span-full">Memuat daftar model suara F5-TTS...</div>
+            </div>
+          </div>
+
+          <!-- Naskah & Pronunciation Optimization Card -->
+          <div class="glass-panel p-5 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-800/80">
+              <div class="flex items-center space-x-2">
+                <span class="p-1.5 rounded-lg bg-indigo-500/10 text-indigo-400">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                </span>
+                <h3 class="text-sm font-semibold text-slate-200">Kolom Narasi & Naskah Voice Over</h3>
+              </div>
+
+              <!-- Pronunciation Optimization Switch -->
+              <label class="flex items-center space-x-2 cursor-pointer bg-slate-900/90 border border-indigo-500/30 px-3 py-1 rounded-xl hover:border-indigo-500/60 transition-all">
+                <input type="checkbox" id="f5BilingualSwitch" checked class="accent-indigo-500 w-4 h-4 rounded cursor-pointer">
+                <span class="text-xs text-indigo-300 font-medium">✨ Optimasi Pengucapan Bilingual & GASING</span>
+              </label>
+            </div>
+
+            <!-- Main Textarea for F5-TTS -->
+            <div class="relative">
+              <textarea
+                id="f5NarrationInput"
+                rows="6"
+                class="w-full bg-slate-950/70 text-slate-100 placeholder-slate-500 text-sm leading-relaxed p-4 rounded-xl border border-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-y min-h-[140px]"
+                placeholder="Ketik narasi naskah yang ingin dibaca di sini... Contoh: Selamat datang di petualangan Sacred Octagon! Bersama teknologi asisten AI, kita belajar matematika GASING. Kasih W O W! Hebat sekali!"
+              ></textarea>
+
+              <!-- Live Normalized Text Preview Box -->
+              <div id="f5PronunciationPreviewBox" class="mt-2.5 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs space-y-1.5">
+                <div class="flex items-center justify-between text-[11px] text-slate-400">
+                  <span class="flex items-center space-x-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
+                    <strong class="text-slate-300">Pratinjau Fonetik Yang Dibaca F5-TTS:</strong>
+                  </span>
+                  <span class="text-amber-400 font-mono" id="f5ChunkCountBadge">1 Bagian Kalimat</span>
+                </div>
+                <p id="f5PronunciationText" class="text-amber-200/90 font-mono text-[11px] leading-relaxed italic bg-slate-950/60 p-2 rounded-lg border border-slate-800/60">
+                  (Ketik naskah untuk melihat pratinjau pelafalan otomatis)
+                </p>
+                <div class="flex items-center justify-between text-[10px] text-slate-500 pt-0.5">
+                  <span>💡 Kata <strong>"AI"</strong> diucapkan <em>"ei-ai"</em> | <strong>"GASING"</strong> tetap bahasa Indonesia | <strong>"W O W"</strong> berirama jingle.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick GASING Praise Chips -->
+            <div class="space-y-1.5 pt-1">
+              <span class="text-[11px] text-slate-400 block">Sisipkan Ucapan Pujian & Jingle Khas GASING:</span>
+              <div class="flex flex-wrap gap-1.5">
+                <button type="button" class="f5-praise-chip btn-subtle px-2.5 py-1 text-[11px] rounded-lg hover:border-amber-500/50 hover:text-amber-300" data-praise="Kasih W O W! Hebat sekali!">
+                  🏆 Kasih WOW!
+                </button>
+                <button type="button" class="f5-praise-chip btn-subtle px-2.5 py-1 text-[11px] rounded-lg hover:border-amber-500/50 hover:text-amber-300" data-praise="Jawaban yang TEPAT! Kamu memang HEBAT!">
+                  ⚡ Jawaban TEPAT
+                </button>
+                <button type="button" class="f5-praise-chip btn-subtle px-2.5 py-1 text-[11px] rounded-lg hover:border-amber-500/50 hover:text-amber-300" data-praise="Kamu anak yang CERDAS dan LUAR BIASA!">
+                  🌟 Anak CERDAS
+                </button>
+                <button type="button" class="f5-praise-chip btn-subtle px-2.5 py-1 text-[11px] rounded-lg hover:border-amber-500/50 hover:text-amber-300" data-praise="Kereeen! Perhitungan mencongak kamu sangat cepat!">
+                  🚀 Kereeeen!
+                </button>
+                <button type="button" class="f5-praise-chip btn-subtle px-2.5 py-1 text-[11px] rounded-lg hover:border-amber-500/50 hover:text-amber-300" data-praise="Belajar matematika GASING: Gampang, Asyik, dan Menyenangkan!">
+                  📐 Slogan GASING
+                </button>
+              </div>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-400 pt-2 border-t border-slate-800/60">
+              <div class="flex items-center space-x-4">
+                <span>Karakter: <strong id="f5CharCount" class="text-amber-400 font-mono">0</strong></span>
+                <span>Kata: <strong id="f5WordCount" class="text-amber-400 font-mono">0</strong></span>
+                <span>Estimasi Durasi: <strong id="f5EstDuration" class="text-slate-200 font-mono">~0 dtk</strong></span>
+              </div>
+              <button type="button" id="btnF5ClearText" class="text-slate-400 hover:text-rose-400 text-xs transition-colors">
+                Bersihkan Naskah
+              </button>
+            </div>
+          </div>
+
+          <!-- Quality, Format & Generation Card -->
+          <div class="glass-panel p-5 space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              
+              <!-- 1. Format Selector (WAV vs MP3) -->
+              <div class="space-y-1">
+                <label class="text-[11px] font-semibold text-slate-300 flex items-center space-x-1">
+                  <span>💾</span>
+                  <span>Format Hasil Audio:</span>
+                </label>
+                <select
+                  id="f5OutputFormat"
+                  class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-amber-500 font-mono"
+                >
+                  <option value="wav" selected>WAV (16-bit Master PCM)</option>
+                  <option value="mp3">MP3 (320 kbps High Quality)</option>
+                </select>
+              </div>
+
+              <!-- 2. Quality NFE Steps -->
+              <div class="space-y-1">
+                <label class="text-[11px] font-semibold text-slate-300 flex items-center space-x-1">
+                  <span>⚙️</span>
+                  <span>Kualitas vs Kecepatan (Steps):</span>
+                </label>
+                <select
+                  id="f5NfeSteps"
+                  class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-2 text-xs text-slate-100 focus:outline-none focus:border-amber-500 font-mono"
+                >
+                  <option value="16">16 Steps (Cepat / ~4 dtk)</option>
+                  <option value="32" selected>32 Steps (Standar Rekomendasi)</option>
+                  <option value="64">64 Steps (Studio Master Fidelity)</option>
+                </select>
+              </div>
+
+              <!-- 3. Speed / Tempo -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px] font-semibold text-slate-300">
+                  <span>⏱️ Kecepatan Suara:</span>
+                  <span id="f5SpeedLabel" class="text-amber-400 font-mono">1.0x</span>
+                </div>
+                <input
+                  id="f5SpeedSlider"
+                  type="range"
+                  min="0.8"
+                  max="1.4"
+                  step="0.05"
+                  value="1.0"
+                  class="w-full accent-amber-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer mt-2"
+                >
+              </div>
+
+            </div>
+
+            <!-- Big Main Generate Button -->
+            <button
+              type="button"
+              id="btnGenerateF5TTS"
+              class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 hover:from-amber-400 hover:to-orange-500 text-slate-950 font-extrabold text-sm sm:text-base flex items-center justify-center space-x-3 shadow-lg shadow-amber-500/25 transition-all transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
+            >
+              <svg id="f5GenerateIcon" class="w-5 h-5 text-slate-950" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+              <span id="btnGenerateF5TTSText">Hasilkan Suara Kloning F5-TTS (Generate Audio)</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ======================================================== -->
+      <!-- RIGHT SECTION: STUDIO AUDIO TUNER (PITCH, SPEED, DSP)    -->
+      <!-- ======================================================== -->
+      <aside class="lg:col-span-5 flex flex-col space-y-5">
+
+        <!-- Active Source Monitor Card -->
+        <div class="glass-panel p-5 space-y-4">
+          
+          <div class="flex items-center justify-between pb-3 border-b border-slate-800/80">
+            <div class="flex items-center space-x-2">
+              <span class="p-1.5 rounded-lg bg-purple-500/10 text-purple-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                </svg>
+              </span>
+              <div>
+                <h3 class="text-sm font-semibold text-slate-200">Studio Audio Tuner & DSP</h3>
+                <p class="text-[11px] text-slate-400">Atur Pitch, Speed & Intonasi Nada Terpasang</p>
+              </div>
+            </div>
+            
+            <span id="activeModeBadge" class="px-2.5 py-1 rounded-full text-[10px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+              Preset AI Aktif
+            </span>
+          </div>
+
+          <!-- Current Audio Title & Excerpt -->
+          <div class="p-3 rounded-xl bg-slate-950/70 border border-slate-800/80 flex items-center justify-between">
+            <div class="truncate mr-2">
+              <span class="block text-[10px] text-slate-400 font-medium">Audio Sedang Dimuat:</span>
+              <span id="currentAudioTitle" class="block text-xs font-bold text-slate-100 truncate">
+                Prof. Gasing (Mentor Masa Depan)
+              </span>
+            </div>
+            <span id="currentAudioDuration" class="text-xs font-mono text-indigo-400 font-semibold shrink-0">
+              00:00
+            </span>
+          </div>
+
+          <!-- Dynamic Audio Visualizer Canvas -->
+          <div class="space-y-2">
+            <div class="relative w-full h-28 bg-slate-950 rounded-xl overflow-hidden border border-slate-800/90 flex items-center justify-center">
+              <canvas id="visualizerCanvas" class="w-full h-full block"></canvas>
+              <div id="visualizerOverlay" class="absolute inset-0 flex items-center justify-center text-xs text-slate-500 pointer-events-none">
+                Tekan Putar Suara untuk Memulai Visualisasi Spektrum
+              </div>
+            </div>
+
+            <!-- Seek & Time Slider -->
+            <div class="flex items-center space-x-2 pt-1">
+              <span id="timeCurrent" class="text-[11px] font-mono text-slate-400">00:00</span>
+              <input
+                id="seekSlider"
+                type="range"
+                min="0"
+                max="100"
+                value="0"
+                class="flex-1 w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+              >
+              <span id="timeTotal" class="text-[11px] font-mono text-slate-400">00:00</span>
+            </div>
+          </div>
+
+          <!-- Player Controls Bar -->
+          <div class="flex items-center justify-between gap-2 pt-1">
+            <div class="flex items-center space-x-2">
+              <!-- Big Play / Pause Button -->
+              <button
+                type="button"
+                id="btnMainPlay"
+                class="btn-primary px-5 py-2.5 text-xs font-bold flex items-center space-x-2"
+              >
+                <svg id="mainPlayIcon" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+                <span id="mainPlayText">Putar Suara</span>
+              </button>
+
+              <!-- Stop Button -->
+              <button
+                type="button"
+                id="btnMainStop"
+                class="btn-subtle p-2.5 text-slate-300"
+                title="Hentikan Pemutaran"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6 6h12v12H6z"/>
+                </svg>
+              </button>
+
+              <!-- Loop Toggle Button -->
+              <button
+                type="button"
+                id="btnMainLoop"
+                class="btn-subtle p-2.5 text-slate-400 hover:text-indigo-300"
+                title="Ulangi Audio (Loop)"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- Player Status Indicator -->
+            <span id="playbackStatusText" class="text-[11px] font-mono text-slate-400">
+              Standby
+            </span>
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- ADVANCED DSP TUNER SLIDERS (PITCH, SPEED, EQ)            -->
+          <!-- ======================================================== -->
+          <div class="pt-4 border-t border-slate-800/80 space-y-4">
+            
+            <!-- 1. Pitch Shifter (Tinggi Rendah Nada) -->
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-medium text-slate-300 flex items-center space-x-1.5">
+                  <span>🎵</span>
+                  <span>Tinggi Nada (Pitch Shifter):</span>
+                </span>
+                <div class="flex items-center space-x-1.5">
+                  <span id="pitchBadge" class="text-xs font-mono font-bold text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded-md border border-indigo-500/20">
+                    0.0 st (Normal)
+                  </span>
+                </div>
+              </div>
+
+              <!-- Pitch Slider (-12 to +12 semitones) -->
+              <input
+                id="pitchSlider"
+                type="range"
+                min="-12"
+                max="12"
+                step="0.5"
+                value="0"
+                class="w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+              >
+
+              <!-- Quick Pitch Presets -->
+              <div class="grid grid-cols-5 gap-1 pt-1 text-[10px]">
+                <button type="button" class="pitch-preset-btn btn-subtle py-1 text-center" data-pitch="-4">
+                  -4 st (Bass)
+                </button>
+                <button type="button" class="pitch-preset-btn btn-subtle py-1 text-center" data-pitch="-1">
+                  -1 st
+                </button>
+                <button type="button" class="pitch-preset-btn btn-subtle py-1 text-center active" data-pitch="0">
+                  0 st (Asli)
+                </button>
+                <button type="button" class="pitch-preset-btn btn-subtle py-1 text-center" data-pitch="2">
+                  +2 st (Ceria)
+                </button>
+                <button type="button" class="pitch-preset-btn btn-subtle py-1 text-center" data-pitch="5">
+                  +5 st (Anime)
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. Speed / Tempo Slider -->
+            <div class="space-y-1.5">
+              <div class="flex items-center justify-between text-xs">
+                <span class="font-medium text-slate-300 flex items-center space-x-1.5">
+                  <span>⏱️</span>
+                  <span>Kecepatan Bicara (Tempo):</span>
+                </span>
+                <span id="speedBadge" class="text-xs font-mono font-bold text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded-md border border-indigo-500/20">
+                  1.00x
+                </span>
+              </div>
+
+              <input
+                id="speedSlider"
+                type="range"
+                min="0.5"
+                max="2.0"
+                step="0.05"
+                value="1.0"
+                class="w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+              >
+
+              <!-- Quick Speed Presets -->
+              <div class="grid grid-cols-4 gap-1 pt-1 text-[10px]">
+                <button type="button" class="speed-preset-btn btn-subtle py-1 text-center" data-speed="0.85">
+                  0.85x (Tenang)
+                </button>
+                <button type="button" class="speed-preset-btn btn-subtle py-1 text-center active" data-speed="1.0">
+                  1.0x (Normal)
+                </button>
+                <button type="button" class="speed-preset-btn btn-subtle py-1 text-center" data-speed="1.15">
+                  1.15x (Dinamis)
+                </button>
+                <button type="button" class="speed-preset-btn btn-subtle py-1 text-center" data-speed="1.3">
+                  1.3x (Cepat)
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Equalizer & Vokal Intonasi (Bass & Treble) -->
+            <div class="grid grid-cols-2 gap-3 pt-1">
+              <!-- Bass EQ -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px]">
+                  <span class="text-slate-400">Kedalaman Bass:</span>
+                  <span id="bassBadge" class="text-indigo-400 font-mono">0 dB</span>
+                </div>
+                <input
+                  id="bassSlider"
+                  type="range"
+                  min="-8"
+                  max="8"
+                  step="1"
+                  value="0"
+                  class="w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+                >
+              </div>
+
+              <!-- Treble EQ -->
+              <div class="space-y-1">
+                <div class="flex justify-between text-[11px]">
+                  <span class="text-slate-400">Artikulasi Treble:</span>
+                  <span id="trebleBadge" class="text-indigo-400 font-mono">0 dB</span>
+                </div>
+                <input
+                  id="trebleSlider"
+                  type="range"
+                  min="-8"
+                  max="8"
+                  step="1"
+                  value="0"
+                  class="w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+                >
+              </div>
+            </div>
+
+            <!-- 4. Volume / Master Gain Boost -->
+            <div class="space-y-1 pt-1">
+              <div class="flex justify-between text-[11px]">
+                <span class="text-slate-400">Volume Suara (Gain Boost):</span>
+                <span id="volumeBadge" class="text-indigo-400 font-mono">100%</span>
+              </div>
+              <input
+                id="volumeSlider"
+                type="range"
+                min="0"
+                max="1.5"
+                step="0.05"
+                value="1.0"
+                class="w-full accent-indigo-500 bg-slate-800 h-1.5 rounded-lg appearance-none cursor-pointer"
+              >
+            </div>
+
+          </div>
+
+          <!-- ======================================================== -->
+          <!-- EXPORT ACTIONS (DOWNLOAD DUAL FORMAT: WAV & MP3)         -->
+          <!-- ======================================================== -->
+          <div class="pt-4 border-t border-slate-800/80 space-y-2.5">
+            <div class="grid grid-cols-2 gap-2">
+              <!-- Download WAV -->
+              <button
+                type="button"
+                id="btnDownloadWav"
+                class="btn-emerald py-3 px-3 text-xs font-bold flex items-center justify-center space-x-1.5"
+              >
+                <svg class="w-4 h-4 text-emerald-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                <span id="downloadBtnText">Unduh WAV</span>
+              </button>
+
+              <!-- Download MP3 -->
+              <button
+                type="button"
+                id="btnDownloadMp3"
+                class="py-3 px-3 rounded-xl bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white text-xs font-bold flex items-center justify-center space-x-1.5 shadow-md shadow-orange-600/20 transition-all cursor-pointer"
+              >
+                <svg class="w-4 h-4 text-amber-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                <span id="downloadMp3BtnText">Unduh MP3</span>
+              </button>
+            </div>
+            <p class="text-[10px] text-slate-500 text-center">
+              Pilihan uncompressed WAV 44.1kHz (Master Game Engine) atau MP3 320kbps (Streaming & Web PWA).
+            </p>
+          </div>
+
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: REKAM SUARA AT TRAINER / MANDIRI (VOICE CLONER)   -->
+  <!-- ======================================================== -->
+  <!-- ======================================================== -->
+  <!-- MODAL: REKAM SUARA AT TRAINER / MANDIRI (VOICE CLONER)   -->
+  <!-- ======================================================== -->
+  <div id="voiceRecordModal" class="hidden fixed inset-0 z-50 overflow-y-auto bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+    <div class="glass-panel w-full max-w-lg max-h-[88vh] flex flex-col border border-amber-500/30 shadow-2xl shadow-amber-500/10 rounded-2xl overflow-hidden my-auto bg-slate-900/95">
+      
+      <!-- Modal Header (Sticky Top) -->
+      <div class="flex-shrink-0 px-5 py-3.5 border-b border-slate-800/90 bg-slate-900/95 flex items-center justify-between z-10">
+        <div class="flex items-center space-x-2.5">
+          <div class="w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-base border border-amber-500/30">
+            🎙️
+          </div>
+          <div>
+            <h3 class="text-sm font-bold text-white leading-tight" id="modalTitle">Perekam & Kloning Suara AT / Mandiri</h3>
+            <p class="text-[10.5px] text-slate-400 leading-tight">Rekam 5–15 detik untuk menghasilkan model suara kloning F5-TTS</p>
+          </div>
+        </div>
+        <button type="button" id="btnCloseRecordModal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-all cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body (Scrollable Container with sleek scrollbar) -->
+      <div id="modalBodyScrollable" class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3.5 modal-scroll-area">
+        
+        <!-- Form Mode Toggle -->
+        <div class="grid grid-cols-2 gap-2 text-xs">
+          <button type="button" id="modeBtnTrainer" class="py-2 px-3 rounded-xl font-bold bg-amber-500 text-slate-950 text-center transition-all">
+            👨‍🏫 Suara AT / Trainer GASING
+          </button>
+          <button type="button" id="modeBtnCustom" class="py-2 px-3 rounded-xl font-bold bg-slate-800 text-slate-300 text-center hover:bg-slate-700 transition-all">
+            🎙️ Suara Pribadi / Mandiri
+          </button>
+        </div>
+
+        <!-- Metadata Inputs -->
+        <div class="p-3 rounded-xl bg-slate-950/60 border border-slate-800/80 space-y-2.5 text-xs">
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block text-[11px] text-slate-400 mb-1" id="labelSpeakerName">Nama AT / Trainer:</label>
+              <input
+                type="text"
+                id="inputSpeakerName"
+                placeholder="Contoh: Kak Budi, Bu Rini..."
+                class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-slate-100 focus:outline-none focus:border-amber-500 text-xs"
+              >
+            </div>
+            <div>
+              <label class="block text-[11px] text-slate-400 mb-1" id="labelRegion">Daerah / Asal Pelatihan:</label>
+              <input
+                type="text"
+                id="inputRegion"
+                placeholder="Contoh: Sumut, Papua, Bali..."
+                class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3 py-1.5 text-slate-100 focus:outline-none focus:border-amber-500 text-xs"
+              >
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block text-[11px] text-slate-400 mb-1">Peran Narator:</label>
+              <select
+                id="selectNarratorRole"
+                class="w-full bg-slate-950 border border-slate-800 rounded-xl px-2.5 py-1.5 text-slate-100 focus:outline-none focus:border-amber-500 text-xs"
+              >
+                <option value="Narator Modul Matematika SO">Narator Modul Matematika SO</option>
+                <option value="Tutor Hitung Cepat GASING">Tutor Hitung Cepat GASING</option>
+                <option value="Pemandu Pujian & Evaluasi">Pemandu Pujian & Evaluasi</option>
+                <option value="Pembaca Cerita Petualangan Babilon">Pembaca Cerita Babilon</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] text-slate-400 mb-1">Gender Suara:</label>
+              <select
+                id="selectGender"
+                class="w-full bg-slate-950 border border-slate-800 rounded-xl px-2.5 py-1.5 text-slate-100 focus:outline-none focus:border-amber-500 text-xs"
+              >
+                <option value="Pria">Pria (Bapak/Kakak)</option>
+                <option value="Wanita">Wanita (Ibu/Kakak)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Calibration Script Dropdown & Textarea -->
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <label class="text-[11px] text-slate-400">Naskah Kalibrasi Suara (Bacalah kalimat ini):</label>
+              <button type="button" id="btnSwitchCalibScript" class="text-[10px] text-amber-400 hover:underline">
+                Ganti Naskah Kalibrasi 🔄
+              </button>
+            </div>
+            <textarea
+              id="inputRefText"
+              rows="2"
+              class="w-full bg-slate-950/80 border border-slate-800 rounded-xl p-2.5 text-xs text-amber-200 leading-relaxed focus:outline-none focus:border-amber-500 font-medium"
+            >Halo adik-adik pintar! Hari ini kita akan belajar matematika gasing bersama, gampang, asyik, dan menyenangkan!</textarea>
+          </div>
+        </div>
+
+        <!-- Microphone Source Selection & Sound Check -->
+        <div id="micSelectorWrapper" class="p-3 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2">
+          <div class="flex items-center justify-between">
+            <label for="selectMicDevice" class="text-[11px] font-semibold text-slate-300 flex items-center space-x-1.5">
+              <span>🎙️</span>
+              <span>Pilih Sumber Mikrofon:</span>
+            </label>
+            <button
+              type="button"
+              id="btnTestSpeakerChime"
+              class="text-[10px] text-indigo-400 hover:text-indigo-300 font-medium px-2 py-0.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 transition-all flex items-center space-x-1 cursor-pointer"
+              title="Uji apakah speaker/audio komputer Anda aktif"
+            >
+              <span>🔊</span>
+              <span>Tes Audio Speaker</span>
+            </button>
+          </div>
+          <div class="flex items-center space-x-2">
+            <select
+              id="selectMicDevice"
+              class="flex-1 bg-slate-950 border border-slate-700/80 rounded-lg px-2.5 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-amber-400 cursor-pointer"
+            >
+              <option value="">Memuat daftar mikrofon...</option>
+            </select>
+            <button
+              type="button"
+              id="btnRefreshMicDevices"
+              class="px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs border border-slate-700 transition-all cursor-pointer"
+              title="Segarkan daftar mikrofon"
+            >
+              🔄
+            </button>
+          </div>
+
+          <!-- Live Pre-Recording Mic Level & Activity Indicator -->
+          <div class="flex items-center justify-between text-[11px] pt-1">
+            <span class="text-slate-400 flex items-center space-x-1">
+              <span id="micLiveActivityDot" class="w-2 h-2 rounded-full bg-slate-600 transition-colors"></span>
+              <span id="micLiveActivityText">Level Suara Mikrofon:</span>
+            </span>
+            <span id="micLiveLevelPct" class="font-mono text-emerald-400 font-bold">0%</span>
+          </div>
+          <div class="w-full h-1.5 rounded-full bg-slate-800 overflow-hidden">
+            <div id="micPreLiveMeter" class="h-full bg-gradient-to-r from-emerald-500 via-amber-400 to-rose-500 w-0 transition-all duration-75"></div>
+          </div>
+          <p id="micDeviceAdvice" class="text-[10px] text-slate-400 leading-tight">
+            💡 Tips: Berbicaralah sekarang. Jika meteran di atas tidak bergerak hijau, silakan ganti pilihan mikrofon ke <b>MacBook Pro Microphone</b> atau <b>YS Microphone</b>.
+          </p>
+        </div>
+
+        <!-- Live Mic Recording Visualizer & Timer -->
+        <div class="p-3.5 rounded-xl bg-slate-950 border border-slate-800 space-y-2.5">
+          <div class="flex items-center justify-between text-xs">
+            <span class="flex items-center space-x-1.5 text-slate-400">
+              <span id="recordLed" class="w-2.5 h-2.5 rounded-full bg-slate-600 transition-colors"></span>
+              <span id="recordStatusLabel" class="font-medium text-[11px]">Mikrofon Standby — Siap Merekam</span>
+            </span>
+            <span id="recordTimer" class="font-mono text-sm font-bold text-amber-400">00:00</span>
+          </div>
+
+          <!-- Waveform Canvas & Live Level Container -->
+          <div class="relative rounded-lg overflow-hidden border border-slate-800/80 bg-slate-900/90">
+            <canvas id="recordWaveCanvas" class="w-full h-14 block"></canvas>
+            
+            <!-- Live Level Meter Bar -->
+            <div class="absolute bottom-0 left-0 right-0 h-1 bg-slate-800/80">
+              <div id="micLevelMeter" class="h-full bg-gradient-to-r from-emerald-500 via-amber-400 to-rose-500 w-0 transition-all duration-75"></div>
+            </div>
+          </div>
+
+          <!-- Recording Control Buttons -->
+          <div class="flex flex-wrap items-center justify-center gap-2 pt-0.5">
+            <!-- Main Record / Stop Button -->
+            <button
+              type="button"
+              id="btnToggleRecord"
+              class="py-2.5 px-5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold flex items-center space-x-2 shadow-lg shadow-rose-600/25 transition-all cursor-pointer"
+            >
+              <span id="recordBtnDot" class="w-3 h-3 rounded-full bg-white"></span>
+              <span id="btnToggleRecordText">Mulai Merekam Suara</span>
+            </button>
+
+            <!-- Play Preview of Recorded Audio (shown when recording completed) -->
+            <button
+              type="button"
+              id="btnPlayRecordedSample"
+              disabled
+              class="hidden py-2.5 px-5 rounded-xl play-sample-active text-white text-xs font-bold flex items-center space-x-2 transition-all shadow-lg cursor-pointer"
+            >
+              <span id="playSampleIcon">▶</span>
+              <span id="playSampleText">Putar Hasil Rekaman</span>
+            </button>
+
+            <!-- Reset / Re-record Button (shown after recording) -->
+            <button
+              type="button"
+              id="btnResetRecord"
+              class="hidden py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-semibold flex items-center space-x-1.5 border border-slate-700/80 transition-all cursor-pointer"
+              title="Hapus rekaman saat ini dan mulai rekam ulang"
+            >
+              <span>🔄</span>
+              <span>Rekam Ulang</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- File Upload Alternative (for AT training videos/audios) -->
+        <div class="pt-0.5 pb-1 text-center">
+          <span class="text-[10px] text-slate-500">Atau pilih file audio/video rekaman pelatihan:</span>
+          <input type="file" id="modalAudioFileInput" accept="audio/*,video/*" class="hidden">
+          <button type="button" id="btnTriggerFileSelect" class="block mx-auto mt-0.5 text-xs text-indigo-400 hover:text-indigo-300 underline font-medium cursor-pointer">
+            Pilih File Audio/Video dari Komputer (.wav, .mp3, .mp4)
+          </button>
+          <span id="selectedFileNameDisplay" class="block text-[11px] text-emerald-400 font-mono mt-0.5"></span>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer Action (Sticky Bottom) -->
+      <div class="flex-shrink-0 px-5 py-3 border-t border-slate-800/90 bg-slate-900/95 flex items-center justify-between z-10">
+        <div class="text-[11px] text-slate-400 flex items-center space-x-1.5">
+          <span id="footerSampleIndicator" class="w-2 h-2 rounded-full bg-slate-600 transition-colors"></span>
+          <span id="footerSampleStatus" class="font-medium text-slate-300">Belum ada audio</span>
+        </div>
+        <div class="flex items-center space-x-2">
+          <button type="button" id="btnCancelRecordModal" class="px-4 py-2 rounded-xl text-xs text-slate-400 hover:text-white hover:bg-slate-800 transition-all cursor-pointer">
+            Batal
+          </button>
+          <button
+            type="button"
+            id="btnSaveClonedVoice"
+            disabled
+            class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-950 text-xs font-bold transition-all disabled:opacity-50 shadow-md cursor-pointer"
+          >
+            Simpan & Buat Model Suara
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Notification Toast Container -->
+  <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col space-y-2 pointer-events-none max-w-sm"></div>
+
+  <!-- Application Logic -->
+  <script src="app.js?v=2.6"></script>
+</body>
+</html>
