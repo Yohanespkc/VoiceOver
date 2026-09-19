@@ -1,0 +1,157 @@
+# 🎙️ Rekomendasi Suara (VoiceOver) AI — Sacred Octagon (SO) Games
+
+Folder ini berisi **14 koleksi rekomendasi suara (*voiceover*) AI terbaik** yang dikurasi dan diproduksi khusus untuk ekosistem game dan pembelajaran **Sacred Octagon (SO)** dan **Metode GASING** (Gampang, Asyik, dan Menyenangkan).
+
+Semua audio diproduksi dengan standar resolusi tinggi:
+- **Format**: MP3 Stereo (LAME Encoded)
+- **Sample Rate**: 44,100 Hz (CD Quality)
+- **Bitrate**: 320 kbps High Fidelity
+- **DSP Tuning**: EQ Formant Matching, Highpass 80Hz filter, Loudness Normalization EBU R128 (-15 s/d -16 LUFS), serta Chamber Reverb/Echo khusus untuk karakter tertentu (Blaze & Sang Ratu).
+
+---
+
+## 📂 Daftar 14 Rekomendasi Suara Karakter
+
+### 1. 👨‍🏫 Prof. Gasing (Asyiknya Belajar)
+Karakter suara guru besar yang bijak, bersahabat, kebapakan, menuntun langkah pemahaman matematika anak secara terstruktur dari konkret ke mencongak.
+
+* **[01_Prof_Gasing_Belajar_Konsep_GASING.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/01_Prof_Gasing_Belajar_Konsep_GASING.mp3)** (Durasi: 26.09s)
+  * *Peran*: Video Pembuka Zona 1 (Misi Babilonia)
+  * *Ciri Khas*: Bijak, hangat, menghilangkan rasa takut matematika.
+  * *Naskah*:
+    > *"Halo anak-anak hebat seluruh Indonesia! Selamat datang di petualangan Asyiknya Belajar bersama Profesor Gasing. Ingat ya, di dunia Sacred Octagon, matematika itu tidak sulit. Prinsip kita selalu sama: Gasing! Gampang, Asyik, dan Menyenangkan! Hilangkan rasa takutmu, buka pikiranmu, dan mari kita taklukkan setiap tantangan bersama-sama!"*
+
+* **[02_Prof_Gasing_Belajar_Trik_Lirik_Kanan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/02_Prof_Gasing_Belajar_Trik_Lirik_Kanan.mp3)** (Durasi: 24.72s)
+  * *Peran*: Tutorial Penjumlahan Cepat & Trik Mencongak
+  * *Ciri Khas*: Intonasi instruksional dinamis, jelas, artikulatif.
+  * *Naskah*:
+    > *"Perhatikan baik-baik rahasia berhitung cepat Profesor! Kita selalu menjumlahkan dari depan, dari kiri ke kanan. Tapi sebelum menulis hasilnya... Lirik kanan! Perhatikan angka di sebelahnya. Kalau jumlahnya sepuluh atau lebih, angka depan kita tambah satu! Sangat gampang dan ajaib, kan? Coba kamu praktikkan sekarang!"*
+
+* **[03_Prof_Gasing_Belajar_Konkret_Abstrak_Mencongak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/03_Prof_Gasing_Belajar_Konkret_Abstrak_Mencongak.mp3)** (Durasi: 21.84s)
+  * *Peran*: Pengantar Tiga Pilar Metodologi GASING
+  * *Ciri Khas*: Filosofis, menuntun penuh kasih dan ketulusan.
+  * *Naskah*:
+    > *"Anak-anak yang pintar, belajar matematika itu ada tiga tahapan emasnya: Pertama, kita pegang bendanya secara konkret. Kedua, kita bayangkan gambarnya secara abstrak. Dan ketiga, kita hitung langsung di luar kepala secara mencongak! Kalau ketiga langkah ini kalian kuasai, kalian akan menjadi juara matematika sejati!"*
+
+---
+
+### 2. 🏆 Prof. Gasing (Pujian di Asyiknya Bermain)
+Karakter suara penuh euforia kemenangan, berapi-api membakar semangat juang siswa, dan merayakan pencapaian belajar di game BermainEngine.
+
+* **[04_Prof_Gasing_Pujian_Kasih_WOW.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/04_Prof_Gasing_Pujian_Kasih_WOW.mp3)** (Durasi: 12.77s)
+  * *Peran*: Pujian Ikonik Streak Gameplay
+  * *Ciri Khas*: Ceria, bersorak, apresiasi tulus.
+  * *Naskah*:
+    > *"Kasih We, kasih O, kasih We... WOW! Hebaaat sekali kamu! Jawabanmu secepat kilat dan seratus persen tepat! Profesor sangat bangga melihat semangat belajarmu hari ini!"*
+
+* **[05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3)** (Durasi: 11.78s)
+  * *Peran*: Selebrasi Combo Streak 5x / 10x
+  * *Ciri Khas*: Berapi-api, membakar semangat petualangan.
+  * *Naskah*:
+    > *"Luar biasa! Combo streak beruntun tanpa cela! Lihat, mutan-mutan suruhan Blaze mulai ketakutan melihat kecepatan hitunganmu! Terus pacu energimu, Ksatria Octagon!"*
+
+* **[06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3)** (Durasi: 12.84s)
+  * *Peran*: Layar Kemenangan Akbar (*Victory Overlay* 5 Hati Utuh)
+  * *Ciri Khas*: Sukacita kemenangan sempurna, hadiah +2 senter emas.
+  * *Naskah*:
+    > *"Sempurna! Kamu berhasil menyelesaikan ronde ini dengan lima nyawa utuh tanpa pernah kehabisan waktu! Kamu berhak mendapatkan dua senter emas dan fragmen Sacred Octagon berikutnya! Pertahankan prestasimu!"*
+
+---
+
+### 3. 😈 Blaze (Ejekan & Tantangan Bos Antagonis)
+Karakter suara bariton rendah, berat, dominan, sinis, dan mengintimidasi. Dilengkapi *dark room echo* yang menegaskan kehadirannya sebagai bos mutan di dimensi api.
+
+* **[07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3)** (Durasi: 14.86s)
+  * *Peran*: Trigger saat timer habis per soal (kehilangan 1 nyawa)
+  * *Ciri Khas*: Sinis, tawa mengejek (*Hahaha!*), memprovokasi pemain.
+  * *Naskah*:
+    > *"Hahaha! Waktumu habis, bocah lambat! Otakmu membeku di depan angka-angka itu? Satu hatimu hangus terbakar api kegelapan! Ayo, coba lagi kalau kamu punya nyali!"*
+
+* **[08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3)** (Durasi: 12.14s)
+  * *Peran*: Reaksi ejekan saat pemain salah memilih opsi jawaban
+  * *Ciri Khas*: Meremehkan kemampuan pemain, menertawakan kesalahan.
+  * *Naskah*:
+    > *"Hahaha! Begitu saja tidak bisa? Hitungan kacau seperti itu tidak akan pernah mampu menembus perisai apiku! Menyerah sajalah, Ksatria lemah!"*
+
+* **[09_Blaze_Tantangan_Boss_Stage_Arena.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/09_Blaze_Tantangan_Boss_Stage_Arena.mp3)** (Durasi: 13.81s)
+  * *Peran*: Dialog Pembuka Boss Stage di akhir zona
+  * *Ciri Khas*: Mengintimidasi, menggelegar sinematik, aura bos akhir.
+  * *Naskah*:
+    > *"Berani sekali kamu menginjakkan kaki di istana apiku! Kau pikir metode Gasing bisa menyelamatkanmu dariku? Kali ini tidak ada ampun, seluruh fragmen Sacred Octagon akan kuhancurkan selamanya!"*
+
+---
+
+### 4. 🛡️ Karakter Pendukung Game Sacred Octagon (SO)
+
+* **[10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3)** (Durasi: 22.80s)
+  * *Karakter*: **Guru Marcia** (Pemandu & Tutor Game SO)
+  * *Peran*: Tombol Bantuan Interaktif "Tanya Marcia" saat anak bingung
+  * *Ciri Khas*: Lembut, sabar, penuh empati, menenangkan anak agar tidak takut salah.
+  * *Naskah*:
+    > *"Halo Ksatria kecil! Jangan berkecil hati ya. Di sini kita belajar bersama, dan salah itu adalah bagian dari proses menjadi pintar. Yuk, tarik napas perlahan... Mari kita perhatikan kembali nilai tempat bilangannya bersama Marcia. Kamu pasti bisa!"*
+
+* **[11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3)** (Durasi: 11.93s)
+  * *Karakter*: **Ksatria Xander** (Ksatria Octagon - Hero Muda)
+  * *Peran*: Dialog pahlawan pemain sebelum bertarung di level
+  * *Ciri Khas*: Remaja pemberani, energik, menjunjung tinggi persatuan ksatria.
+  * *Naskah*:
+    > *"Teman-teman, jangan gentar menghadapi mutan Blaze! Dengan kecerdikan logika dan persatuan Ksatria Octagon, tidak ada soal matematika yang tidak bisa kita selesaikan! Maju bersama, selamatkan dimensi kita!"*
+
+* **[12_Master_Tutor_Komando_Trik_Mencongak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/12_Master_Tutor_Komando_Trik_Mencongak.mp3)** (Durasi: 14.83s)
+  * *Karakter*: **Master Tutor** (Instruktur Berhitung Cepat)
+  * *Peran*: Sesi Latihan Kecepatan Berhitung Cepat (Drill Mencongak)
+  * *Ciri Khas*: Komando tegas, cepat, presisi pada pola pasangan 10.
+  * *Naskah*:
+    > *"Pasang telinga dan fokuskan pandangan! Ingat pasangan sepuluh: satu dengan sembilan, dua dengan delapan, tiga dengan tujuh! Jangan gunakan coretan kertas, gunakan mata dan pikiranmu! Lirik kanan, langsung sebut angkanya!"*
+
+* **[13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3)** (Durasi: 18.12s)
+  * *Karakter*: **Piko Robot** (Pendamping Robotik & Sensor HUD)
+  * *Peran*: Audio Warning HUD saat waktu kritis (<5 detik) & hitung mundur
+  * *Ciri Khas*: Efek suara robotik sci-fi (flanger/resonator), lucu namun waspada.
+  * *Naskah*:
+    > *"Bip-bip-bip! Peringatan! Sensor mendeteksi waktu tersisa tinggal lima detik! Ksatria, cepat kunci jawabanmu sekarang! Aktifkan radar matematika! Tiga... Dua... Satu... Bip!"*
+
+* **[14_Sang_Ratu_Babilon_Prolog_Dimensi.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/14_Sang_Ratu_Babilon_Prolog_Dimensi.mp3)** (Durasi: 21.62s)
+  * *Karakter*: **Sang Ratu Babilon** (Pelindung Fragmen Suci)
+  * *Peran*: Prolog Sinematik Masuk Zona Baru / Cutscene Cerita
+  * *Ciri Khas*: Anggun, megah, mistis, reverberasi istana kuno.
+  * *Naskah*:
+    > *"Wahai para pencari kebenaran. Gerbang kuno Babilonia kini telah terbuka kembali. Hanya jiwa yang jujur dan pikiran yang tajam yang mampu merangkai kembali pecahan delapan sudut suci. Pergilah dengan restu semesta, bawalah pulang kejayaan bagi dunia."*
+
+---
+
+## 🎛️ Tabel Parameter DSP Studio Audio
+
+| File | Karakter | Voice Model | Pitch | Rate | Profil Filter FFmpeg DSP |
+| :--- | :--- | :--- | :---: | :---: | :--- |
+| `01` | Prof. Gasing Belajar | `id-ID-ArdiNeural` | -2Hz | -4% | Lowshelf warm +2dB @250Hz, Presence +2dB @3.5kHz |
+| `02` | Prof. Gasing Lirik Kanan | `id-ID-ArdiNeural` | -2Hz | -3% | Clarifier +2.5dB @3.2kHz, Speech highpass 80Hz |
+| `03` | Prof. Gasing 3 Tahap | `id-ID-ArdiNeural` | -3Hz | -5% | Warmth +2.5dB @200Hz, Smooth rolloff |
+| `04` | Prof. Gasing Kasih WOW | `id-ID-ArdiNeural` | +4Hz | +12% | Uplift Presence +3.5dB @4kHz, Fast transient |
+| `05` | Prof. Gasing Combo | `id-ID-ArdiNeural` | +3Hz | +10% | Hype presence +3dB @3.8kHz, +5% volume |
+| `06` | Prof. Gasing Victory | `id-ID-ArdiNeural` | +2Hz | +6% | Celebration EQ +2.5dB @3.5kHz |
+| `07` | Blaze Timeout | `id-ID-ArdiNeural` | -14Hz | -8% | Sub-bass punch +5dB @120Hz, Dark Chamber Echo |
+| `08` | Blaze Ejekan Salah | `id-ID-ArdiNeural` | -13Hz | -7% | Low-mid growl +4.5dB @120Hz, Taunt Echo |
+| `09` | Blaze Boss Arena | `id-ID-ArdiNeural` | -15Hz | -10% | Demonic Boss Reverb, Bass shelf +6dB @110Hz |
+| `10` | Guru Marcia | `id-ID-GadisNeural` | +2Hz | +2% | Gentle voice warmth +2dB @2.8kHz |
+| `11` | Ksatria Xander | `id-ID-ArdiNeural` | +12Hz | +15% | Boy Hero youth pitch shift, Bright +2.5dB @3.5kHz |
+| `12` | Master Tutor | `id-ID-ArdiNeural` | +2Hz | +8% | Rapid drill articulation +2.2dB @3kHz |
+| `13` | Piko Robot | `id-ID-GadisNeural` | +18Hz | +18% | Robotic ring flanger, high resonance filter |
+| `14` | Sang Ratu Babilon | `id-ID-GadisNeural` | -4Hz | -6% | Ethereal Hall Reverb (aecho), Silky High-Shelf |
+
+---
+
+## 🎮 Rekomendasi Integrasi ke Game Sacred Octagon (Astro PWA)
+
+1. **BermainEngine (`BermainEngine.astro`)**:
+   - `07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3`: Mainkan saat fungsi `engine.health.damage(true)` terpanggil akibat countdown timer menyentuh 0.
+   - `08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3`: Mainkan dengan probabilitas 30% saat pemain memilih jawaban salah pada nomor yang sama.
+   - `04_Prof_Gasing_Pujian_Kasih_WOW.mp3` & `05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3`: Mainkan saat combo streak mencapai 5 atau 10 berturut-turut.
+   - `06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3`: Mainkan saat overlay kemenangan terbuka dan sisa nyawa pemain = 5.
+   - `13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3`: Mainkan saat waktu tersisa $\le 5$ detik untuk memicu urgensi berhitung.
+
+2. **Modul Asyiknya Belajar**:
+   - Pasangkan `01`, `02`, dan `03` sebagai narasi pendamping pada video animasi konsep dasar matematika GASING di setiap awal bab Zona 1 s/d 8.
+
+3. **Kloning Suara F5-TTS**:
+   - Seluruh file di folder ini dapat langsung dimuat ke **Tab F5-TTS Indo Studio** pada aplikasi VoiceOver Studio SO untuk menjadi **audio referensi kloning** (*Voice Cloning Reference Audio*) bagi pembuatan dialog-dialog baru lainnya!

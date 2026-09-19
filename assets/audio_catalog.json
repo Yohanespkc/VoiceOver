@@ -828,5 +828,147 @@
       "character": "Motivator Energik (Pria)",
       "vibe": "Semangat Membara & Pujian Kuat"
     }
+  ],
+  "rekomendasi_ai": [
+    {
+      "id": "01_Prof_Gasing_Belajar_Konsep_GASING.mp3",
+      "title": "Prof. Gasing — Video Pembuka Asyiknya Belajar Zona 1 (Misi Babilonia)",
+      "transcript": "Halo anak-anak hebat seluruh Indonesia! Selamat datang di petualangan Asyiknya Belajar bersama Profesor Gasing. Ingat ya, di dunia Sacred Octagon, matematika itu tidak sulit. Prinsip kita selalu sama: Gasing! Gampang, Asyik, dan Menyenangkan! Hilangkan rasa takutmu, buka pikiranmu, dan mari kita taklukkan setiap tantangan bersama-sama!",
+      "filename": "01_Prof_Gasing_Belajar_Konsep_GASING.mp3",
+      "rel_path": "/rekomendasi-ai/01_Prof_Gasing_Belajar_Konsep_GASING.mp3",
+      "duration": 26.09,
+      "character": "Prof. Gasing",
+      "vibe": "Bijak, Ramah, Mendidik"
+    },
+    {
+      "id": "02_Prof_Gasing_Belajar_Trik_Lirik_Kanan.mp3",
+      "title": "Prof. Gasing — Tutorial Trik Penjumlahan Cepat di Modul Belajar",
+      "transcript": "Perhatikan baik-baik rahasia berhitung cepat Profesor! Kita selalu menjumlahkan dari depan, dari kiri ke kanan. Tapi sebelum menulis hasilnya... Lirik kanan! Perhatikan angka di sebelahnya. Kalau jumlahnya sepuluh atau lebih, angka depan kita tambah satu! Sangat gampang dan ajaib, kan? Coba kamu praktikkan sekarang!",
+      "filename": "02_Prof_Gasing_Belajar_Trik_Lirik_Kanan.mp3",
+      "rel_path": "/rekomendasi-ai/02_Prof_Gasing_Belajar_Trik_Lirik_Kanan.mp3",
+      "duration": 24.72,
+      "character": "Prof. Gasing",
+      "vibe": "Instruksional, Antusias, Jelas"
+    },
+    {
+      "id": "03_Prof_Gasing_Belajar_Konkret_Abstrak_Mencongak.mp3",
+      "title": "Prof. Gasing — Pengantar Tiga Pilar Pembelajaran GASING",
+      "transcript": "Anak-anak yang pintar, belajar matematika itu ada tiga tahapan emasnya: Pertama, kita pegang bendanya secara konkret. Kedua, kita bayangkan gambarnya secara abstrak. Dan ketiga, kita hitung langsung di luar kepala secara mencongak! Kalau ketiga langkah ini kalian kuasai, kalian akan menjadi juara matematika sejati!",
+      "filename": "03_Prof_Gasing_Belajar_Konkret_Abstrak_Mencongak.mp3",
+      "rel_path": "/rekomendasi-ai/03_Prof_Gasing_Belajar_Konkret_Abstrak_Mencongak.mp3",
+      "duration": 21.84,
+      "character": "Prof. Gasing",
+      "vibe": "Filosofis, Menuntun, Penuh Kasih"
+    },
+    {
+      "id": "04_Prof_Gasing_Pujian_Kasih_WOW.mp3",
+      "title": "Prof. Gasing (Pujian) — Pujian Streak Gameplay Asyiknya Bermain",
+      "transcript": "Kasih We, kasih O, kasih We... WOW! Hebaaat sekali kamu! Jawabanmu secepat kilat dan seratus persen tepat! Profesor sangat bangga melihat semangat belajarmu hari ini!",
+      "filename": "04_Prof_Gasing_Pujian_Kasih_WOW.mp3",
+      "rel_path": "/rekomendasi-ai/04_Prof_Gasing_Pujian_Kasih_WOW.mp3",
+      "duration": 12.77,
+      "character": "Prof. Gasing (Pujian)",
+      "vibe": "Ceria, Bersorak, Gelora Kemenangan"
+    },
+    {
+      "id": "05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3",
+      "title": "Prof. Gasing (Pujian) — Apresiasi Pencapaian Combo Streak di BermainEngine",
+      "transcript": "Luar biasa! Combo streak beruntun tanpa cela! Lihat, mutan-mutan suruhan Blaze mulai ketakutan melihat kecepatan hitunganmu! Terus pacu energimu, Ksatria Octagon!",
+      "filename": "05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3",
+      "rel_path": "/rekomendasi-ai/05_Prof_Gasing_Pujian_Combo_Streak_Sempurna.mp3",
+      "duration": 11.78,
+      "character": "Prof. Gasing (Pujian)",
+      "vibe": "Memotivasi, Berapi-api, Bangga"
+    },
+    {
+      "id": "06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3",
+      "title": "Prof. Gasing (Pujian) — Layar Kemenangan (Victory Overlay) 5 Hati Lengkap",
+      "transcript": "Sempurna! Kamu berhasil menyelesaikan ronde ini dengan lima nyawa utuh tanpa pernah kehabisan waktu! Kamu berhak mendapatkan dua senter emas dan fragmen Sacred Octagon berikutnya! Pertahankan prestasimu!",
+      "filename": "06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3",
+      "rel_path": "/rekomendasi-ai/06_Prof_Gasing_Pujian_Victory_5_Nyawa.mp3",
+      "duration": 12.84,
+      "character": "Prof. Gasing (Pujian)",
+      "vibe": "Selebrasi Akbar, Penuh Sukacita"
+    },
+    {
+      "id": "07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3",
+      "title": "Blaze — Trigger Saat Timer Per Soal Habis (Timeout & Nyawa Rusak)",
+      "transcript": "Hahaha! Waktumu habis, bocah lambat! Otakmu membeku di depan angka-angka itu? Satu hatimu hangus terbakar api kegelapan! Ayo, coba lagi kalau kamu punya nyali!",
+      "filename": "07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3",
+      "rel_path": "/rekomendasi-ai/07_Blaze_Ejekan_Waktu_Habis_Timeout.mp3",
+      "duration": 14.86,
+      "character": "Blaze",
+      "vibe": "Sinis, Kejam, Tertawa Menakutkan"
+    },
+    {
+      "id": "08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3",
+      "title": "Blaze — Reaksi Ejekan Saat Pemain Salah Menjawab Soal",
+      "transcript": "Hahaha! Begitu saja tidak bisa? Hitungan kacau seperti itu tidak akan pernah mampu menembus perisai apiku! Menyerah sajalah, Ksatria lemah!",
+      "filename": "08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3",
+      "rel_path": "/rekomendasi-ai/08_Blaze_Ejekan_Salah_Hitung_Mutan.mp3",
+      "duration": 12.14,
+      "character": "Blaze",
+      "vibe": "Meremehkan, Mengejek, Dominan"
+    },
+    {
+      "id": "09_Blaze_Tantangan_Boss_Stage_Arena.mp3",
+      "title": "Blaze — Dialog Pembuka Boss Fight Arena Akhir Zona",
+      "transcript": "Berani sekali kamu menginjakkan kaki di istana apiku! Kau pikir metode Gasing bisa menyelamatkanmu dariku? Kali ini tidak ada ampun, seluruh fragmen Sacred Octagon akan kuhancurkan selamanya!",
+      "filename": "09_Blaze_Tantangan_Boss_Stage_Arena.mp3",
+      "rel_path": "/rekomendasi-ai/09_Blaze_Tantangan_Boss_Stage_Arena.mp3",
+      "duration": 13.81,
+      "character": "Blaze",
+      "vibe": "Mengintimidasi, Berwibawa Jahat, Sinematik"
+    },
+    {
+      "id": "10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3",
+      "title": "Guru Marcia — Fitur Interaktif 'Tanya Marcia' Bimbingan Siswa",
+      "transcript": "Halo Ksatria kecil! Jangan berkecil hati ya. Di sini kita belajar bersama, dan salah itu adalah bagian dari proses menjadi pintar. Yuk, tarik napas perlahan... Mari kita perhatikan kembali nilai tempat bilangannya bersama Marcia. Kamu pasti bisa!",
+      "filename": "10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3",
+      "rel_path": "/rekomendasi-ai/10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3",
+      "duration": 22.8,
+      "character": "Guru Marcia",
+      "vibe": "Lembut, Sabar, Mengayomi"
+    },
+    {
+      "id": "11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3",
+      "title": "Ksatria Xander — Dialog Ksatria Pemain Sebelum Memulai Pertarungan",
+      "transcript": "Teman-teman, jangan gentar menghadapi mutan Blaze! Dengan kecerdikan logika dan persatuan Ksatria Octagon, tidak ada soal matematika yang tidak bisa kita selesaikan! Maju bersama, selamatkan dimensi kita!",
+      "filename": "11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3",
+      "rel_path": "/rekomendasi-ai/11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3",
+      "duration": 11.93,
+      "character": "Ksatria Xander",
+      "vibe": "Pemberani, Energik, Jiwa Petualang"
+    },
+    {
+      "id": "12_Master_Tutor_Komando_Trik_Mencongak.mp3",
+      "title": "Master Tutor — Instruksi Latihan Drill Mencongak Otomatis",
+      "transcript": "Pasang telinga dan fokuskan pandangan! Ingat pasangan sepuluh: satu dengan sembilan, dua dengan delapan, tiga dengan tujuh! Jangan gunakan coretan kertas, gunakan mata dan pikiranmu! Lirik kanan, langsung sebut angkanya!",
+      "filename": "12_Master_Tutor_Komando_Trik_Mencongak.mp3",
+      "rel_path": "/rekomendasi-ai/12_Master_Tutor_Komando_Trik_Mencongak.mp3",
+      "duration": 14.83,
+      "character": "Master Tutor",
+      "vibe": "Taktis, Tegas, Cepat"
+    },
+    {
+      "id": "13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3",
+      "title": "Piko Robot — Audio Warning Sensor HUD Saat Timer Kritis (<5 Detik)",
+      "transcript": "Bip-bip-bip! Peringatan! Sensor mendeteksi waktu tersisa tinggal lima detik! Ksatria, cepat kunci jawabanmu sekarang! Aktifkan radar matematika! Tiga... Dua... Satu... Bip!",
+      "filename": "13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3",
+      "rel_path": "/rekomendasi-ai/13_Piko_Robot_Sensor_Energi_Timer_Alert.mp3",
+      "duration": 18.12,
+      "character": "Piko Robot",
+      "vibe": "Lucu, Sci-Fi Robotik, Waspada"
+    },
+    {
+      "id": "14_Sang_Ratu_Babilon_Prolog_Dimensi.mp3",
+      "title": "Sang Ratu Babilon — Prolog Sinematik Pembuka Gerbang Misi Babilonia",
+      "transcript": "Wahai para pencari kebenaran. Gerbang kuno Babilonia kini telah terbuka kembali. Hanya jiwa yang jujur dan pikiran yang tajam yang mampu merangkai kembali pecahan delapan sudut suci. Pergilah dengan restu semesta, bawalah pulang kejayaan bagi dunia.",
+      "filename": "14_Sang_Ratu_Babilon_Prolog_Dimensi.mp3",
+      "rel_path": "/rekomendasi-ai/14_Sang_Ratu_Babilon_Prolog_Dimensi.mp3",
+      "duration": 21.62,
+      "character": "Sang Ratu Babilon",
+      "vibe": "Anggun, Kharismatik, Megah Sinematik"
+    }
   ]
 }

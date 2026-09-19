@@ -652,6 +652,9 @@ def generate_f5_tts(req: F5TTSRequest):
 app.mount("/models", StaticFiles(directory=os.path.join(BASE_DIR, "models")), name="models")
 app.mount("/assets", StaticFiles(directory=ASSETS_DIR), name="assets")
 app.mount("/output", StaticFiles(directory=OUTPUT_DIR), name="output")
+REKOMENDASI_DIR = os.path.join(BASE_DIR, "rekomendasi AI")
+if os.path.exists(REKOMENDASI_DIR):
+    app.mount("/rekomendasi-ai", StaticFiles(directory=REKOMENDASI_DIR), name="rekomendasi-ai")
 
 # Serve UI static files with anti-cache headers
 @app.get("/")
