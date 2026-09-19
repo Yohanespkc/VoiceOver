@@ -163,6 +163,60 @@ const characterPresets = {
     vibe: 'dramatis',
     semitones: -2.0,
     speed: 0.98
+  },
+  vo_anak_ceria: {
+    name: '👶 Suara Anak (Kids Voice)',
+    voice: 'id-ID-GadisNeural',
+    pitch: '+16Hz',
+    rate: '+12%',
+    vibe: 'ceria',
+    semitones: 4.5,
+    speed: 1.12
+  },
+  vo_korporat_formal: {
+    name: '🏢 Suara Korporat (Corporate Voice)',
+    voice: 'id-ID-ArdiNeural',
+    pitch: '-2Hz',
+    rate: '+0%',
+    vibe: 'formal',
+    semitones: -0.8,
+    speed: 1.0
+  },
+  vo_youtube_vlog: {
+    name: '📹 Suara YouTube / Vlog',
+    voice: 'id-ID-ArdiNeural',
+    pitch: '+3Hz',
+    rate: '+10%',
+    vibe: 'santai',
+    semitones: 1.2,
+    speed: 1.1
+  },
+  vo_audiobook_kisah: {
+    name: '📚 Suara Audiobook',
+    voice: 'id-ID-GadisNeural',
+    pitch: '-3Hz',
+    rate: '-6%',
+    vibe: 'imersif',
+    semitones: -1.2,
+    speed: 0.94
+  },
+  vo_iklan_komersial: {
+    name: '🎧 Suara Iklan (Commercial Voice)',
+    voice: 'id-ID-GadisNeural',
+    pitch: '+6Hz',
+    rate: '+15%',
+    vibe: 'persuasif',
+    semitones: 2.2,
+    speed: 1.15
+  },
+  vo_motivator_pria: {
+    name: '⚡ Suara Motivator Pria Energik',
+    voice: 'id-ID-ArdiNeural',
+    pitch: '+5Hz',
+    rate: '+14%',
+    vibe: 'semangat',
+    semitones: 2.0,
+    speed: 1.14
   }
 };
 
@@ -170,7 +224,13 @@ const characterPresets = {
 const presetTexts = {
   babilon: 'Salam Ksatria Octagon yang cerdas dan pemberani! Kamu luar biasa... Mampu mengalahkan mutan-mutan utusan Blaze di level pertama. Selamat! Kamu telah mendapatkan fragmen Sacred Octagon yang pertama. Asyik kan, belajar matematika sambil bermain game?',
   lirikKanan: 'Anak-anak yang hebat! Mari kita pelajari trik cepat Penjumlahan Dua Angka dengan metode GASING! Perhatikan: 43 + 29. Pertama, jumlahkan puluhannya: 4 + 2 = 6. Eits, sebelum menulis 6... Lirik kanan! Perhatikan satuannya: 3 + 9 = 12. Karena 12 lebih dari 10, puluhannya kita tambah 1 menjadi 7! Gampang dan asyik, kan?',
-  pujianCeria: 'Kasih We O We... WOW! Hebaaat sekali kamu! Jawabanmu sangat tepat dan luar biasa cepat! Tetap semangat menjadi juara matematika!'
+  pujianCeria: 'Kasih We O We... WOW! Hebaaat sekali kamu! Jawabanmu sangat tepat dan luar biasa cepat! Tetap semangat menjadi juara matematika!',
+  anakCeria: 'Halo teman-teman cerdas! Wah, lihat ini, robot antariksa kita sudah siap meluncur ke galaksi bintang matematika! Ayo kita berpetualang dan hitung mundur bareng-bareng ya: Tiga, dua, satu... Meluncur!',
+  korporat: 'Selamat datang di profil inovasi berkelanjutan kami. Dengan mengedepankan integrasi teknologi digital dan integritas profesional, kami berdedikasi menciptakan solusi bernilai tambah bagi kemajuan ekosistem bisnis modern di Indonesia.',
+  youtubeVlog: 'Halo guys, balik lagi di channel kita! Hari ini gua bener-bener excited banget, soalnya perangkat yang kemarin kita tunggu-tunggu akhirnya mendarat di studio. Penasaran performanya gimana? Yuk, langsung kita bahas tuntas dan jangan lupa subscribe ya!',
+  audiobook: 'Di bawah hamparan langit senja yang temaram, langkah kakinya terhenti di depan gerbang kayu tua itu. Angin pegunungan berhembus perlahan, seolah membisikkan kembali kisah masa silam yang telah lama terlelap di antara gemerisik dedaunan.',
+  iklanKomersial: 'Mau belanja hemat tanpa repot? Sekarang saatnya beralih ke cara baru yang serba cepat dan praktis! Dapatkan diskon spesial hingga tujuh puluh persen hanya hari ini. Yuk, buka aplikasinya dan klaim promomu sekarang juga!',
+  motivatorPria: 'Luar biasa! Jangan pernah ragukan kehebatan yang ada di dalam dirimu! Setiap tetes keringat dan perjuanganmu hari ini sedang membentuk masa depan yang gemilang. Bangkit, melangkah maju dengan gagah berani, dan buktikan bahwa kamu adalah sang juara!'
 };
 
 // DOM Elements
@@ -2785,32 +2845,122 @@ function setupEventListeners() {
   });
 
   // Sample Dialogue Preset Buttons
-  document.getElementById('btnPresetBabilon').addEventListener('click', () => {
-    narrationInput.value = presetTexts.babilon;
-    updateTextStats();
-    document.querySelector('.character-card[data-char="prof_gasing_mentor"]').click();
-    loadAssetIntoStudio('/assets/audio/prof_gasing/01_prof_gasing_misi_babilon.wav', 'Prof. Gasing (Misi Babilonia)');
-    state.lastGeneratedText = presetTexts.babilon;
-    state.lastGeneratedChar = 'prof_gasing_mentor';
-  });
+  const btnBabilon = document.getElementById('btnPresetBabilon');
+  if (btnBabilon) {
+    btnBabilon.addEventListener('click', () => {
+      narrationInput.value = presetTexts.babilon;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="prof_gasing_mentor"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/prof_gasing/01_prof_gasing_misi_babilon.wav', 'Prof. Gasing (Misi Babilonia)');
+      state.lastGeneratedText = presetTexts.babilon;
+      state.lastGeneratedChar = 'prof_gasing_mentor';
+    });
+  }
 
-  document.getElementById('btnPresetLirikKanan').addEventListener('click', () => {
-    narrationInput.value = presetTexts.lirikKanan;
-    updateTextStats();
-    document.querySelector('.character-card[data-char="master_tutor"]').click();
-    loadAssetIntoStudio('/assets/audio/karakter_lain/master_tutor_lirik_kanan.wav', 'Master Tutor (Trik Lirik Kanan)');
-    state.lastGeneratedText = presetTexts.lirikKanan;
-    state.lastGeneratedChar = 'master_tutor';
-  });
+  const btnAnak = document.getElementById('btnPresetAnak');
+  if (btnAnak) {
+    btnAnak.addEventListener('click', () => {
+      narrationInput.value = presetTexts.anakCeria;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_anak_ceria"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/01_suara_anak_ceria.mp3', '👶 Suara Anak Ceria (Kids Voice)');
+      state.lastGeneratedText = presetTexts.anakCeria;
+      state.lastGeneratedChar = 'vo_anak_ceria';
+    });
+  }
 
-  document.getElementById('btnPresetPujianCeria').addEventListener('click', () => {
-    narrationInput.value = presetTexts.pujianCeria;
-    updateTextStats();
-    document.querySelector('.character-card[data-char="prof_gasing_anime"]').click();
-    loadAssetIntoStudio('/assets/audio/pujian_gasing/22_Kasih_We_o_We_WOW.mp3', 'Kasih W O W (Asset Asli Bowo)');
-    state.lastGeneratedText = presetTexts.pujianCeria;
-    state.lastGeneratedChar = 'prof_gasing_anime';
-  });
+  const btnKorporat = document.getElementById('btnPresetKorporat');
+  if (btnKorporat) {
+    btnKorporat.addEventListener('click', () => {
+      narrationInput.value = presetTexts.korporat;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_korporat_formal"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/02_suara_korporat_profesional.mp3', '🏢 Suara Korporat Profesional');
+      state.lastGeneratedText = presetTexts.korporat;
+      state.lastGeneratedChar = 'vo_korporat_formal';
+    });
+  }
+
+  const btnVlog = document.getElementById('btnPresetVlog');
+  if (btnVlog) {
+    btnVlog.addEventListener('click', () => {
+      narrationInput.value = presetTexts.youtubeVlog;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_youtube_vlog"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/03_suara_youtube_vlog.mp3', '📹 Suara YouTube & Daily Vlog');
+      state.lastGeneratedText = presetTexts.youtubeVlog;
+      state.lastGeneratedChar = 'vo_youtube_vlog';
+    });
+  }
+
+  const btnAudiobook = document.getElementById('btnPresetAudiobook');
+  if (btnAudiobook) {
+    btnAudiobook.addEventListener('click', () => {
+      narrationInput.value = presetTexts.audiobook;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_audiobook_kisah"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/04_suara_audiobook_kisah.mp3', '📚 Suara Audiobook & Cerita');
+      state.lastGeneratedText = presetTexts.audiobook;
+      state.lastGeneratedChar = 'vo_audiobook_kisah';
+    });
+  }
+
+  const btnIklan = document.getElementById('btnPresetIklan');
+  if (btnIklan) {
+    btnIklan.addEventListener('click', () => {
+      narrationInput.value = presetTexts.iklanKomersial;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_iklan_komersial"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/05_suara_iklan_komersial.mp3', '🎧 Suara Iklan & Komersial');
+      state.lastGeneratedText = presetTexts.iklanKomersial;
+      state.lastGeneratedChar = 'vo_iklan_komersial';
+    });
+  }
+
+  const btnMotivator = document.getElementById('btnPresetMotivator');
+  if (btnMotivator) {
+    btnMotivator.addEventListener('click', () => {
+      narrationInput.value = presetTexts.motivatorPria;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="vo_motivator_pria"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/contoh_voiceover/06_suara_motivator_pria.mp3', '⚡ Suara Motivator Pria Energik');
+      state.lastGeneratedText = presetTexts.motivatorPria;
+      state.lastGeneratedChar = 'vo_motivator_pria';
+    });
+  }
+
+  const btnLirikKanan = document.getElementById('btnPresetLirikKanan');
+  if (btnLirikKanan) {
+    btnLirikKanan.addEventListener('click', () => {
+      narrationInput.value = presetTexts.lirikKanan;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="master_tutor"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/karakter_lain/master_tutor_lirik_kanan.wav', 'Master Tutor (Trik Lirik Kanan)');
+      state.lastGeneratedText = presetTexts.lirikKanan;
+      state.lastGeneratedChar = 'master_tutor';
+    });
+  }
+
+  const btnPujianCeria = document.getElementById('btnPresetPujianCeria');
+  if (btnPujianCeria) {
+    btnPujianCeria.addEventListener('click', () => {
+      narrationInput.value = presetTexts.pujianCeria;
+      updateTextStats();
+      const card = document.querySelector('.character-card[data-char="prof_gasing_anime"]');
+      if (card) card.click();
+      loadAssetIntoStudio('/assets/audio/pujian_gasing/22_Kasih_We_o_We_WOW.mp3', 'Kasih W O W (Asset Asli Bowo)');
+      state.lastGeneratedText = presetTexts.pujianCeria;
+      state.lastGeneratedChar = 'prof_gasing_anime';
+    });
+  }
 
   document.getElementById('btnClearText').addEventListener('click', () => {
     narrationInput.value = '';

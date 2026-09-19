@@ -450,6 +450,78 @@ class F5IndoEngine:
                 "ref_text": "Sekarang kita perhatikan trik lirik kanan pada metode penjumlahan gasing.",
                 "avatar": "📐",
                 "description": "Trainer berpengalaman mengajar trik lirik kanan langkah demi langkah."
+            },
+            {
+                "id": "vo_anak",
+                "name": "Suara Anak Ceria (Kids Voice)",
+                "role": "Konten Edukasi, Animasi & Kartun",
+                "category": "voiceover_indo",
+                "gender": "Anak-anak",
+                "ref_audio": "/assets/audio/contoh_voiceover/01_suara_anak_ceria.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "01_suara_anak_ceria.mp3"),
+                "ref_text": "Halo teman-teman cerdas! Wah, lihat ini, robot antariksa kita sudah siap meluncur ke galaksi bintang matematika! Ayo kita berpetualang dan hitung mundur bareng-bareng ya: Tiga, dua, satu... Meluncur!",
+                "avatar": "👶",
+                "description": "Ceria, polos, penuh energi, dan ekspresif. Cocok untuk edukasi anak dan animasi."
+            },
+            {
+                "id": "vo_korporat",
+                "name": "Suara Korporat (Corporate Voice)",
+                "role": "Company Profile & Presentasi Bisnis",
+                "category": "voiceover_indo",
+                "gender": "Pria Formal",
+                "ref_audio": "/assets/audio/contoh_voiceover/02_suara_korporat_profesional.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "02_suara_korporat_profesional.mp3"),
+                "ref_text": "Selamat datang di profil inovasi berkelanjutan kami. Dengan mengedepankan integrasi teknologi digital dan integritas profesional, kami berdedikasi menciptakan solusi bernilai tambah bagi kemajuan ekosistem bisnis modern di Indonesia.",
+                "avatar": "🏢",
+                "description": "Tegas, jelas, profesional, dan berwibawa untuk presentasi bisnis dan e-learning."
+            },
+            {
+                "id": "vo_youtube",
+                "name": "Suara YouTube & Daily Vlog",
+                "role": "Konten Kreator, Review & Tutorial",
+                "category": "voiceover_indo",
+                "gender": "Pria Santai",
+                "ref_audio": "/assets/audio/contoh_voiceover/03_suara_youtube_vlog.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "03_suara_youtube_vlog.mp3"),
+                "ref_text": "Halo guys, balik lagi di channel kita! Hari ini gua bener-bener excited banget, soalnya perangkat yang kemarin kita tunggu-tunggu akhirnya mendarat di studio. Penasaran performanya gimana? Yuk, langsung kita bahas tuntas dan jangan lupa subscribe ya!",
+                "avatar": "📹",
+                "description": "Santai, natural, terasa dekat seperti mengobrol akrab dengan teman."
+            },
+            {
+                "id": "vo_audiobook",
+                "name": "Suara Audiobook & Storytelling",
+                "role": "Narator Buku Audio, Cerita & Podcast",
+                "category": "voiceover_indo",
+                "gender": "Wanita",
+                "ref_audio": "/assets/audio/contoh_voiceover/04_suara_audiobook_kisah.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "04_suara_audiobook_kisah.mp3"),
+                "ref_text": "Di bawah hamparan langit senja yang temaram, langkah kakinya terhenti di depan gerbang kayu tua itu. Angin pegunungan berhembus perlahan, seolah membisikkan kembali kisah masa silam yang telah lama terlelap di antara gemerisik dedaunan.",
+                "avatar": "📚",
+                "description": "Artikulasi jelas, ritme stabil dan mendalam, membangun emosi dan suasana imersif."
+            },
+            {
+                "id": "vo_iklan",
+                "name": "Suara Iklan Komersial (High Impact)",
+                "role": "Pengisi Iklan TV, Radio & Digital Ads",
+                "category": "voiceover_indo",
+                "gender": "Wanita Dinamis",
+                "ref_audio": "/assets/audio/contoh_voiceover/05_suara_iklan_komersial.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "05_suara_iklan_komersial.mp3"),
+                "ref_text": "Mau belanja hemat tanpa repot? Sekarang saatnya beralih ke cara baru yang serba cepat dan praktis! Dapatkan diskon spesial hingga tujuh puluh persen hanya hari ini. Yuk, buka aplikasinya dan klaim promomu sekarang juga!",
+                "avatar": "🎧",
+                "description": "Persuasif, menarik perhatian seketika, dan punya impact kuat dalam waktu singkat."
+            },
+            {
+                "id": "vo_motivator",
+                "name": "Suara Motivator Pria Energik",
+                "role": "Pemantik Semangat, Pujian & Gelora Juara",
+                "category": "voiceover_indo",
+                "gender": "Pria Energik",
+                "ref_audio": "/assets/audio/contoh_voiceover/06_suara_motivator_pria.mp3",
+                "ref_audio_abs": os.path.join(BASE_DIR, "assets", "audio", "contoh_voiceover", "06_suara_motivator_pria.mp3"),
+                "ref_text": "Luar biasa! Jangan pernah ragukan kehebatan yang ada di dalam dirimu! Setiap tetes keringat dan perjuanganmu hari ini sedang membentuk masa depan yang gemilang. Bangkit, melangkah maju dengan gagah berani, dan buktikan bahwa kamu adalah sang juara!",
+                "avatar": "⚡",
+                "description": "Laki-laki semangat, energik, membakar motivasi perjuangan dan memberikan pujian tulus."
             }
         ]
 

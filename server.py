@@ -98,6 +98,48 @@ CHARACTER_PRESETS = {
         "rate": "-2%",
         "description": "Sinematik, membangun ketegangan dan imersi dunia game."
     },
+    "vo_anak_ceria": {
+        "name": "👶 Suara Anak (Kids Voice)",
+        "voice": "id-ID-GadisNeural",
+        "pitch": "+16Hz",
+        "rate": "+12%",
+        "description": "Ceria, polos, penuh energi, dan ekspresif. Cocok untuk edukasi, animasi, dan kartun."
+    },
+    "vo_korporat_formal": {
+        "name": "🏢 Suara Korporat (Corporate Voice)",
+        "voice": "id-ID-ArdiNeural",
+        "pitch": "-2Hz",
+        "rate": "+0%",
+        "description": "Tegas, jelas, profesional, dan berwibawa. Cocok untuk company profile dan presentasi bisnis."
+    },
+    "vo_youtube_vlog": {
+        "name": "📹 Suara YouTube / Vlog",
+        "voice": "id-ID-ArdiNeural",
+        "pitch": "+3Hz",
+        "rate": "+10%",
+        "description": "Santai, natural, terasa dekat seperti mengobrol akrab dengan teman. Cocok untuk konten digital."
+    },
+    "vo_audiobook_kisah": {
+        "name": "📚 Suara Audiobook",
+        "voice": "id-ID-GadisNeural",
+        "pitch": "-3Hz",
+        "rate": "-6%",
+        "description": "Artikulasi jelas, ritme stabil dan mendalam, membangun emosi dan suasana imersif."
+    },
+    "vo_iklan_komersial": {
+        "name": "🎧 Suara Iklan (Commercial Voice)",
+        "voice": "id-ID-GadisNeural",
+        "pitch": "+6Hz",
+        "rate": "+15%",
+        "description": "Persuasif, menarik perhatian seketika, dan punya impact kuat dalam waktu singkat."
+    },
+    "vo_motivator_pria": {
+        "name": "⚡ Suara Motivator Pria Energik",
+        "voice": "id-ID-ArdiNeural",
+        "pitch": "+5Hz",
+        "rate": "+14%",
+        "description": "Laki-laki semangat, energik, membakar semangat perjuangan, memberikan pujian dan motivasi kuat."
+    },
     "custom": {
         "name": "Custom / Kustom Mandiri",
         "voice": "id-ID-ArdiNeural",

@@ -258,6 +258,78 @@
                 <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Tenang, mendidik dengan empati.</p>
               </div>
 
+              <!-- 9. Suara Anak (Kids Voice) -->
+              <div class="character-card" data-char="vo_anak_ceria" data-voice="id-ID-GadisNeural" data-pitch="+16Hz" data-rate="+12%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">👶</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Suara Anak</h3>
+                    <p class="text-[10px] text-amber-300 font-medium">Kids & Edukasi</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Ceria, polos, ekspresif, penuh energi.</p>
+              </div>
+
+              <!-- 10. Suara Korporat (Corporate Voice) -->
+              <div class="character-card" data-char="vo_korporat_formal" data-voice="id-ID-ArdiNeural" data-pitch="-2Hz" data-rate="+0%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">🏢</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Korporat</h3>
+                    <p class="text-[10px] text-blue-400 font-medium">Company Profile</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Tegas, profesional, dan berwibawa.</p>
+              </div>
+
+              <!-- 11. Suara YouTube / Vlog -->
+              <div class="character-card" data-char="vo_youtube_vlog" data-voice="id-ID-ArdiNeural" data-pitch="+3Hz" data-rate="+10%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">📹</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">YouTube / Vlog</h3>
+                    <p class="text-[10px] text-emerald-400 font-medium">Casual Creator</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Santai, akrab seperti mengobrol.</p>
+              </div>
+
+              <!-- 12. Suara Audiobook -->
+              <div class="character-card" data-char="vo_audiobook_kisah" data-voice="id-ID-GadisNeural" data-pitch="-3Hz" data-rate="-6%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">📚</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Audiobook</h3>
+                    <p class="text-[10px] text-purple-400 font-medium">Storytelling Imersif</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Artikulasi jelas & ritme emosional.</p>
+              </div>
+
+              <!-- 13. Suara Iklan (Commercial Voice) -->
+              <div class="character-card" data-char="vo_iklan_komersial" data-voice="id-ID-GadisNeural" data-pitch="+6Hz" data-rate="+15%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">🎧</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Suara Iklan</h3>
+                    <p class="text-[10px] text-rose-400 font-medium">High Impact Ads</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Persuasif, menarik, dan ber-impact.</p>
+              </div>
+
+              <!-- 14. Suara Motivator Pria Energik -->
+              <div class="character-card" data-char="vo_motivator_pria" data-voice="id-ID-ArdiNeural" data-pitch="+5Hz" data-rate="+14%">
+                <div class="flex items-center space-x-2">
+                  <span class="text-xl">⚡</span>
+                  <div>
+                    <h3 class="text-xs font-bold text-slate-200">Motivator Pria</h3>
+                    <p class="text-[10px] text-yellow-400 font-medium">Gelora Semangat</p>
+                  </div>
+                </div>
+                <p class="text-[10px] text-slate-400 mt-1.5 line-clamp-2">Semangat berapi-api & pujian kuat.</p>
+              </div>
+
             </div>
           </div>
 
@@ -274,18 +346,16 @@
               </div>
 
               <!-- Quick Dialogue Preset Buttons -->
-              <div class="flex items-center space-x-1.5 text-xs">
-                <span class="text-slate-400 hidden sm:inline">Contoh Naskah:</span>
-                <button type="button" id="btnPresetBabilon" class="btn-subtle px-2.5 py-1 text-xs">
-                  Misi Babilon
-                </button>
-                <button type="button" id="btnPresetLirikKanan" class="btn-subtle px-2.5 py-1 text-xs">
-                  Trik Lirik Kanan
-                </button>
-                <button type="button" id="btnPresetPujianCeria" class="btn-subtle px-2.5 py-1 text-xs">
-                  Pujian Hebat
-                </button>
-                <button type="button" id="btnClearText" title="Hapus Naskah" class="p-1.5 rounded-lg bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 transition-colors">
+              <div class="flex flex-wrap items-center gap-1 text-xs">
+                <span class="text-slate-400 hidden sm:inline mr-1 text-[11px]">Naskah Contoh:</span>
+                <button type="button" id="btnPresetBabilon" class="btn-subtle px-2 py-0.5 text-[11px]">Misi Babilon</button>
+                <button type="button" id="btnPresetAnak" class="btn-subtle px-2 py-0.5 text-[11px]">👶 Anak</button>
+                <button type="button" id="btnPresetKorporat" class="btn-subtle px-2 py-0.5 text-[11px]">🏢 Korporat</button>
+                <button type="button" id="btnPresetVlog" class="btn-subtle px-2 py-0.5 text-[11px]">📹 Vlog</button>
+                <button type="button" id="btnPresetAudiobook" class="btn-subtle px-2 py-0.5 text-[11px]">📚 Audiobook</button>
+                <button type="button" id="btnPresetIklan" class="btn-subtle px-2 py-0.5 text-[11px]">🎧 Iklan</button>
+                <button type="button" id="btnPresetMotivator" class="btn-subtle px-2 py-0.5 text-[11px]">⚡ Motivator</button>
+                <button type="button" id="btnClearText" title="Hapus Naskah" class="p-1.5 rounded-lg bg-rose-500/10 text-rose-400 hover:bg-rose-500/20 transition-colors ml-1">
                   <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                   </svg>
@@ -415,7 +485,10 @@
             <!-- Category Filter Buttons -->
             <div class="flex flex-wrap items-center gap-2">
               <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-indigo-600 text-white shadow-sm transition-all" data-cat="all">
-                Semua Asset (76)
+                Semua Asset (82)
+              </button>
+              <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="contoh_voiceover">
+                🎙️ Ragam VoiceOver (6 Gaya)
               </button>
               <button type="button" class="cat-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-cat="pujian_gasing">
                 🏆 Pujian GASING (Kasih WOW, Hebat)
@@ -574,6 +647,9 @@
             <div class="flex flex-wrap items-center gap-1.5 text-xs">
               <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-amber-500 text-slate-950 shadow-sm transition-all" data-f5cat="all">
                 Semua Suara
+              </button>
+              <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="voiceover_indo">
+                🎙️ 6 Gaya VoiceOver Populer
               </button>
               <button type="button" class="f5-cat-btn px-3 py-1 rounded-xl font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-all" data-f5cat="so_character">
                 ⭐ Karakter Sacred Octagon

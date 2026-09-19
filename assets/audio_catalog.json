@@ -766,5 +766,67 @@
       "character": "Sang Ratu Babilon",
       "vibe": "Anggun & Karismatik"
     }
+  ],
+  "contoh_voiceover": [
+    {
+      "id": "01_suara_anak_ceria.mp3",
+      "title": "👶 Suara Anak (Kids Voice)",
+      "transcript": "Halo teman-teman cerdas! Wah, lihat ini, robot antariksa kita sudah siap meluncur ke galaksi bintang matematika! Ayo kita berpetualang dan hitung mundur bareng-bareng ya: Tiga, dua, satu... Meluncur!",
+      "filename": "01_suara_anak_ceria.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/01_suara_anak_ceria.mp3",
+      "duration": 17.02,
+      "character": "Anak Ceria (Kids)",
+      "vibe": "Ceria, Polos & Penuh Energi"
+    },
+    {
+      "id": "02_suara_korporat_profesional.mp3",
+      "title": "🏢 Suara Korporat (Corporate Voice)",
+      "transcript": "Selamat datang di profil inovasi berkelanjutan kami. Dengan mengedepankan integrasi teknologi digital dan integritas profesional, kami berdedikasi menciptakan solusi bernilai tambah bagi kemajuan ekosistem bisnis modern di Indonesia.",
+      "filename": "02_suara_korporat_profesional.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/02_suara_korporat_profesional.mp3",
+      "duration": 13.66,
+      "character": "Eksekutif Korporat",
+      "vibe": "Tegas, Jelas & Berwibawa"
+    },
+    {
+      "id": "03_suara_youtube_vlog.mp3",
+      "title": "📹 Suara YouTube / Vlog",
+      "transcript": "Halo guys, balik lagi di channel kita! Hari ini gua bener-bener excited banget, soalnya perangkat yang kemarin kita tunggu-tunggu akhirnya mendarat di studio. Penasaran performanya gimana? Yuk, langsung kita bahas tuntas dan jangan lupa subscribe ya!",
+      "filename": "03_suara_youtube_vlog.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/03_suara_youtube_vlog.mp3",
+      "duration": 14.62,
+      "character": "Kreator YouTube / Vlogger",
+      "vibe": "Santai, Natural & Akrab"
+    },
+    {
+      "id": "04_suara_audiobook_kisah.mp3",
+      "title": "📚 Suara Audiobook",
+      "transcript": "Di bawah hamparan langit senja yang temaram, langkah kakinya terhenti di depan gerbang kayu tua itu. Angin pegunungan berhembus perlahan, seolah membisikkan kembali kisah masa silam yang telah lama terlelap di antara gemerisik dedaunan.",
+      "filename": "04_suara_audiobook_kisah.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/04_suara_audiobook_kisah.mp3",
+      "duration": 17.86,
+      "character": "Narator Audiobook",
+      "vibe": "Artikulasi Jelas, Stabil & Imersif"
+    },
+    {
+      "id": "05_suara_iklan_komersial.mp3",
+      "title": "🎧 Suara Iklan (Commercial Voice)",
+      "transcript": "Mau belanja hemat tanpa repot? Sekarang saatnya beralih ke cara baru yang serba cepat dan praktis! Dapatkan diskon spesial hingga tujuh puluh persen hanya hari ini. Yuk, buka aplikasinya dan klaim promomu sekarang juga!",
+      "filename": "05_suara_iklan_komersial.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/05_suara_iklan_komersial.mp3",
+      "duration": 15.84,
+      "character": "Pengisi Iklan (Commercial)",
+      "vibe": "Persuasif & High Impact"
+    },
+    {
+      "id": "06_suara_motivator_pria.mp3",
+      "title": "⚡ Suara Motivator Pria Energik",
+      "transcript": "Luar biasa! Jangan pernah ragukan kehebatan yang ada di dalam dirimu! Setiap tetes keringat dan perjuanganmu hari ini sedang membentuk masa depan yang gemilang. Bangkit, melangkah maju dengan gagah berani, dan buktikan bahwa kamu adalah sang juara!",
+      "filename": "06_suara_motivator_pria.mp3",
+      "rel_path": "/assets/audio/contoh_voiceover/06_suara_motivator_pria.mp3",
+      "duration": 14.09,
+      "character": "Motivator Energik (Pria)",
+      "vibe": "Semangat Membara & Pujian Kuat"
+    }
   ]
 }
