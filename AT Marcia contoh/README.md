@@ -22,11 +22,11 @@ Folder ini memuat:
 ### 🟢 KASUS 1: Bimbingan Remedial & Tombol Interaktif "Tanya Marcia"
 *Situasi saat anak salah berulang kali, mengalami kebuntuan, atau menekan tombol bantuan `❓ Tanya Marcia`.*
 
-* **[01_Kasus1_TanyaMarcia_Meredakan_Cemas_Salah_Coba_Lagi.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/01_Kasus1_TanyaMarcia_Meredakan_Cemas_Salah_Coba_Lagi.mp3)** (Durasi: 15.62s)
+* **[01_Kasus1_TanyaMarcia_Meredakan_Cemas_Salah_Coba_Lagi.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/01_Kasus1_TanyaMarcia_Meredakan_Cemas_Salah_Coba_Lagi.mp3)** (Durasi: 12.53s) — *Kloning F5-TTS Asli*
   > *"Tenang ya Ksatria kecil, jangan cemas... Di metode GASING, salah itu hal yang sangat wajar dan bagian dari proses belajar. Yuk, tarik napas perlahan dan kita coba lagi bersama Marcia ya!"*
-* **[02_Kasus1_TanyaMarcia_Petunjuk_Lirik_Nilai_Tempat.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/02_Kasus1_TanyaMarcia_Petunjuk_Lirik_Nilai_Tempat.mp3)** (Durasi: 14.35s)
+* **[02_Kasus1_TanyaMarcia_Petunjuk_Lirik_Nilai_Tempat.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/02_Kasus1_TanyaMarcia_Petunjuk_Lirik_Nilai_Tempat.mp3)** (Durasi: 12.40s) — *Kloning F5-TTS Asli*
   > *"Bingung menentukan hasilnya? Coba perhatikan kolom puluhannya terlebih dahulu. Jangan terburu-buru menulis angka depan ya, lirik angka di sebelahnya dan lihat polanya bersama Marcia."*
-* **[03_Kasus1_TanyaMarcia_Membangun_Percaya_Diri_Anak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/03_Kasus1_TanyaMarcia_Membangun_Percaya_Diri_Anak.mp3)** (Durasi: 12.50s)
+* **[03_Kasus1_TanyaMarcia_Membangun_Percaya_Diri_Anak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/03_Kasus1_TanyaMarcia_Membangun_Percaya_Diri_Anak.mp3)** (Durasi: 9.71s) — *Kloning F5-TTS Asli*
   > *"Marcia tahu kamu anak yang cerdas dan pantang menyerah. Kamu pasti bisa menyelesaikan tantangan ini! Yuk, fokus dan kita tuntaskan bersama-sama!"*
 
 ---
@@ -34,41 +34,41 @@ Folder ini memuat:
 ### 🟡 KASUS 2: Video Penjelasan Konsep Langkah-demi-Langkah (Step-by-Step Explainer)
 *Video tutorial materi berhitung runut: penjumlahan bersimpan, coretan, perkalian, dan pembagian.*
 
-* **[04_Kasus2_Explainer_Penjumlahan_Dua_Digit_Bersimpan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/04_Kasus2_Explainer_Penjumlahan_Dua_Digit_Bersimpan.mp3)** (Durasi: 27.74s)
-  > *"Mari kita pelajari penjumlahan dua digit dengan cara yang gampang dan asyik! Perhatikan angka dua puluh delapan ditambah lima. Pertama, jumlahkan puluhannya: dua puluh. Lalu satuannya: delapan ditambah lima sama dengan tiga belas. Tiga belas ditambah dua puluh menjadi tiga puluh tiga! Sangat mudah, kan?"*
-* **[05_Kasus2_Explainer_Trik_Coretan_Ajaib_GASING.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/05_Kasus2_Explainer_Trik_Coretan_Ajaib_GASING.mp3)** (Durasi: 18.84s)
-  > *"Sekarang kita pelajari trik coretan ajaib GASING. Ketika jumlah satuan sudah mencapai sepuluh atau lebih, kita cukup memberi coretan kecil di atas angka depan sebagai pengingat. Dengan begitu, kita tidak akan pernah lupa menjumlahkan simpanannya!"*
-* **[06_Kasus2_Explainer_Konsep_Dasar_Pembagian_Ramah_Anak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/06_Kasus2_Explainer_Konsep_Dasar_Pembagian_Ramah_Anak.mp3)** (Durasi: 18.24s)
-  > *"Ketika kita hendak menghitung enam dibagi dua, sebenarnya sama saja dengan bertanya: dua dikali berapa yang hasilnya sama dengan enam? Jawabannya tentu tiga! Matematika itu logika yang menyenangkan, bukan sekadar hafalan rumit."*
+* **[04_Kasus2_Explainer_Penjumlahan_Dua_Digit_Bersimpan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/04_Kasus2_Explainer_Penjumlahan_Dua_Digit_Bersimpan.mp3)** (Durasi: 16.92s) — *Kloning F5-TTS Asli*
+  > *"Mari kita pelajari penjumlahan dua digit dengan cara yang gampang dan asyik! Perhatikan angka dua puluh delapan ditambah lima. Pertama, jumlahkan puluhannya, lalu satuannya. Tiga belas ditambah dua puluh menjadi tiga puluh tiga! Sangat mudah, kan?"*
+* **[05_Kasus2_Explainer_Trik_Coretan_Ajaib_GASING.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/05_Kasus2_Explainer_Trik_Coretan_Ajaib_GASING.mp3)** (Durasi: 15.84s) — *Kloning F5-TTS Asli*
+  > *"Sekarang kita pelajari trik coretan ajaib GASING. Ketika jumlah satuan sudah mencapai sepuluh atau lebih, kita cukup memberi coretan kecil di atas angka depan sebagai pengingat. Dengan begitu, kita tidak akan pernah lupa simpanannya!"*
+* **[06_Kasus2_Explainer_Konsep_Dasar_Pembagian_Ramah_Anak.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/06_Kasus2_Explainer_Konsep_Dasar_Pembagian_Ramah_Anak.mp3)** (Durasi: 13.47s) — *Kloning F5-TTS Asli*
+  > *"Ketika kita hendak menghitung enam dibagi dua, sebenarnya sama saja dengan bertanya: dua dikali berapa yang hasilnya sama dengan enam? Jawabannya tentu tiga! Matematika itu logika yang menyenangkan."*
 
 ---
 
 ### 🔵 KASUS 3: Pemandu Onboarding Siswa Baru (Welcome Guide & FTUX)
 *Penyambutan pemain baru yang pertama kali mengunduh game Sacred Octagon (Zona 1 & Zona 2).*
 
-* **[07_Kasus3_Onboarding_Selamat_Datang_Sacred_Octagon.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/07_Kasus3_Onboarding_Selamat_Datang_Sacred_Octagon.mp3)** (Durasi: 20.59s)
+* **[07_Kasus3_Onboarding_Selamat_Datang_Sacred_Octagon.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/07_Kasus3_Onboarding_Selamat_Datang_Sacred_Octagon.mp3)** (Durasi: 16.92s) — *Kloning F5-TTS Asli*
   > *"Halo adik-adik hebat! Selamat datang di dunia petualangan Sacred Octagon! Saya Marcia, teman sekaligus pemandu belajarmu selama berpetualang di sini. Bersiaplah mengumpulkan fragmen suci matematika dengan cara yang gampang, asyik, dan menyenangkan!"*
-* **[08_Kasus3_Onboarding_Aturan_5_Nyawa_Dan_Timer_Game.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/08_Kasus3_Onboarding_Aturan_5_Nyawa_Dan_Timer_Game.mp3)** (Durasi: 24.43s)
-  > *"Sebelum kita mulai bertualang, perhatikan lima hati di sudut atas layarmu. Itu adalah lima nyawamu. Di game ini, jawaban yang salah tidak akan mengurangi nyawamu. Nyawamu hanya berkurang jika waktu per soal habis. Jadi tetap santai, nikmati prosesnya, dan jangan panik ya!"*
+* **[08_Kasus3_Onboarding_Aturan_5_Nyawa_Dan_Timer_Game.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/08_Kasus3_Onboarding_Aturan_5_Nyawa_Dan_Timer_Game.mp3)** (Durasi: 17.26s) — *Kloning F5-TTS Asli*
+  > *"Sebelum mulai bertualang, perhatikan lima hati di sudut atas layarmu. Itu adalah lima nyawamu. Di game ini, jawaban yang salah tidak akan mengurangi nyawamu. Nyawamu hanya berkurang jika waktu per soal habis. Jadi tetap santai dan jangan panik ya!"*
 
 ---
 
 ### 🟠 KASUS 4: Pembacaan Soal Cerita Kontekstual (Word Problems Narrator)
 *Narasi audio untuk soal cerita terapan guna membantu pembaca pemula (early readers).*
 
-* **[09_Kasus4_SoalCerita_Saudagar_Koin_Pasar_Babilonia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/09_Kasus4_SoalCerita_Saudagar_Koin_Pasar_Babilonia.mp3)** (Durasi: 21.02s)
+* **[09_Kasus4_SoalCerita_Saudagar_Koin_Pasar_Babilonia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/09_Kasus4_SoalCerita_Saudagar_Koin_Pasar_Babilonia.mp3)** (Durasi: 17.25s) — *Kloning F5-TTS Asli*
   > *"Di sebuah pasar kuno Babilonia, seorang saudagar memiliki empat puluh lima koin emas. Kemudian, ia membeli bahan rempah-rempah seharga dua puluh tujuh koin emas. Berapakah sisa koin emas yang dimiliki saudagar tersebut sekarang? Yuk kita hitung bersama!"*
-* **[10_Kasus4_SoalCerita_Timbangan_Ikan_Nelayan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/10_Kasus4_SoalCerita_Timbangan_Ikan_Nelayan.mp3)** (Durasi: 21.74s)
-  > *"Paman nelayan membawa dua keranjang ikan segar dari pantai. Keranjang pertama beratnya tiga puluh enam kilogram, dan keranjang kedua beratnya dua puluh sembilan kilogram. Berapakah total berat seluruh ikan hasil tangkapan paman nelayan? Mari perhatikan angka puluhannya terlebih dahulu!"*
+* **[10_Kasus4_SoalCerita_Timbangan_Ikan_Nelayan.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/10_Kasus4_SoalCerita_Timbangan_Ikan_Nelayan.mp3)** (Durasi: 17.86s) — *Kloning F5-TTS Asli*
+  > *"Paman nelayan membawa dua keranjang ikan segar dari pantai. Keranjang pertama beratnya tiga puluh enam kilogram, dan keranjang kedua beratnya dua puluh sembilan kilogram. Berapakah total berat seluruh ikan hasil tangkapan paman nelayan? Mari kita hitung bersama!"*
 
 ---
 
 ### 🟣 KASUS 5: Apresiasi Ketekunan & Penutup Sesi Belajar (Gentle Encouragement)
 *Pujian hangat dan dekompresi mental di akhir sesi belajar saat anak lelah.*
 
-* **[11_Kasus5_Penutup_Apresiasi_Ketekunan_Belajar.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/11_Kasus5_Penutup_Apresiasi_Ketekunan_Belajar.mp3)** (Durasi: 18.19s)
+* **[11_Kasus5_Penutup_Apresiasi_Ketekunan_Belajar.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/11_Kasus5_Penutup_Apresiasi_Ketekunan_Belajar.mp3)** (Durasi: 15.09s) — *Kloning F5-TTS Asli*
   > *"Luar biasa usahamu hari ini! Kamu sudah belajar dan berlatih dengan penuh kesabaran. Walaupun ada soal yang menantang, kamu tetap berani mencoba sampai berhasil. Marcia sangat bangga melihat semangat pantang menyerahmu!"*
-* **[12_Kasus5_Penutup_Ajakan_Istirahat_Lanjut_Besok.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/12_Kasus5_Penutup_Ajakan_Istirahat_Lanjut_Besok.mp3)** (Durasi: 22.39s)
+* **[12_Kasus5_Penutup_Ajakan_Istirahat_Lanjut_Besok.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/AT%20Marcia%20contoh/12_Kasus5_Penutup_Ajakan_Istirahat_Lanjut_Besok.mp3)** (Durasi: 18.67s) — *Kloning F5-TTS Asli*
   > *"Wah, petualangan berhitung kita hari ini sudah selesai dengan sangat baik! Sekarang saatnya mengistirahatkan pikiranmu sejenak, bermain bersama keluarga, atau tidur yang cukup. Besok kita lanjutkan kembali misi seru berikutnya bersama Marcia ya! Sampai jumpa, Ksatria kecil!"*
 
 ---
