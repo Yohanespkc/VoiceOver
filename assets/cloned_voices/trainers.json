@@ -1,15 +1,27 @@
 [
   {
     "id": "so_marcia",
-    "name": "Guru Marcia (Pemandu Tanya Marcia)",
-    "role": "Pemandu & Tutor Game SO",
+    "name": "Guru Marcia (Trainer Marcia Asli)",
+    "role": "Pemandu & Tutor Game SO (Wanita)",
     "category": "so_character",
     "gender": "Wanita",
-    "ref_audio": "/assets/cloned_voices/marcia_ref.wav",
-    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/marcia_ref.wav",
-    "ref_text": "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam.",
+    "ref_audio": "/assets/cloned_voices/at_marcia_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_marcia_ref.wav",
+    "ref_text": "Pertama kita tulis dulu nilai tempat jawabannya, ini ada ratusan, puluhan, dan satuan.",
     "avatar": "/assets/cloned_voices/marcia_avatar.png",
-    "description": "Suara hangat, bersahabat, penuh empati, memandu siswa dalam petualangan matematika SO."
+    "description": "Suara asli Trainer Marcia yang hangat, bersahabat, penuh empati, memandu siswa dalam petualangan matematika SO."
+  },
+  {
+    "id": "at_john",
+    "name": "AT John (Tutor Tanya Marcia)",
+    "role": "Trainer GASING / Tutor Pembagian (Pria)",
+    "category": "trainer_gasing",
+    "gender": "Pria",
+    "ref_audio": "/assets/cloned_voices/at_john_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_john_ref.wav",
+    "ref_text": "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam.",
+    "avatar": "👨‍🏫",
+    "description": "Suara tenang, jelas, dan artikulatif Tutor John dari rekaman video pembagian Tanya Marcia."
   },
   {
     "id": "prof_yosu_asli",
@@ -25,16 +37,16 @@
   },
   {
     "id": "at_c04618f8",
-    "name": "AT Marcia Trainer",
-    "role": "Narator Modul Matematika SO",
+    "name": "AT Marcia Trainer (Master 6 Menit)",
+    "role": "Tutor Matematika Modul GASING",
     "category": "trainer_gasing",
     "gender": "Wanita",
     "region": "Columbia",
     "specialty": "Tutor Modul Hitung",
-    "ref_audio": "/assets/cloned_voices/at_c04618f8.wav",
-    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_c04618f8.wav",
-    "ref_text": "Halo adik-adik pintar! Hari ini kita akan belajar matematika gasing bersama, gampang, asyik, dan menyenangkan!",
+    "ref_audio": "/assets/cloned_voices/at_marcia_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_marcia_ref.wav",
+    "ref_text": "Pertama kita tulis dulu nilai tempat jawabannya, ini ada ratusan, puluhan, dan satuan.",
     "avatar": "👩‍🏫",
-    "description": "Trainer GASING (Columbia) — Narator Modul Matematika SO"
+    "description": "Trainer GASING Marcia — Narator modul matematika GASING (suara asli dari video master 6 menit)."
   }
 ]

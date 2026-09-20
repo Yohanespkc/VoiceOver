@@ -104,8 +104,12 @@ async def run_tests():
         # Sample Preset Dialogue Buttons
         presets = [
             ("btnPresetBabilon", "Babilonia"),
-            ("btnPresetLirikKanan", "Lirik Kanan"),
-            ("btnPresetPujianCeria", "Pujian Ceria")
+            ("btnPresetAnak", "Suara Anak"),
+            ("btnPresetKorporat", "Suara Korporat"),
+            ("btnPresetVlog", "Suara Vlog"),
+            ("btnPresetAudiobook", "Suara Audiobook"),
+            ("btnPresetIklan", "Suara Iklan"),
+            ("btnPresetMotivator", "Suara Motivator")
         ]
         for btn_id, label in presets:
             try:
@@ -353,6 +357,13 @@ async def run_tests():
             record_check("Quick Action: Kloning Cepat Marcia", btn_marcia_visible, "Button is visible and active")
         except Exception as e:
             record_check("Quick Action: Kloning Cepat Marcia", False, str(e))
+
+        try:
+            btn_john = page.locator("#btnAutoCloneJohn")
+            btn_john_visible = await btn_john.is_visible()
+            record_check("Quick Action: Kloning Cepat Tutor John", btn_john_visible, "Button is visible and active")
+        except Exception as e:
+            record_check("Quick Action: Kloning Cepat Tutor John", False, str(e))
 
         try:
             btn_prof = page.locator("#btnAutoCloneProf")

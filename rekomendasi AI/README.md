@@ -1,6 +1,12 @@
 # 🎙️ Rekomendasi Suara (VoiceOver) AI — Sacred Octagon (SO) Games
 
-Folder ini berisi **14 koleksi rekomendasi suara (*voiceover*) AI terbaik** yang dikurasi dan diproduksi khusus untuk ekosistem game dan pembelajaran **Sacred Octagon (SO)** dan **Metode GASING** (Gampang, Asyik, dan Menyenangkan).
+Folder ini berisi **17 koleksi audio rekomendasi suara (*voiceover*) AI dan rekaman master terbaik** yang dikurasi dan diproduksi khusus untuk ekosistem game dan pembelajaran **Sacred Octagon (SO)** dan **Metode GASING** (Gampang, Asyik, dan Menyenangkan).
+
+> [!IMPORTANT]
+> ### 📌 Klarifikasi Identitas Pengisi Suara: Guru Marcia (Wanita) & Tutor John (Pria)
+> Dalam ekosistem materi *Tanya Marcia* terdapat 2 figur tutor yang berbeda:
+> 1. **Guru Marcia (Wanita)**: Trainer Marcia asli dengan rekaman master 6 menit (`15_AT_Marcia...` & `16_AT_Marcia...`). Suaranya hangat, ramah anak (~180 Hz). Klip `10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3` telah dikloning langsung dari vokal asli beliau menggunakan F5-TTS Indo V2.
+> 2. **AT John (Pria)**: Tutor John yang membawakan video pembagian zona 5 level 1 (`17_AT_John...`). Suara bariton tenang dan artikulatif (~89 Hz). Sebelumnya sempat salah dinamai Marcia, kini telah dipisahkan ke identitas aslinya.
 
 Semua audio diproduksi dengan standar resolusi tinggi:
 - **Format**: MP3 Stereo (LAME Encoded)
@@ -10,7 +16,7 @@ Semua audio diproduksi dengan standar resolusi tinggi:
 
 ---
 
-## 📂 Daftar 14 Rekomendasi Suara Karakter
+## 📂 Daftar Rekomendasi Suara Karakter
 
 ### 1. 👨‍🏫 Prof. Gasing (Asyiknya Belajar)
 Karakter suara guru besar yang bijak, bersahabat, kebapakan, menuntun langkah pemahaman matematika anak secara terstruktur dari konkret ke mencongak.
@@ -83,9 +89,10 @@ Karakter suara bariton rendah, berat, dominan, sinis, dan mengintimidasi. Dileng
 
 ### 4. 🛡️ Karakter Pendukung Game Sacred Octagon (SO)
 
-* **[10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3)** (Durasi: 22.80s)
-  * *Karakter*: **Guru Marcia** (Pemandu & Tutor Game SO)
+* **[10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3)** (Durasi: 21.68s)
+  * *Karakter*: **Guru Marcia (Trainer Marcia Asli - Wanita)**
   * *Peran*: Tombol Bantuan Interaktif "Tanya Marcia" saat anak bingung
+  * *Teknologi*: Kloning F5-TTS Indonesian Finetune V2 dari vokal asli master 6 menit
   * *Ciri Khas*: Lembut, sabar, penuh empati, menenangkan anak agar tidak takut salah.
   * *Naskah*:
     > *"Halo Ksatria kecil! Jangan berkecil hati ya. Di sini kita belajar bersama, dan salah itu adalah bagian dari proses menjadi pintar. Yuk, tarik napas perlahan... Mari kita perhatikan kembali nilai tempat bilangannya bersama Marcia. Kamu pasti bisa!"*
@@ -136,6 +143,17 @@ Karakter vokal asli Trainer Marcia (Columbia) yang membawakan modul video intera
 
 ---
 
+### 6. 👨‍🏫 AT John (Tutor Tanya Marcia - Pria)
+Karakter vokal asli Tutor John yang membawakan rekaman video modul pembelajaran pembagian interaktif pada Tanya Marcia (Zona 5 Level 1).
+
+* **[17_AT_John_Tutor_Pembagian_Tanya_Marcia.mp3](file:///Users/yohanessurya/Documents/Development/VoiceOver/rekomendasi%20AI/17_AT_John_Tutor_Pembagian_Tanya_Marcia.mp3)** (Durasi: 7.40s)
+  * *Peran*: Penjelasan Konsep Dasar Pembagian Interaktif (6 Bagi 2)
+  * *Ciri Khas*: Bariton tenang, santai, artikulasi jelas (~89 Hz).
+  * *Naskah*:
+    > *"Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam."*
+
+---
+
 ## 💡 Analisis Karakter Vokal & Rekomendasi Situasi Penggunaan (Use Cases)
 
 Berdasarkan analisis akustik dan dinamika vokal **AT Marcia Trainer**, warna suaranya tergolong **Warm Mezzo-Soprano** dengan tempo tuturan stabil, artikulasi fonem Indonesia sangat bersih, serta resonansi yang menumbuhkan rasa aman (*psychological safety*).
@@ -181,13 +199,14 @@ Berdasarkan analisis akustik dan dinamika vokal **AT Marcia Trainer**, warna sua
 | `07` | Blaze Timeout | `id-ID-ArdiNeural` | -14Hz | -8% | Sub-bass punch +5dB @120Hz, Dark Chamber Echo |
 | `08` | Blaze Ejekan Salah | `id-ID-ArdiNeural` | -13Hz | -7% | Low-mid growl +4.5dB @120Hz, Taunt Echo |
 | `09` | Blaze Boss Arena | `id-ID-ArdiNeural` | -15Hz | -10% | Demonic Boss Reverb, Bass shelf +6dB @110Hz |
-| `10` | Guru Marcia (AI) | `id-ID-GadisNeural` | +2Hz | +2% | Gentle voice warmth +2dB @2.8kHz |
+| `10` | Guru Marcia (Asli) | F5-TTS Cloned (Marcia Asli) | Natural (F0 ~180Hz) | Natural | Highpass 80Hz, Loudnorm -16 LUFS |
 | `11` | Ksatria Xander | `id-ID-ArdiNeural` | +12Hz | +15% | Boy Hero youth pitch shift, Bright +2.5dB @3.5kHz |
 | `12` | Master Tutor | `id-ID-ArdiNeural` | +2Hz | +8% | Rapid drill articulation +2.2dB @3kHz |
 | `13` | Piko Robot | `id-ID-GadisNeural` | +18Hz | +18% | Robotic ring flanger, high resonance filter |
 | `14` | Sang Ratu Babilon | `id-ID-GadisNeural` | -4Hz | -6% | Ethereal Hall Reverb (aecho), Silky High-Shelf |
 | `15` | AT Marcia Trainer (Full) | Audio Asli Master | Asli | Asli | Highpass 80Hz, Normalisasi EBU R128 (-16 LUFS, +17.6dB) |
 | `16` | AT Marcia (Highlight) | Audio Asli Cuplikan | Asli | Asli | Highpass 80Hz, Normalisasi EBU R128 (-16 LUFS) 35 detik |
+| `17` | AT John (Tutor Tanya Marcia)| Audio Asli Video SO | Asli (F0 ~89Hz) | Asli | Highpass 80Hz, Normalisasi EBU R128 (-16 LUFS) 7.4 detik |
 
 ---
 

@@ -289,6 +289,7 @@ const tabBtnF5 = document.getElementById('tabBtnF5');
 const tabContentF5 = document.getElementById('tabContentF5');
 const f5DeviceBadge = document.getElementById('f5DeviceBadge');
 const btnAutoCloneMarcia = document.getElementById('btnAutoCloneMarcia');
+const btnAutoCloneJohn = document.getElementById('btnAutoCloneJohn');
 const btnAutoCloneProf = document.getElementById('btnAutoCloneProf');
 const btnOpenVoiceRecorder = document.getElementById('btnOpenVoiceRecorder');
 const btnOpenAudioUpload = document.getElementById('btnOpenAudioUpload');
@@ -1289,7 +1290,7 @@ function renderF5VoiceGrid() {
     const isSelected = v.id === state.selectedF5VoiceId;
     const activeBorder = isSelected ? 'active border-amber-500 ring-2 ring-amber-500/40 bg-amber-950/25' : 'border-slate-800/80 hover:border-slate-700 bg-slate-900/50';
     const avatar = v.avatar || (v.category === 'so_character' ? '⭐' : (v.gender === 'Wanita' ? '👩‍🏫' : '👨‍🏫'));
-    const isDeletable = (v.category === 'custom' || v.category === 'trainer_gasing' || v.id.startsWith('voice_') || v.id.startsWith('at_')) && v.id !== 'so_marcia' && v.id !== 'prof_yosu_asli';
+    const isDeletable = (v.category === 'custom' || v.category === 'trainer_gasing' || v.id.startsWith('voice_') || v.id.startsWith('at_')) && v.id !== 'so_marcia' && v.id !== 'prof_yosu_asli' && v.id !== 'at_john';
     
     // Audio preview button if reference audio exists
     const audioPreviewBtn = v.ref_audio ? `
@@ -2729,7 +2730,7 @@ async function saveClonedVoice() {
 }
 
 /**
- * Auto Clone Marcia Quick Action
+ * Auto Clone Marcia Quick Action (Female Trainer from 6-minute master)
  */
 async function triggerAutoCloneMarcia() {
   if (!btnAutoCloneMarcia) return;
@@ -2737,13 +2738,13 @@ async function triggerAutoCloneMarcia() {
   btnAutoCloneMarcia.disabled = true;
 
   try {
-    showToast('Mengekstrak suara Guru Marcia dari video Game SO...', 'info');
+    showToast('Mengekstrak sampel suara Guru Marcia dari rekaman master 6 menit...', 'info');
     const res = await fetch('/api/f5/auto-clone-marcia', { method: 'POST' });
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || 'Gagal auto-clone Marcia');
     }
-    showToast('Suara Guru Marcia (Game Sacred Octagon) berhasil diekstrak!', 'success');
+    showToast('Suara Guru Marcia (Trainer Marcia Asli) berhasil diekstrak!', 'success');
     await loadF5Voices();
     selectF5Voice('so_marcia');
   } catch (err) {
@@ -2751,6 +2752,32 @@ async function triggerAutoCloneMarcia() {
   } finally {
     btnAutoCloneMarcia.disabled = false;
     btnAutoCloneMarcia.innerHTML = originalHtml;
+  }
+}
+
+/**
+ * Auto Clone John Quick Action (Male Trainer from Tanya Marcia video)
+ */
+async function triggerAutoCloneJohn() {
+  if (!btnAutoCloneJohn) return;
+  const originalHtml = btnAutoCloneJohn.innerHTML;
+  btnAutoCloneJohn.disabled = true;
+
+  try {
+    showToast('Mengekstrak suara Tutor John dari video Tanya Marcia...', 'info');
+    const res = await fetch('/api/f5/auto-clone-john', { method: 'POST' });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.detail || 'Gagal auto-clone John');
+    }
+    showToast('Suara Tutor John (Video Tanya Marcia - Pria) berhasil diekstrak!', 'success');
+    await loadF5Voices();
+    selectF5Voice('at_john');
+  } catch (err) {
+    showToast('Error ekstraksi John: ' + err.message, 'error');
+  } finally {
+    btnAutoCloneJohn.disabled = false;
+    btnAutoCloneJohn.innerHTML = originalHtml;
   }
 }
 
@@ -3106,6 +3133,7 @@ function setupEventListeners() {
 
   // Quick Action Auto-Cloners & Record Launchers
   if (btnAutoCloneMarcia) btnAutoCloneMarcia.addEventListener('click', triggerAutoCloneMarcia);
+  if (btnAutoCloneJohn) btnAutoCloneJohn.addEventListener('click', triggerAutoCloneJohn);
   if (btnAutoCloneProf) btnAutoCloneProf.addEventListener('click', triggerAutoCloneProf);
   if (btnOpenVoiceRecorder) btnOpenVoiceRecorder.addEventListener('click', () => openRecordModal('trainer'));
   if (btnOpenAudioUpload) btnOpenAudioUpload.addEventListener('click', () => {

@@ -137,17 +137,17 @@
   {
     "filename": "10_Guru_Marcia_Bimbingan_Tanya_Marcia.mp3",
     "category": "Karakter Pendukung Game SO",
-    "character": "Guru Marcia",
-    "role": "Pemandu Ramah & Sahabat Siswa",
-    "voice": "id-ID-GadisNeural",
-    "pitch": "+2Hz",
-    "rate": "+2%",
-    "volume": "+2%",
-    "dsp_filter": "highpass=f=100,equalizer=f=2800:t=q:w=1.5:g=2,loudnorm=I=-16:TP=-1.5:LRA=9",
+    "character": "Guru Marcia (Trainer Marcia Asli)",
+    "role": "Pemandu Ramah & Sahabat Siswa (Wanita)",
+    "voice": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia 6-min Master)",
+    "pitch": "Natural (F0 ~180Hz)",
+    "rate": "Natural",
+    "volume": "+0dB Normalized",
+    "dsp_filter": "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10",
     "text": "Halo Ksatria kecil! Jangan berkecil hati ya. Di sini kita belajar bersama, dan salah itu adalah bagian dari proses menjadi pintar. Yuk, tarik napas perlahan... Mari kita perhatikan kembali nilai tempat bilangannya bersama Marcia. Kamu pasti bisa!",
     "vibe": "Lembut, Sabar, Mengayomi",
     "game_context": "Fitur Interaktif 'Tanya Marcia' Bimbingan Siswa",
-    "duration": 22.8
+    "duration": 21.68
   },
   {
     "filename": "11_Ksatria_Xander_Gelora_Pahlawan_Muda.mp3",
@@ -238,5 +238,20 @@
     "vibe": "Ceria, Dekat, Penuh Semangat Edukasi",
     "game_context": "Sapaan Pembuka Modul Tanya Marcia",
     "duration": 35.0
+  },
+  {
+    "filename": "17_AT_John_Tutor_Pembagian_Tanya_Marcia.mp3",
+    "category": "Karakter Pendukung Game SO",
+    "character": "AT John (Tutor)",
+    "role": "Trainer GASING / Tutor Pembagian (Pria)",
+    "voice": "Suara Asli Rekaman Video SO (Normalized)",
+    "pitch": "Natural (F0 ~89Hz)",
+    "rate": "Natural",
+    "volume": "+0dB Normalized",
+    "dsp_filter": "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=7",
+    "text": "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam.",
+    "vibe": "Tenang, Jelas, Artikulatif",
+    "game_context": "Video Modul Pembagian Interaktif Tanya Marcia Zona 5",
+    "duration": 7.4
   }
 ]

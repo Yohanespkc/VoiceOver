@@ -405,7 +405,7 @@ def get_f5_voices():
 @app.delete("/api/f5/voices/{voice_id}")
 def delete_f5_voice(voice_id: str):
     """Menghapus profil kloning suara buatan pengguna / trainer."""
-    protected_system_voices = ["blaze_original", "eem_reporter", "eem_prabowo", "eem_windah", "so_marcia", "prof_yosu_asli"]
+    protected_system_voices = ["blaze_original", "eem_reporter", "eem_prabowo", "eem_windah", "so_marcia", "at_john", "prof_yosu_asli"]
     if voice_id in protected_system_voices:
         raise HTTPException(status_code=400, detail="Model suara bawaan sistem tidak dapat dihapus.")
     
@@ -427,7 +427,20 @@ def auto_clone_marcia_endpoint():
         profile = engine.auto_clone_marcia()
         return {
             "status": "success",
-            "message": "Suara Guru Marcia berhasil diekstrak otomatis dari video Game SO!",
+            "message": "Suara Guru Marcia berhasil diekstrak otomatis dari rekaman master 6 menit!",
+            "profile": profile
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.post("/api/f5/auto-clone-john")
+def auto_clone_john_endpoint():
+    engine = F5IndoEngine.get_instance()
+    try:
+        profile = engine.auto_clone_john()
+        return {
+            "status": "success",
+            "message": "Suara Tutor John berhasil diekstrak otomatis dari video Tanya Marcia!",
             "profile": profile
         }
     except Exception as e:

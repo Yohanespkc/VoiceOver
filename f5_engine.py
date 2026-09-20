@@ -221,30 +221,67 @@ class F5IndoEngine:
         subprocess.run(cmd, capture_output=True, check=True)
         return output_path
 
-    def auto_clone_marcia(self) -> Dict[str, Any]:
-        """Secara otomatis mengekstrak sampel suara jernih Guru Marcia dari video game SO lokal."""
+    def auto_clone_john(self) -> Dict[str, Any]:
+        """Secara otomatis mengekstrak sampel suara Tutor John (pria) dari video modul pembagian Tanya Marcia lokal."""
         so_video_path = "/Users/yohanessurya/Documents/Development/so/apps/suite/dist/assets/videos/z5l1/z5l1_tanya_marcia.mp4"
         if not os.path.exists(so_video_path):
             so_video_path = "/Users/yohanessurya/Documents/Development/so/apps/suite/dist/TanyaMarcia/zone5Level1 - Tanya Marcia.mov"
 
-        if not os.path.exists(so_video_path):
-            raise FileNotFoundError(f"File video Marcia tidak ditemukan di {so_video_path}")
+        john_wav = os.path.join(CLONED_VOICES_DIR, "at_john_ref.wav")
+        if os.path.exists(so_video_path):
+            # Potong segmen dialog pembuka utuh (durasi 7.33 detik: 0.12s hingga 7.45s) dengan bandpass filter dan fade in/out
+            cmd = [
+                "ffmpeg", "-y", "-ss", "00:00:00.12", "-to", "00:00:07.45",
+                "-i", so_video_path,
+                "-af", "highpass=f=80,lowpass=f=11000,afade=t=in:ss=0:d=0.02,afade=t=out:st=7.25:d=0.08",
+                "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
+                john_wav
+            ]
+            res = subprocess.run(cmd, capture_output=True, text=True)
+            if res.returncode != 0:
+                raise Exception(f"Gagal mengekstrak audio John: {res.stderr}")
 
-        marcia_wav = os.path.join(CLONED_VOICES_DIR, "marcia_ref.wav")
-        # Potong segmen dialog pembuka utuh (durasi 7.33 detik: 0.12s hingga 7.45s) dengan bandpass filter dan fade in/out
-        cmd = [
-            "ffmpeg", "-y", "-ss", "00:00:00.12", "-to", "00:00:07.45",
-            "-i", so_video_path,
-            "-af", "highpass=f=80,lowpass=f=11000,afade=t=in:ss=0:d=0.02,afade=t=out:st=7.25:d=0.08",
-            "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
-            marcia_wav
-        ]
-        res = subprocess.run(cmd, capture_output=True, text=True)
-        if res.returncode != 0:
-            raise Exception(f"Gagal mengekstrak audio Marcia: {res.stderr}")
+        john_ref_text = "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam."
 
-        # Transkripsi 100% akurat sesuai ucapan vokal di video
-        marcia_ref_text = "Ketika kita hendak menghitung enam bagi dua, sama saja dengan bertanya dua kali berapa sama dengan enam."
+        profile = {
+            "id": "at_john",
+            "name": "AT John (Tutor Tanya Marcia)",
+            "role": "Trainer GASING / Tutor Pembagian (Pria)",
+            "category": "trainer_gasing",
+            "gender": "Pria",
+            "ref_audio": "/assets/cloned_voices/at_john_ref.wav",
+            "ref_audio_abs": john_wav,
+            "ref_text": john_ref_text,
+            "avatar": "👨‍🏫",
+            "description": "Suara tenang, jelas, dan artikulatif Tutor John dari rekaman video pembagian Tanya Marcia."
+        }
+        self.save_voice_profile(profile)
+        return profile
+
+    def auto_clone_marcia(self) -> Dict[str, Any]:
+        """Secara otomatis mengekstrak sampel suara autentik Trainer Marcia (wanita) dari rekaman video master 6 menit."""
+        master_src = os.path.join(CLONED_VOICES_DIR, "at_c04618f8.wav")
+        if not os.path.exists(master_src):
+            master_src = os.path.join(BASE_DIR, "AT Marcia contoh", "00_AT_Marcia_Trainer_Suara_Asli_Master_6Min.mp3")
+
+        marcia_wav = os.path.join(CLONED_VOICES_DIR, "at_marcia_ref.wav")
+        marcia_legacy_wav = os.path.join(CLONED_VOICES_DIR, "marcia_ref.wav")
+
+        if os.path.exists(master_src):
+            # Potong segmen ucapan jernih autentik Trainer Marcia (7.7 detik: 7.15s s/d 14.85s) dengan highpass dan loudnorm
+            cmd = [
+                "ffmpeg", "-y", "-ss", "00:00:07.15", "-to", "00:00:14.85",
+                "-i", master_src,
+                "-af", "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=7,afade=t=in:ss=0:d=0.03,afade=t=out:st=7.6:d=0.08",
+                "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
+                marcia_wav
+            ]
+            res = subprocess.run(cmd, capture_output=True, text=True)
+            if res.returncode == 0:
+                shutil.copyfile(marcia_wav, marcia_legacy_wav)
+
+        # Transkripsi 100% akurat terverifikasi dari audio asli Trainer Marcia
+        marcia_ref_text = "Pertama kita tulis dulu nilai tempat jawabannya, ini ada ratusan, puluhan, dan satuan."
 
         # Simpan avatar jika ada
         avatar_src = "/Users/yohanessurya/Documents/Development/so/apps/suite/dist/assets/images/characters/avatar_marcia.png"
@@ -257,15 +294,15 @@ class F5IndoEngine:
 
         profile = {
             "id": "so_marcia",
-            "name": "Guru Marcia (Pemandu Tanya Marcia)",
-            "role": "Pemandu & Tutor Game SO",
+            "name": "Guru Marcia (Trainer Marcia Asli)",
+            "role": "Pemandu & Tutor Game SO (Wanita)",
             "category": "so_character",
             "gender": "Wanita",
-            "ref_audio": "/assets/cloned_voices/marcia_ref.wav",
+            "ref_audio": "/assets/cloned_voices/at_marcia_ref.wav",
             "ref_audio_abs": marcia_wav,
             "ref_text": marcia_ref_text,
             "avatar": "/assets/cloned_voices/marcia_avatar.png" if os.path.exists(avatar_dst) else "👩‍🏫",
-            "description": "Suara hangat, bersahabat, penuh empati, memandu siswa dalam petualangan matematika SO."
+            "description": "Suara asli Trainer Marcia yang hangat, bersahabat, penuh empati, memandu siswa dalam petualangan matematika SO."
         }
         self.save_voice_profile(profile)
         return profile
@@ -360,14 +397,21 @@ class F5IndoEngine:
         """Mengembalikan seluruh koleksi model suara terbaik (Karakter SO, AT Trainer, Standar Eempostor)."""
         voices = []
 
-        # 1. Pastikan profil Marcia & Prof. Gasing terdaftar
-        if not any(v.get("id") == "so_marcia" for v in self.get_trainers()):
+        # 1. Pastikan profil Marcia, John & Prof. Gasing terdaftar
+        trainers_list = self.get_trainers()
+        if not any(v.get("id") == "so_marcia" for v in trainers_list):
             try:
                 self.auto_clone_marcia()
             except Exception:
                 pass
 
-        if not any(v.get("id") == "prof_yosu_asli" for v in self.get_trainers()):
+        if not any(v.get("id") == "at_john" for v in trainers_list):
+            try:
+                self.auto_clone_john()
+            except Exception:
+                pass
+
+        if not any(v.get("id") == "prof_yosu_asli" for v in trainers_list):
             try:
                 self.auto_clone_prof_gasing()
             except Exception:

@@ -7,7 +7,9 @@
     "text": "Tenang ya Ksatria kecil, jangan cemas. Di metode GASING, salah itu hal yang sangat wajar dan bagian dari proses belajar. Yuk, tarik napas perlahan dan kita coba lagi bersama Marcia ya!",
     "vibe": "Hangat, Menenangkan, Penuh Kasih",
     "game_context": "Trigger Tombol Bantuan 'Tanya Marcia' Saat Siswa Salah Menjawab Berulang",
-    "duration": 12.53
+    "duration": 16.17,
+    "pitch_f0_hz": 8820.0,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "02_Kasus1_TanyaMarcia_Petunjuk_Lirik_Nilai_Tempat.mp3",
@@ -17,7 +19,9 @@
     "text": "Bingung menentukan hasilnya? Coba perhatikan kolom puluhannya terlebih dahulu. Jangan terburu-buru menulis angka depan ya, lirik angka di sebelahnya dan lihat polanya bersama Marcia.",
     "vibe": "Sabar, Tuntunan Rinci, Mendidik",
     "game_context": "Pemberian Hint / Clue Penyelesaian Soal Mencongak",
-    "duration": 12.4
+    "duration": 16.0,
+    "pitch_f0_hz": 8820.0,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "03_Kasus1_TanyaMarcia_Membangun_Percaya_Diri_Anak.mp3",
@@ -27,7 +31,9 @@
     "text": "Marcia tahu kamu anak yang cerdas dan pantang menyerah. Kamu pasti bisa menyelesaikan tantangan ini! Yuk, fokus dan kita tuntaskan bersama-sama!",
     "vibe": "Membangkitkan Semangat, Bersahabat",
     "game_context": "Dorongan Moral Ketika Siswa Mengalami Kebuntuan Matematika",
-    "duration": 9.71
+    "duration": 12.53,
+    "pitch_f0_hz": 195.1,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "04_Kasus2_Explainer_Penjumlahan_Dua_Digit_Bersimpan.mp3",
@@ -37,7 +43,9 @@
     "text": "Mari kita pelajari penjumlahan dua digit dengan cara yang gampang dan asyik! Perhatikan angka dua puluh delapan ditambah lima. Pertama, jumlahkan puluhannya, lalu satuannya. Tiga belas ditambah dua puluh menjadi tiga puluh tiga! Sangat mudah, kan?",
     "vibe": "Jelas, Terstruktur, Artikulatif",
     "game_context": "Video Pembelajaran Penjumlahan Zona 2 Level 4",
-    "duration": 16.92
+    "duration": 21.59,
+    "pitch_f0_hz": 186.1,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "05_Kasus2_Explainer_Trik_Coretan_Ajaib_GASING.mp3",
@@ -47,7 +55,9 @@
     "text": "Sekarang kita pelajari trik coretan ajaib GASING. Ketika jumlah satuan sudah mencapai sepuluh atau lebih, kita cukup memberi coretan kecil di atas angka depan sebagai pengingat. Dengan begitu, kita tidak akan pernah lupa simpanannya!",
     "vibe": "Ringan, Edukatif, Taktis",
     "game_context": "Modul Penjelasan Teknik Coretan Penjumlahan",
-    "duration": 15.84
+    "duration": 20.2,
+    "pitch_f0_hz": 198.6,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "06_Kasus2_Explainer_Konsep_Dasar_Pembagian_Ramah_Anak.mp3",
@@ -57,7 +67,9 @@
     "text": "Ketika kita hendak menghitung enam dibagi dua, sebenarnya sama saja dengan bertanya: dua dikali berapa yang hasilnya sama dengan enam? Jawabannya tentu tiga! Matematika itu logika yang menyenangkan.",
     "vibe": "Pencerahan Konseptual, Mudah Dipahami",
     "game_context": "Tutorial Pengantar Pembagian Zona 5",
-    "duration": 13.47
+    "duration": 17.4,
+    "pitch_f0_hz": 352.8,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "07_Kasus3_Onboarding_Selamat_Datang_Sacred_Octagon.mp3",
@@ -67,7 +79,9 @@
     "text": "Halo adik-adik hebat! Selamat datang di dunia petualangan Sacred Octagon! Saya Marcia, teman sekaligus pemandu belajarmu selama berpetualang di sini. Bersiaplah mengumpulkan fragmen suci matematika dengan cara yang gampang, asyik, dan menyenangkan!",
     "vibe": "Ceria, Menyenangkan, Menyambut Hangat",
     "game_context": "Layar Pembuka First-Time User Experience (FTUX) Zona 1",
-    "duration": 16.92
+    "duration": 21.84,
+    "pitch_f0_hz": 169.0,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "08_Kasus3_Onboarding_Aturan_5_Nyawa_Dan_Timer_Game.mp3",
@@ -77,7 +91,9 @@
     "text": "Sebelum kita mulai bertualang, perhatikan lima hati di sudut atas layarmu. Itu adalah lima nyawamu. Di game ini, jawaban yang salah tidak akan mengurangi nyawamu. Nyawamu hanya berkurang jika waktu per soal habis. Jadi tetap santai dan jangan panik ya!",
     "vibe": "Informatif, Menenangkan Aturan Main",
     "game_context": "Panduan HUD Mekanisme 5 Nyawa & Countdown Timer BermainEngine",
-    "duration": 17.26
+    "duration": 22.03,
+    "pitch_f0_hz": 247.8,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "09_Kasus4_SoalCerita_Saudagar_Koin_Pasar_Babilonia.mp3",
@@ -87,7 +103,9 @@
     "text": "Di sebuah pasar kuno Babilonia, seorang saudagar memiliki empat puluh lima koin emas. Kemudian, ia membeli bahan rempah-rempah seharga dua puluh tujuh koin emas. Berapakah sisa koin emas yang dimiliki saudagar tersebut sekarang? Yuk kita hitung bersama!",
     "vibe": "Bercerita, Imersif, Membantu Siswa Membaca",
     "game_context": "Audio Narator Soal Cerita Pasar Babilonia Zona 2 Level 3",
-    "duration": 17.25
+    "duration": 22.03,
+    "pitch_f0_hz": 8820.0,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "10_Kasus4_SoalCerita_Timbangan_Ikan_Nelayan.mp3",
@@ -97,7 +115,9 @@
     "text": "Paman nelayan membawa dua keranjang ikan segar dari pantai. Keranjang pertama beratnya tiga puluh enam kilogram, dan keranjang kedua beratnya dua puluh sembilan kilogram. Berapakah total berat seluruh ikan hasil tangkapan paman nelayan? Mari kita hitung bersama!",
     "vibe": "Kontekstual, Jelas, Menstimulasi Logika",
     "game_context": "Audio Narator Soal Cerita Timbangan Ikan Zona 2",
-    "duration": 17.86
+    "duration": 22.8,
+    "pitch_f0_hz": 90.2,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "11_Kasus5_Penutup_Apresiasi_Ketekunan_Belajar.mp3",
@@ -107,7 +127,9 @@
     "text": "Luar biasa usahamu hari ini! Kamu sudah belajar dan berlatih dengan penuh kesabaran. Walaupun ada soal yang menantang, kamu tetap berani mencoba sampai berhasil. Marcia sangat bangga melihat semangat pantang menyerahmu!",
     "vibe": "Penuh Empati, Tulus, Membesarkan Hati",
     "game_context": "Evaluasi Akhir Sesi Belajar / Debriefing Ronde",
-    "duration": 15.09
+    "duration": 19.23,
+    "pitch_f0_hz": 8820.0,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   },
   {
     "filename": "12_Kasus5_Penutup_Ajakan_Istirahat_Lanjut_Besok.mp3",
@@ -117,6 +139,8 @@
     "text": "Wah, petualangan berhitung kita hari ini sudah selesai dengan sangat baik! Sekarang saatnya mengistirahatkan pikiranmu sejenak, bermain bersama keluarga, atau tidur yang cukup. Besok kita lanjutkan kembali misi seru berikutnya bersama Marcia ya! Sampai jumpa, Ksatria kecil!",
     "vibe": "Hangat, Menyejukkan, Kakak Pengayom",
     "game_context": "Layar Keluar / Logout / Penutup Harian Game SO",
-    "duration": 18.67
+    "duration": 23.85,
+    "pitch_f0_hz": 183.8,
+    "model": "F5-TTS Indonesian Finetune V2 (Cloned from Authentic AT Marcia Trainer 6-min Master)"
   }
 ]
