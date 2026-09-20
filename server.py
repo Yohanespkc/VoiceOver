@@ -655,6 +655,9 @@ app.mount("/output", StaticFiles(directory=OUTPUT_DIR), name="output")
 REKOMENDASI_DIR = os.path.join(BASE_DIR, "rekomendasi AI")
 if os.path.exists(REKOMENDASI_DIR):
     app.mount("/rekomendasi-ai", StaticFiles(directory=REKOMENDASI_DIR), name="rekomendasi-ai")
+MARCIA_CONTOH_DIR = os.path.join(BASE_DIR, "AT Marcia contoh")
+if os.path.exists(MARCIA_CONTOH_DIR):
+    app.mount("/at-marcia-contoh", StaticFiles(directory=MARCIA_CONTOH_DIR), name="at-marcia-contoh")
 
 # Serve UI static files with anti-cache headers
 @app.get("/")
