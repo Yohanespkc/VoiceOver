@@ -1,0 +1,293 @@
+{
+  "id": "sprint_03_z1l1_bilangan_54s",
+  "title": "Zona 1 Level 1: Mengenal Bilangan 6 s.d. 10 (Sprint 03)",
+  "subtitle": "Penggantian suara John ke suara jernih Guru Marcia (F5-TTS Fast & Denoised + Edge-TTS Studio), disinkronkan tepat dengan kartu pola dan tulisan tangan.",
+  "duration_seconds": 54.0,
+  "source_type": "local_mp4",
+  "original_speaker": "Tutor John (Pria)",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "voice_id": "so_marcia",
+  "acceleration": "F5-TTS nfe_step=32 High-Fidelity + Phrase Caching",
+  "noise_filtering": "Highpass 80Hz + Loudnorm broadcast -16 LUFS (Preserving full 2-8kHz vocal harmonics)",
+  "files": {
+    "original_video": "/video-projects/sprint_03_z1l1_bilangan_54s/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/video_dubbed_marcia_f5.mp4",
+    "dubbed_video_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/video_dubbed_marcia_edge.mp4",
+    "dubbed_audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/master_dubbing_edge.mp3",
+    "master_audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/master_dubbing_f5.mp3",
+    "master_audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/master_dubbing_edge.mp3"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 1.1,
+      "visual": "Papan tulis: menunjukkan kartu pola angka 6 pertama",
+      "prof_text": "Ini enam.",
+      "marcia_text": "Ini enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 1.85,
+      "end": 3.1,
+      "visual": "Papan tulis: menunjuk variasi pola angka 6 kedua",
+      "prof_text": "Ini juga enam.",
+      "marcia_text": "Ini juga enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 3.85,
+      "end": 5.05,
+      "visual": "Papan tulis: menunjuk variasi pola angka 6 ketiga",
+      "prof_text": "Ini juga enam.",
+      "marcia_text": "Ini juga enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 5.85,
+      "end": 7.25,
+      "visual": "Papan tulis: menunjuk pasangan angka 6 berikutnya",
+      "prof_text": "Ini juga enam.",
+      "marcia_text": "Ini juga enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 8.3,
+      "end": 9.5,
+      "visual": "Papan tulis: menunjuk kombinasi pola angka 6 ke-5",
+      "prof_text": "Ini juga enam.",
+      "marcia_text": "Ini juga enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 10.45,
+      "end": 11.95,
+      "visual": "Papan tulis: menunjuk pasangan 6 terakhir",
+      "prof_text": "Ini juga enam.",
+      "marcia_text": "Ini juga enam.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 13.3,
+      "end": 14.3,
+      "visual": "Papan tulis: beralih ke kartu pembentukan angka 7",
+      "prof_text": "Ini tujuh.",
+      "marcia_text": "Ini tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 15.3,
+      "end": 16.4,
+      "visual": "Papan tulis: menunjuk variasi pasangan angka 7 ke-2",
+      "prof_text": "Ini juga tujuh.",
+      "marcia_text": "Ini juga tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 17.6,
+      "end": 18.7,
+      "visual": "Papan tulis: menunjuk variasi pasangan angka 7 ke-3",
+      "prof_text": "Ini juga tujuh.",
+      "marcia_text": "Ini juga tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 19.7,
+      "end": 20.9,
+      "visual": "Papan tulis: menunjuk variasi pasangan angka 7 ke-4",
+      "prof_text": "Ini juga tujuh.",
+      "marcia_text": "Ini juga tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 21.9,
+      "end": 23.05,
+      "visual": "Papan tulis: menunjuk variasi pasangan angka 7 ke-5",
+      "prof_text": "Ini juga tujuh.",
+      "marcia_text": "Ini juga tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 23.95,
+      "end": 25.15,
+      "visual": "Papan tulis: menunjuk variasi pasangan angka 7 ke-6",
+      "prof_text": "Ini juga tujuh.",
+      "marcia_text": "Ini juga tujuh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 25.45,
+      "end": 26.4,
+      "visual": "Papan tulis: beralih ke pembentukan angka 8",
+      "prof_text": "Ini delapan.",
+      "marcia_text": "Ini delapan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_13_aligned.wav"
+    },
+    {
+      "id": 14,
+      "start": 27.4,
+      "end": 28.6,
+      "visual": "Papan tulis: menunjuk variasi angka 8 kedua",
+      "prof_text": "Ini juga delapan.",
+      "marcia_text": "Ini juga delapan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_14_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_14_aligned.wav"
+    },
+    {
+      "id": 15,
+      "start": 29.55,
+      "end": 30.8,
+      "visual": "Papan tulis: menunjuk variasi angka 8 ketiga",
+      "prof_text": "Ini juga delapan.",
+      "marcia_text": "Ini juga delapan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_15_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_15_aligned.wav"
+    },
+    {
+      "id": 16,
+      "start": 31.65,
+      "end": 32.85,
+      "visual": "Papan tulis: menunjuk variasi angka 8 keempat",
+      "prof_text": "Ini juga delapan.",
+      "marcia_text": "Ini juga delapan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_16_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_16_aligned.wav"
+    },
+    {
+      "id": 17,
+      "start": 33.3,
+      "end": 34.3,
+      "visual": "Papan tulis: beralih ke pembentukan angka 9",
+      "prof_text": "Ini sembilan.",
+      "marcia_text": "Ini sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_17_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_17_aligned.wav"
+    },
+    {
+      "id": 18,
+      "start": 34.95,
+      "end": 36.15,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-2",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_18_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_18_aligned.wav"
+    },
+    {
+      "id": 19,
+      "start": 36.85,
+      "end": 38.05,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-3",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_19_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_19_aligned.wav"
+    },
+    {
+      "id": 20,
+      "start": 38.7,
+      "end": 39.85,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-4",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_20_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_20_aligned.wav"
+    },
+    {
+      "id": 21,
+      "start": 40.5,
+      "end": 41.7,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-5",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_21_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_21_aligned.wav"
+    },
+    {
+      "id": 22,
+      "start": 42.65,
+      "end": 43.7,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-6",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_22_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_22_aligned.wav"
+    },
+    {
+      "id": 23,
+      "start": 44.5,
+      "end": 45.7,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-7",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_23_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_23_aligned.wav"
+    },
+    {
+      "id": 24,
+      "start": 46.2,
+      "end": 47.45,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-8",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_24_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_24_aligned.wav"
+    },
+    {
+      "id": 25,
+      "start": 47.85,
+      "end": 49.1,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-9",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_25_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_25_aligned.wav"
+    },
+    {
+      "id": 26,
+      "start": 49.55,
+      "end": 50.75,
+      "visual": "Papan tulis: menunjuk variasi pola angka 9 ke-10",
+      "prof_text": "Ini juga sembilan.",
+      "marcia_text": "Ini juga sembilan.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_26_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_26_aligned.wav"
+    },
+    {
+      "id": 27,
+      "start": 51.4,
+      "end": 52.3,
+      "visual": "Papan tulis: kesimpulan kartu bilangan 10",
+      "prof_text": "Ini sepuluh.",
+      "marcia_text": "Ini sepuluh.",
+      "audio_f5": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/f5_seg_27_aligned.wav",
+      "audio_edge": "/video-projects/sprint_03_z1l1_bilangan_54s/segments/edge_seg_27_aligned.wav"
+    }
+  ]
+}

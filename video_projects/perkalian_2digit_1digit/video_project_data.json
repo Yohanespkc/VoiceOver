@@ -1,0 +1,97 @@
+{
+  "title": "Percobaan Video Perkalian 2 Digit x 1 Digit (00:00 - 00:36)",
+  "source_url": "https://www.youtube.com/watch?v=t630efAuHPU",
+  "duration_seconds": 36.0,
+  "original_character": "Prof. Yohanes Surya",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "files": {
+    "original_video": "/video-projects/perkalian_2digit_1digit/clip_36s.mp4",
+    "original_audio": "/video-projects/perkalian_2digit_1digit/clip_36s_audio.wav",
+    "dubbed_video_edge": "/video-projects/perkalian_2digit_1digit/video_dubbed_marcia_edge.mp4",
+    "dubbed_audio_edge": "/video-projects/perkalian_2digit_1digit/master_dubbing_edge.mp3",
+    "dubbed_video_f5": "/video-projects/perkalian_2digit_1digit/video_dubbed_marcia_f5.mp4",
+    "dubbed_audio_f5": "/video-projects/perkalian_2digit_1digit/master_dubbing_f5.mp3"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.8,
+      "visual": "Layar pembuka menampilkan judul naskah dan soal perkalian 2 digit x 1 digit",
+      "prof_text": "Perkalian dua digit dengan satu digit",
+      "marcia_text": "Perkalian dua digit dengan satu digit.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_1_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.8,
+      "end": 7.0,
+      "visual": "Menunjuk soal pertama di kiri atas: 42 x 3",
+      "prof_text": "Kita lihat di sini, 42 kali 3",
+      "marcia_text": "Kita lihat di sini: empat puluh dua kali tiga.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_2_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.0,
+      "end": 10.9,
+      "visual": "Menulis tanda di bawah angka 4 (puluhan) dan di bawah angka 2 (satuan)",
+      "prof_text": "4 ini adalah puluhan, 2 satuan",
+      "marcia_text": "Empat ini adalah puluhan... dua, satuan.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_3_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 10.9,
+      "end": 15.0,
+      "visual": "Menulis 2 slot garis kosong di bawah soal: _ _ (slot puluhan & satuan)",
+      "prof_text": "Kita lihat hasilnya adalah: ini puluhan, ini satuan",
+      "marcia_text": "Kita lihat hasilnya adalah: ini puluhan, ini satuan.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_4_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 15.0,
+      "end": 19.4,
+      "visual": "Menarik garis dari 4 ke 3 (4 x 3), menulis angka 1 di posisi puluhan",
+      "prof_text": "4 dikali 3 puluhan, yang berarti ada 12",
+      "marcia_text": "Empat dikali tiga puluhan, yang berarti ada dua belas.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_5_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 19.4,
+      "end": 26.5,
+      "visual": "Menulis angka 2 (menjadi 12 _), menjelaskan konsep 40 x 3 = 120 = 12 puluhan",
+      "prof_text": "karena 40 kali 3 satuan itu adalah hasilnya 12 puluhan",
+      "marcia_text": "karena empat puluh kali tiga satuan, itu adalah hasilnya dua belas puluhan.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_6_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 26.5,
+      "end": 32.0,
+      "visual": "Menarik garis lengkung dari angka 2 ke 3 (2 x 3)",
+      "prof_text": "kemudian 2 satuan kali 3 satuan, itu adalah 6 satuan",
+      "marcia_text": "kemudian, dua satuan kali tiga satuan... itu adalah enam satuan.",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_7_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 32.0,
+      "end": 36.0,
+      "visual": "Menulis angka 6 di slot satuan (menjadi 12 6 = 126), menggarisbawahi 12 dan 6",
+      "prof_text": "jadi 42 kali 3 itu: 126 (seratus dua puluh enam)",
+      "marcia_text": "jadi, empat puluh dua kali tiga itu: seratus dua puluh enam!",
+      "audio_edge": "/video-projects/perkalian_2digit_1digit/segments/edge_seg_8_aligned.wav",
+      "audio_f5": "/video-projects/perkalian_2digit_1digit/segments/f5_seg_8_aligned.wav"
+    }
+  ]
+}

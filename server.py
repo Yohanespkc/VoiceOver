@@ -671,6 +671,45 @@ if os.path.exists(REKOMENDASI_DIR):
 MARCIA_CONTOH_DIR = os.path.join(BASE_DIR, "AT Marcia contoh")
 if os.path.exists(MARCIA_CONTOH_DIR):
     app.mount("/at-marcia-contoh", StaticFiles(directory=MARCIA_CONTOH_DIR), name="at-marcia-contoh")
+YOSU_CONTOH_DIR = os.path.join(BASE_DIR, "Yosu Contoh")
+if os.path.exists(YOSU_CONTOH_DIR):
+    app.mount("/yosu-contoh", StaticFiles(directory=YOSU_CONTOH_DIR), name="yosu-contoh")
+VIDEO_PROJECTS_DIR = os.path.join(BASE_DIR, "video_projects")
+if os.path.exists(VIDEO_PROJECTS_DIR):
+    app.mount("/video-projects", StaticFiles(directory=VIDEO_PROJECTS_DIR), name="video-projects")
+
+@app.get("/api/video-project/list")
+def list_video_projects():
+    projects = []
+    if os.path.exists(VIDEO_PROJECTS_DIR):
+        for name in sorted(os.listdir(VIDEO_PROJECTS_DIR)):
+            meta_path = os.path.join(VIDEO_PROJECTS_DIR, name, "video_project_data.json")
+            if os.path.exists(meta_path):
+                try:
+                    with open(meta_path, "r", encoding="utf-8") as f:
+                        data = json.load(f)
+                        projects.append({
+                            "id": name,
+                            "title": data.get("title", name),
+                            "duration": data.get("duration_seconds", 0),
+                            "dubbed_character": data.get("dubbed_character", "Guru Marcia")
+                        })
+                except Exception:
+                    pass
+    return projects
+
+@app.get("/api/video-project/info")
+def get_video_project_info(id: Optional[str] = None):
+    project_id = id or "z5l1_tanya_marcia"
+    project_json = os.path.join(BASE_DIR, "video_projects", project_id, "video_project_data.json")
+    if not os.path.exists(project_json):
+        candidate = os.path.join(BASE_DIR, "video_projects", "perkalian_2digit_1digit", "video_project_data.json")
+        if os.path.exists(candidate):
+            project_json = candidate
+        else:
+            raise HTTPException(status_code=404, detail="Data proyek video belum tersedia")
+    with open(project_json, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 # Serve UI static files with anti-cache headers
 @app.get("/")

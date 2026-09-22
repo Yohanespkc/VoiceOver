@@ -259,20 +259,20 @@ class F5IndoEngine:
         return profile
 
     def auto_clone_marcia(self) -> Dict[str, Any]:
-        """Secara otomatis mengekstrak sampel suara autentik Trainer Marcia (wanita) dari rekaman video master 6 menit."""
-        master_src = os.path.join(CLONED_VOICES_DIR, "at_c04618f8.wav")
+        """Secara otomatis mengekstrak sampel suara autentik Trainer Marcia (wanita) dari rekaman video pembelajaran modul GASING."""
+        master_src = os.path.join(BASE_DIR, "Hasil", "videoMarcia", "z2_penjumlahan", "z2l2_sb1bermain1_Z2L2TB1AB1-2A-FULL_cut_18s_94s_76s.mp4")
         if not os.path.exists(master_src):
-            master_src = os.path.join(BASE_DIR, "AT Marcia contoh", "00_AT_Marcia_Trainer_Suara_Asli_Master_6Min.mp3")
+            master_src = os.path.join(CLONED_VOICES_DIR, "at_marcia_ref.wav")
 
         marcia_wav = os.path.join(CLONED_VOICES_DIR, "at_marcia_ref.wav")
         marcia_legacy_wav = os.path.join(CLONED_VOICES_DIR, "marcia_ref.wav")
 
-        if os.path.exists(master_src):
-            # Potong segmen ucapan jernih autentik Trainer Marcia (7.7 detik: 7.15s s/d 14.85s) dengan highpass dan loudnorm
+        if os.path.exists(master_src) and master_src != marcia_wav:
+            # Potong segmen ucapan jernih autentik Trainer Marcia (7.0 detik: 0.0s s/d 6.95s) dengan highpass dan loudnorm
             cmd = [
-                "ffmpeg", "-y", "-ss", "00:00:07.15", "-to", "00:00:14.85",
+                "ffmpeg", "-y", "-ss", "00:00:00.0", "-to", "00:00:06.95",
                 "-i", master_src,
-                "-af", "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=7,afade=t=in:ss=0:d=0.03,afade=t=out:st=7.6:d=0.08",
+                "-af", "highpass=f=85,afftdn=nf=-28,loudnorm=I=-16:TP=-1.5:LRA=7,afade=t=in:ss=0:d=0.03,afade=t=out:st=6.8:d=0.15",
                 "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
                 marcia_wav
             ]
@@ -280,8 +280,8 @@ class F5IndoEngine:
             if res.returncode == 0:
                 shutil.copyfile(marcia_wav, marcia_legacy_wav)
 
-        # Transkripsi 100% akurat terverifikasi dari audio asli Trainer Marcia
-        marcia_ref_text = "Pertama kita tulis dulu nilai tempat jawabannya, ini ada ratusan, puluhan, dan satuan."
+        # Transkripsi 100% akurat terverifikasi dari audio asli Trainer Marcia (Wanita)
+        marcia_ref_text = "Mari kita belajar penjumlahan enam dengan jari. Jumlah jari ada enam."
 
         # Simpan avatar jika ada
         avatar_src = "/Users/yohanessurya/Documents/Development/so/apps/suite/dist/assets/images/characters/avatar_marcia.png"
@@ -308,37 +308,52 @@ class F5IndoEngine:
         return profile
 
     def auto_clone_prof_gasing(self) -> Dict[str, Any]:
-        """Mengekstrak rekaman autentik Prof. Yohanes Surya sebagai profil cloning."""
-        src_ogg = os.path.join(BASE_DIR, "assets", "audio", "prof_gasing", "prof_gasing_yosu_0_asli.ogg")
+        """Mengekstrak rekaman autentik Prof. Yohanes Surya sebagai profil cloning dari video YouTube resmi."""
         dst_wav = os.path.join(CLONED_VOICES_DIR, "prof_yosu_ref.wav")
+        master_src = os.path.join(BASE_DIR, "Yohanes Contoh", "00_Prof_Yohanes_Surya_Suara_Asli_Master_5Min.mp3")
+        legacy_ogg = os.path.join(BASE_DIR, "assets", "audio", "prof_gasing", "prof_gasing_yosu_0_asli.ogg")
 
-        if os.path.exists(src_ogg):
-            # Ambil kalimat pembuka utuh (5.1 detik)
+        ref_text = "Perkalian dua digit dengan satu digit. Kita lihat di sini, empat puluh dua kali tiga."
+
+        if os.path.exists(master_src):
+            # Potong segmen ucapan jernih autentik Prof. Yohanes Surya (7.2 detik)
+            cmd = [
+                "ffmpeg", "-y", "-ss", "00:00:00.10", "-to", "00:00:07.30",
+                "-i", master_src,
+                "-af", "highpass=f=80,afftdn=nr=12:nf=-35,loudnorm=I=-16:TP=-1.5:LRA=7,afade=t=in:ss=0:d=0.03,afade=t=out:st=7.0:d=0.08",
+                "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
+                dst_wav
+            ]
+            subprocess.run(cmd, capture_output=True, check=True)
+        elif not os.path.exists(dst_wav) and os.path.exists(legacy_ogg):
             cmd = [
                 "ffmpeg", "-y", "-ss", "00:00:00.0", "-to", "00:00:05.1",
-                "-i", src_ogg,
+                "-i", legacy_ogg,
                 "-af", "highpass=f=80,lowpass=f=11000",
                 "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
                 dst_wav
             ]
             subprocess.run(cmd, capture_output=True, check=True)
             ref_text = "Salam Ksatria Gaber, saya Profesor GASING Yosu dari masa depan."
-        else:
-            ref_text = "Salam Ksatria Gaber, saya Profesor GASING Yosu dari masa depan."
 
         profile = {
-            "id": "prof_yosu_asli",
-            "name": "Prof. Yohanes Surya (GASING Asli)",
-            "role": "Pendiri & Mentor Utama GASING",
+            "id": "so_yosu",
+            "name": "Suara Yosu (Prof. Yohanes Surya Asli)",
+            "role": "Pendiri & Mentor Utama GASING (Suara Yosu)",
             "category": "so_character",
             "gender": "Pria",
-            "ref_audio": "/assets/cloned_voices/prof_yosu_ref.wav",
-            "ref_audio_abs": dst_wav,
+            "ref_audio": "/assets/cloned_voices/yosu_ref.wav",
+            "ref_audio_abs": os.path.join(CLONED_VOICES_DIR, "yosu_ref.wav"),
             "ref_text": ref_text,
             "avatar": "👨‍🏫",
-            "description": "Suara asli Prof. Yohanes Surya yang hangat, inspiratif, dan membangkitkan semangat berhitung."
+            "description": "Suara asli Yosu (Prof. Yohanes Surya) dari rekaman resmi YouTube perkalian GASING. Berwibawa, inspiratif, dan artikulatif."
         }
         self.save_voice_profile(profile)
+        
+        legacy_profile = dict(profile)
+        legacy_profile["id"] = "prof_yosu_asli"
+        legacy_profile["name"] = "Prof. Yosu (GASING YouTube Asli)"
+        self.save_voice_profile(legacy_profile)
         return profile
 
     def get_trainers(self) -> List[Dict[str, Any]]:

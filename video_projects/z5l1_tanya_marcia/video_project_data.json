@@ -1,0 +1,87 @@
+{
+  "title": "Tanya Marcia: Zone 5 Level 1 (Kaitan Pembagian & Perkalian)",
+  "source_url": "Data VIdeo Marcia/z5l1_tanya_marcia.mp4",
+  "duration_seconds": 22.89,
+  "original_character": "Tutor Tanya Marcia (Original)",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "files": {
+    "original_video": "/video-projects/z5l1_tanya_marcia/clip_tanya_marcia.mp4",
+    "original_audio": "/video-projects/z5l1_tanya_marcia/original_audio.wav",
+    "dubbed_video_edge": "/video-projects/z5l1_tanya_marcia/video_dubbed_marcia_edge.mp4",
+    "dubbed_audio_edge": "/video-projects/z5l1_tanya_marcia/master_dubbing_edge.mp3",
+    "dubbed_video_f5": "/video-projects/z5l1_tanya_marcia/video_dubbed_marcia_f5.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l1_tanya_marcia/master_dubbing_f5.mp3"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.4,
+      "visual": "Judul 'Kaitan Pembagian dan Perkalian', soal 2 x 3 = 6 dan 6 : 2 = ? tampil",
+      "prof_text": "ketika kita hendak menghitung 6 bagi 2",
+      "marcia_text": "Ketika kita hendak menghitung enam bagi dua,",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_1_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.4,
+      "end": 7.5,
+      "visual": "Persamaan 2 x 3 = 6 menyala, menghubungkan perkalian dengan pembagian",
+      "prof_text": "sama saja dengan bertanya 2 kali berapa sama dengan 6",
+      "marcia_text": "sama saja dengan bertanya, dua kali berapa sama dengan enam.",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_2_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.5,
+      "end": 9.6,
+      "visual": "Angka 3 pada 6 : 2 = 3 menyala warna kuning emas",
+      "prof_text": "Jawabnya 3",
+      "marcia_text": "Jawabnya: tiga!",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_3_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 9.8,
+      "end": 11.9,
+      "visual": "Transisi ke latihan kedua",
+      "prof_text": "Wah, menarik sekali",
+      "marcia_text": "Wah, menarik sekali!",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_4_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 12.0,
+      "end": 14.5,
+      "visual": "Soal baru 12 : 3 = ? tampil di layar",
+      "prof_text": "12 bagi 3",
+      "marcia_text": "Dua belas bagi tiga...",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_5_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 14.8,
+      "end": 20.6,
+      "visual": "Rumus kaitan 3 x ? = 12 dan 12 : 3 = ? tampil berdampingan",
+      "prof_text": "Mudah, Kak. Saya hanya pikir saja 3 kali berapa sama dengan 12",
+      "marcia_text": "Mudah, Kak! Saya hanya pikir saja, tiga kali berapa sama dengan dua belas.",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_6_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 20.8,
+      "end": 22.88,
+      "visual": "Muncul kesimpulan jawaban 4",
+      "prof_text": "Jawabnya 4",
+      "marcia_text": "Jawabnya: empat!",
+      "audio_edge": "/video-projects/z5l1_tanya_marcia/segments/edge_seg_7_aligned.wav",
+      "audio_f5": "/video-projects/z5l1_tanya_marcia/segments/f5_seg_7_aligned.wav"
+    }
+  ]
+}

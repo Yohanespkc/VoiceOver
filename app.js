@@ -312,6 +312,32 @@ const btnGenerateF5TTS = document.getElementById('btnGenerateF5TTS');
 const btnGenerateF5TTSText = document.getElementById('btnGenerateF5TTSText');
 const f5GenerateIcon = document.getElementById('f5GenerateIcon');
 
+// Proyek Video DOM Elements
+const tabBtnVideoProject = document.getElementById('tabBtnVideoProject');
+const tabContentVideoProject = document.getElementById('tabContentVideoProject');
+const leftTabsContainer = document.getElementById('leftTabsContainer');
+const rightTunerContainer = document.getElementById('rightTunerContainer');
+const videoOriginal = document.getElementById('videoOriginal');
+const videoDubbed = document.getElementById('videoDubbed');
+const btnVoiceModeF5 = document.getElementById('btnVoiceModeF5');
+const btnVoiceModeEdge = document.getElementById('btnVoiceModeEdge');
+const dubbedBadge = document.getElementById('dubbedBadge');
+const dubbedAudioTrackLabel = document.getElementById('dubbedAudioTrackLabel');
+const downloadDubbedVideoBtn = document.getElementById('downloadDubbedVideoBtn');
+const downloadDubbedAudioBtn = document.getElementById('downloadDubbedAudioBtn');
+const btnDualPlay = document.getElementById('btnDualPlay');
+const btnStopBoth = document.getElementById('btnStopBoth');
+const videoProjectSegmentsContainer = document.getElementById('videoProjectSegmentsContainer');
+const projectSelectDropdown = document.getElementById('projectSelectDropdown');
+const activeProjectDurationBadge = document.getElementById('activeProjectDurationBadge');
+const videoProjectSegmentsCount = document.getElementById('videoProjectSegmentsCount');
+const videoProjectTitle = document.getElementById('videoProjectTitle');
+const videoProjectSubtitle = document.getElementById('videoProjectSubtitle');
+const originalVideoDurationText = document.getElementById('originalVideoDurationText');
+const downloadOriginalVideoBtn = document.getElementById('downloadOriginalVideoBtn');
+const videoProjectSegmentsHeading = document.getElementById('videoProjectSegmentsHeading');
+const videoProjectTotalDurationText = document.getElementById('videoProjectTotalDurationText');
+
 // Voice Recording & AT Trainer Modal Elements
 const voiceRecordModal = document.getElementById('voiceRecordModal');
 const btnCloseRecordModal = document.getElementById('btnCloseRecordModal');
@@ -1204,32 +1230,282 @@ function switchTab(tabName) {
   const standardInactive = 'nav-tab flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-400 hover:text-slate-200 hover:bg-slate-800/60 transition-all';
   const f5Active = 'nav-tab active flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 shadow-md shadow-amber-500/30 font-bold border border-amber-400';
   const f5Inactive = 'nav-tab flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all border border-amber-500/40 bg-gradient-to-r from-amber-500/15 via-orange-500/10 to-indigo-500/15 shadow-sm shadow-amber-500/10';
+  const vpActive = 'nav-tab active flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-gradient-to-r from-purple-600 via-fuchsia-600 to-indigo-600 text-white shadow-md shadow-purple-600/40 font-bold border border-purple-400';
+  const vpInactive = 'nav-tab flex items-center space-x-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all border border-purple-500/40 bg-gradient-to-r from-purple-500/15 via-fuchsia-500/10 to-indigo-500/15 shadow-sm shadow-purple-500/10';
 
-  if (tabName === 'tts') {
-    if (tabBtnTTS) tabBtnTTS.className = standardActive;
-    if (tabBtnSoundboard) tabBtnSoundboard.className = standardInactive;
-    if (tabBtnF5) tabBtnF5.className = f5Inactive;
-    if (tabContentTTS) tabContentTTS.classList.remove('hidden');
-    if (tabContentSoundboard) tabContentSoundboard.classList.add('hidden');
-    if (tabContentF5) tabContentF5.classList.add('hidden');
-  } else if (tabName === 'soundboard') {
-    if (tabBtnTTS) tabBtnTTS.className = standardInactive;
-    if (tabBtnSoundboard) tabBtnSoundboard.className = standardActive;
-    if (tabBtnF5) tabBtnF5.className = f5Inactive;
-    if (tabContentSoundboard) tabContentSoundboard.classList.remove('hidden');
-    if (tabContentTTS) tabContentTTS.classList.add('hidden');
-    if (tabContentF5) tabContentF5.classList.add('hidden');
-  } else if (tabName === 'f5') {
+  if (tabName === 'videoproject') {
     if (tabBtnTTS) tabBtnTTS.className = standardInactive;
     if (tabBtnSoundboard) tabBtnSoundboard.className = standardInactive;
-    if (tabBtnF5) tabBtnF5.className = f5Active;
-    if (tabContentF5) tabContentF5.classList.remove('hidden');
+    if (tabBtnF5) tabBtnF5.className = f5Inactive;
+    if (tabBtnVideoProject) tabBtnVideoProject.className = vpActive;
+
     if (tabContentTTS) tabContentTTS.classList.add('hidden');
     if (tabContentSoundboard) tabContentSoundboard.classList.add('hidden');
+    if (tabContentF5) tabContentF5.classList.add('hidden');
+    if (tabContentVideoProject) tabContentVideoProject.classList.remove('hidden');
 
-    checkF5Status();
-    loadF5Voices();
+    if (leftTabsContainer) {
+      leftTabsContainer.classList.remove('lg:col-span-7');
+      leftTabsContainer.classList.add('lg:col-span-12');
+    }
+    if (rightTunerContainer) rightTunerContainer.classList.add('hidden');
+
+    loadVideoProjectData();
+    window.location.hash = '#/proyek-video';
+  } else {
+    if (tabBtnVideoProject) tabBtnVideoProject.className = vpInactive;
+    if (tabContentVideoProject) tabContentVideoProject.classList.add('hidden');
+
+    if (leftTabsContainer) {
+      leftTabsContainer.classList.remove('lg:col-span-12');
+      leftTabsContainer.classList.add('lg:col-span-7');
+    }
+    if (rightTunerContainer) rightTunerContainer.classList.remove('hidden');
+
+    if (tabName === 'tts') {
+      if (tabBtnTTS) tabBtnTTS.className = standardActive;
+      if (tabBtnSoundboard) tabBtnSoundboard.className = standardInactive;
+      if (tabBtnF5) tabBtnF5.className = f5Inactive;
+      if (tabContentTTS) tabContentTTS.classList.remove('hidden');
+      if (tabContentSoundboard) tabContentSoundboard.classList.add('hidden');
+      if (tabContentF5) tabContentF5.classList.add('hidden');
+    } else if (tabName === 'soundboard') {
+      if (tabBtnTTS) tabBtnTTS.className = standardInactive;
+      if (tabBtnSoundboard) tabBtnSoundboard.className = standardActive;
+      if (tabBtnF5) tabBtnF5.className = f5Inactive;
+      if (tabContentSoundboard) tabContentSoundboard.classList.remove('hidden');
+      if (tabContentTTS) tabContentTTS.classList.add('hidden');
+      if (tabContentF5) tabContentF5.classList.add('hidden');
+    } else if (tabName === 'f5') {
+      if (tabBtnTTS) tabBtnTTS.className = standardInactive;
+      if (tabBtnSoundboard) tabBtnSoundboard.className = standardInactive;
+      if (tabBtnF5) tabBtnF5.className = f5Active;
+      if (tabContentF5) tabContentF5.classList.remove('hidden');
+      if (tabContentTTS) tabContentTTS.classList.add('hidden');
+      if (tabContentSoundboard) tabContentSoundboard.classList.add('hidden');
+
+      checkF5Status();
+      loadF5Voices();
+    }
   }
+}
+
+// Video Project State & Logic
+const videoProjectState = {
+  currentProjectId: 'sprint_03_z1l1_bilangan_54s',
+  projectsCache: {},
+  data: null,
+  activeVoiceMode: 'f5',
+  activeSegmentAudio: null
+};
+
+async function loadVideoProjectData(projectId = null) {
+  const targetId = projectId || (projectSelectDropdown ? projectSelectDropdown.value : 'sprint_03_z1l1_bilangan_54s');
+  videoProjectState.currentProjectId = targetId;
+
+  try {
+    if (videoProjectState.projectsCache[targetId]) {
+      videoProjectState.data = videoProjectState.projectsCache[targetId];
+    } else {
+      const res = await fetch(`/api/video-project/info?id=${encodeURIComponent(targetId)}`);
+      if (!res.ok) throw new Error('Data proyek video belum siap');
+      const data = await res.json();
+      videoProjectState.projectsCache[targetId] = data;
+      videoProjectState.data = data;
+    }
+
+    const data = videoProjectState.data;
+    if (!data) return;
+
+    // Update Header and badges
+    if (videoProjectTitle) videoProjectTitle.textContent = data.title || 'Proyek Video Dubbing';
+    if (activeProjectDurationBadge) activeProjectDurationBadge.textContent = `${(data.duration_seconds || 0).toFixed(2)} Detik`;
+    if (videoProjectSegmentsCount) videoProjectSegmentsCount.textContent = `${(data.segments || []).length} Segmen`;
+    if (videoProjectSegmentsHeading) videoProjectSegmentsHeading.textContent = `Detail Sinkronisasi Gerakan Tulisan (${(data.segments || []).length} Segmen)`;
+    if (videoProjectTotalDurationText) videoProjectTotalDurationText.textContent = `Total Durasi: ${(data.duration_seconds || 0).toFixed(2)} Detik`;
+    if (originalVideoDurationText) originalVideoDurationText.textContent = `${(data.duration_seconds || 0).toFixed(2)}s`;
+
+    if (videoProjectSubtitle) {
+      if (targetId === 'sprint_03_z1l1_bilangan_54s') {
+        videoProjectSubtitle.textContent = 'Sprint 03: Mengganti rekaman naskah pengajaran Tutor John dengan suara kloning Guru Marcia yang jernih dan bebas noise (Accelerated F5-TTS + Spectral Denoiser), disinkronkan tepat dengan kartu pola angka 6–10.';
+      } else if (targetId === 'z5l1_tanya_marcia') {
+        videoProjectSubtitle.textContent = 'Sprint 02: Dubbing Suara Guru Marcia — Disinkronkan presisi dengan animasi visual pembagian & perkalian matematika Sacred Octagon.';
+      } else {
+        videoProjectSubtitle.textContent = 'Sprint 01: Mengganti rekaman naskah pengajaran Prof. Yohanes Surya dengan suara kloning Guru Marcia (Trainer Marcia), disinkronkan tepat dengan gerakan tulisan tangan di papan tulis.';
+      }
+    }
+
+    // Set video aspect ratio
+    const isWidescreen = targetId === 'z5l1_tanya_marcia' || targetId === 'sprint_03_z1l1_bilangan_54s';
+    const aspectClass = isWidescreen ? 'w-full aspect-[16/9] object-contain bg-slate-950' : 'w-full aspect-[4/3] object-contain bg-slate-950';
+
+    if (videoOriginal && data.files) {
+      videoOriginal.src = data.files.original_video;
+      videoOriginal.className = aspectClass;
+    }
+    if (videoDubbed) {
+      videoDubbed.className = aspectClass;
+    }
+    if (downloadOriginalVideoBtn && data.files) {
+      downloadOriginalVideoBtn.href = data.files.original_video;
+      downloadOriginalVideoBtn.download = `${targetId}_original.mp4`;
+    }
+
+    updateDubbedAssets();
+    renderVideoProjectSegments();
+  } catch (err) {
+    console.error('Error loading video project:', err);
+    if (typeof showToast === 'function') {
+      showToast('Gagal memuat data proyek video: ' + err.message, 'error');
+    }
+  }
+}
+
+function updateDubbedAssets() {
+  if (!videoProjectState.data || !videoProjectState.data.files) return;
+  const isF5 = videoProjectState.activeVoiceMode === 'f5';
+  const files = videoProjectState.data.files;
+  const dubbedVideoSrc = isF5 ? files.dubbed_video_f5 : files.dubbed_video_edge;
+  const dubbedAudioSrc = isF5 ? files.dubbed_audio_f5 : files.dubbed_audio_edge;
+  const targetId = videoProjectState.currentProjectId;
+  const videoFileName = isF5 ? `${targetId}_dubbed_marcia_f5.mp4` : `${targetId}_dubbed_marcia_edge.mp4`;
+  const audioFileName = isF5 ? 'master_dubbing_f5.mp3' : 'master_dubbing_edge.mp3';
+
+  if (videoDubbed && dubbedVideoSrc) {
+    const curTime = videoDubbed.currentTime || 0;
+    const isPlaying = !videoDubbed.paused;
+    videoDubbed.src = dubbedVideoSrc;
+    videoDubbed.currentTime = curTime;
+    if (isPlaying) videoDubbed.play().catch(() => {});
+  }
+
+  if (dubbedBadge) {
+    dubbedBadge.textContent = isF5 ? 'F5-TTS Clone' : 'Edge-TTS Studio';
+    dubbedBadge.className = isF5 
+      ? 'px-2 py-0.5 rounded-full text-[9px] font-bold bg-amber-500 text-slate-950 uppercase tracking-wider'
+      : 'px-2 py-0.5 rounded-full text-[9px] font-bold bg-purple-500 text-white uppercase tracking-wider';
+  }
+
+  if (dubbedAudioTrackLabel) {
+    dubbedAudioTrackLabel.textContent = audioFileName;
+  }
+
+  if (downloadDubbedVideoBtn && dubbedVideoSrc) {
+    downloadDubbedVideoBtn.href = dubbedVideoSrc;
+    downloadDubbedVideoBtn.download = videoFileName;
+  }
+  if (downloadDubbedAudioBtn && dubbedAudioSrc) {
+    downloadDubbedAudioBtn.href = dubbedAudioSrc;
+    downloadDubbedAudioBtn.download = `${targetId}_${audioFileName}`;
+  }
+}
+
+function setVideoProjectVoiceMode(mode) {
+  videoProjectState.activeVoiceMode = mode;
+  const isF5 = mode === 'f5';
+
+  if (btnVoiceModeF5 && btnVoiceModeEdge) {
+    if (isF5) {
+      btnVoiceModeF5.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 shadow-md shadow-amber-500/20 cursor-pointer';
+      btnVoiceModeEdge.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all cursor-pointer';
+    } else {
+      btnVoiceModeF5.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold text-slate-400 hover:text-slate-200 transition-all cursor-pointer';
+      btnVoiceModeEdge.className = 'px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md shadow-purple-600/20 cursor-pointer';
+    }
+  }
+
+  updateDubbedAssets();
+  renderVideoProjectSegments();
+}
+
+function renderVideoProjectSegments() {
+  if (!videoProjectSegmentsContainer || !videoProjectState.data) return;
+  const segments = videoProjectState.data.segments || [];
+  const isF5 = videoProjectState.activeVoiceMode === 'f5';
+  const originalCharLabel = videoProjectState.data.original_character || 'Naskah Asli';
+  const dubbedCharLabel = videoProjectState.data.dubbed_character || 'Suara Guru Marcia (Sinkron)';
+
+  videoProjectSegmentsContainer.innerHTML = segments.map(seg => {
+    const audioUrl = isF5 ? seg.audio_f5 : seg.audio_edge;
+    const dur = (seg.end - seg.start).toFixed(2);
+    return `
+      <div class="p-4 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-purple-500/40 transition-all flex flex-col md:flex-row md:items-center justify-between gap-3 group">
+        <div class="space-y-1.5 flex-1">
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="w-6 h-6 rounded-md bg-purple-500/20 text-purple-300 flex items-center justify-center text-xs font-bold font-mono">
+              ${seg.id}
+            </span>
+            <span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-semibold bg-slate-900 border border-slate-700 text-slate-300">
+              ⏱️ ${seg.start.toFixed(2)}s – ${seg.end.toFixed(2)}s (${dur}s)
+            </span>
+            <span class="text-xs text-amber-300/90 font-medium flex items-center space-x-1">
+              <span>✏️</span>
+              <span>${seg.visual}</span>
+            </span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs pt-1">
+            <div class="bg-slate-900/50 p-2.5 rounded-lg border border-slate-800">
+              <span class="text-[10px] uppercase font-bold text-slate-400 block mb-0.5">${originalCharLabel}:</span>
+              <p class="text-slate-300 italic">"${seg.prof_text}"</p>
+            </div>
+            <div class="bg-purple-950/30 p-2.5 rounded-lg border border-purple-800/40">
+              <span class="text-[10px] uppercase font-bold text-purple-300 block mb-0.5">${dubbedCharLabel}:</span>
+              <p class="text-purple-200 font-medium">"${seg.marcia_text}"</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center space-x-2 shrink-0 self-end md:self-center">
+          <button
+            type="button"
+            class="play-seg-btn px-3 py-1.5 rounded-lg bg-purple-600/20 hover:bg-purple-600/40 border border-purple-500/30 text-purple-200 text-xs font-semibold flex items-center space-x-1 transition-all cursor-pointer"
+            data-audio="${audioUrl}"
+          >
+            <span>▶️</span>
+            <span>Audio Segmen</span>
+          </button>
+          <button
+            type="button"
+            class="seek-video-btn px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold flex items-center space-x-1 transition-all cursor-pointer"
+            data-time="${seg.start}"
+          >
+            <span>🎯</span>
+            <span>Lompat Video</span>
+          </button>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  videoProjectSegmentsContainer.querySelectorAll('.play-seg-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const url = btn.getAttribute('data-audio');
+      if (!url) return;
+      if (videoProjectState.activeSegmentAudio) {
+        videoProjectState.activeSegmentAudio.pause();
+      }
+      const audio = new Audio(url);
+      videoProjectState.activeSegmentAudio = audio;
+      audio.play();
+      btn.innerHTML = '<span>🔊</span><span>Memutar...</span>';
+      audio.onended = () => {
+        btn.innerHTML = '<span>▶️</span><span>Audio Segmen</span>';
+      };
+    });
+  });
+
+  videoProjectSegmentsContainer.querySelectorAll('.seek-video-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const t = parseFloat(btn.getAttribute('data-time') || '0');
+      if (videoDubbed) {
+        videoDubbed.currentTime = t;
+        videoDubbed.play();
+      }
+      if (videoOriginal) {
+        videoOriginal.currentTime = t;
+        videoOriginal.play();
+      }
+    });
+  });
 }
 
 /**
@@ -2796,9 +3072,10 @@ async function triggerAutoCloneProf() {
       const err = await res.json().catch(() => ({}));
       throw new Error(err.detail || 'Gagal auto-clone Prof');
     }
-    showToast('Suara Prof. Yohanes Surya siap digunakan!', 'success');
+    showToast('Suara Yosu (Prof. Yohanes Surya) siap digunakan!', 'success');
     await loadF5Voices();
-    selectF5Voice('prof_yohanes_surya');
+    const targetVoice = state.f5Voices.find(v => v.id === 'so_yosu' || v.id === 'prof_yosu_asli');
+    if (targetVoice) selectF5Voice(targetVoice.id);
   } catch (err) {
     showToast('Error kloning Prof: ' + err.message, 'error');
   } finally {
@@ -2811,10 +3088,46 @@ async function triggerAutoCloneProf() {
  * Setup Event Listeners
  */
 function setupEventListeners() {
-  // Tab Switching (TTS, Soundboard, F5-TTS Indo)
+  // Tab Switching (TTS, Soundboard, F5-TTS Indo, Proyek Video)
   if (tabBtnTTS) tabBtnTTS.addEventListener('click', () => switchTab('tts'));
   if (tabBtnSoundboard) tabBtnSoundboard.addEventListener('click', () => switchTab('soundboard'));
   if (tabBtnF5) tabBtnF5.addEventListener('click', () => switchTab('f5'));
+  if (tabBtnVideoProject) tabBtnVideoProject.addEventListener('click', () => switchTab('videoproject'));
+
+  // Proyek Video Controls
+  if (projectSelectDropdown) {
+    projectSelectDropdown.addEventListener('change', (e) => {
+      loadVideoProjectData(e.target.value);
+    });
+  }
+
+  if (btnVoiceModeF5) btnVoiceModeF5.addEventListener('click', () => setVideoProjectVoiceMode('f5'));
+  if (btnVoiceModeEdge) btnVoiceModeEdge.addEventListener('click', () => setVideoProjectVoiceMode('edge'));
+
+  if (btnDualPlay) {
+    btnDualPlay.addEventListener('click', () => {
+      if (videoOriginal && videoDubbed) {
+        const curTime = Math.min(videoOriginal.currentTime, videoDubbed.currentTime);
+        videoOriginal.currentTime = curTime;
+        videoDubbed.currentTime = curTime;
+        videoOriginal.play();
+        videoDubbed.play();
+      }
+    });
+  }
+
+  if (btnStopBoth) {
+    btnStopBoth.addEventListener('click', () => {
+      if (videoOriginal) {
+        videoOriginal.pause();
+        videoOriginal.currentTime = 0;
+      }
+      if (videoDubbed) {
+        videoDubbed.pause();
+        videoDubbed.currentTime = 0;
+      }
+    });
+  }
 
   const btnReloadF5Voices = document.getElementById('btnReloadF5Voices');
   if (btnReloadF5Voices) {
@@ -3350,6 +3663,11 @@ function initializeVoiceOverApp() {
   loadF5Voices();
   checkF5Status();
   updateF5PronunciationPreview();
+
+  // Check URL hash for direct tab navigation (/proyek-video)
+  if (window.location.hash === '#/proyek-video' || window.location.pathname.includes('proyek-video')) {
+    switchTab('videoproject');
+  }
 }
 
 if (document.readyState === 'loading') {

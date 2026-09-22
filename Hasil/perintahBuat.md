@@ -1,0 +1,91 @@
+# Panduan Perintah Video Dubbing & Voice Cloning Sprint (VoiceOver Studio SO)
+
+Dokumen ini berisi panduan perintah praktis untuk menjalankan proses **Video Cloning & Dubbing** secara otomatis pada VoiceOver Studio SO.
+
+---
+
+## 1. Perintah Cepat Lewat Chat (Antigravity AI)
+
+Jika Anda ingin memerintahkan AI secara langsung di chat, Anda cukup mengetikkan salah satu kalimat perintah berikut:
+
+### Contoh A: Dari Link YouTube
+> *"Jalankan sprint video cloning untuk video https://www.youtube.com/watch?v=t630efAuHPU durasi 36 detik, ganti suara dengan Guru Marcia, dan sinkronkan dengan gerakan tulisan tangan di layar."*
+
+### Contoh B: Dari Berkas Video MP4 Lokal
+> *"Buat video cloning dari berkas Data VIdeo Marcia/z5l1_tanya_marcia.mp4 menggunakan suara Guru Marcia."*
+
+---
+
+## 2. Perintah Lewat Terminal (Script Bash Runner)
+
+Anda juga dapat menjalankannya langsung di terminal dalam satu baris perintah:
+
+### A. Kloning Video dari YouTube
+```bash
+./sprint_video_dubbing.sh \
+  --url "https://www.youtube.com/watch?v=t630efAuHPU" \
+  --start 0 \
+  --duration 36 \
+  --voice "so_marcia" \
+  --project-name "perkalian_2digit_1digit"
+```
+
+### B. Kloning Video dari Berkas Lokal (.mp4)
+```bash
+./sprint_video_dubbing.sh \
+  --video "Data VIdeo Marcia/z5l1_tanya_marcia.mp4" \
+  --start 0 \
+  --duration 22.89 \
+  --voice "so_marcia" \
+  --project-name "z5l1_tanya_marcia"
+```
+
+### C. Opsi Tambahan
+* `--skip-f5`: Hanya gunakan Edge-TTS Studio (`id-ID-GadisNeural`) untuk generasi kilat nol noise.
+* `--skip-edge`: Hanya gunakan F5-TTS Indo Cloned Voice autentik.
+
+---
+
+## 3. Parameter Perintah (Argumen Lengkap)
+
+| Argumen | Keterangan | Nilai Standar |
+|---|---|---|
+| `--url` | URL video YouTube yang ingin diunduh | `None` |
+| `--video` | Path berkas MP4 video lokal | `None` |
+| `--start` | Detik awal pemotongan video | `0` |
+| `--duration` | Panjang durasi video yang dipotong (detik) | `36` |
+| `--voice` | ID karakter suara kloning (`so_marcia`, `prof_yosu_asli`, `at_john`) | `so_marcia` |
+| `--project-name` | Nama sub-folder proyek di dalam `video_projects/` | `perkalian_2digit_1digit` |
+
+---
+
+## 4. Alur Kerja Otomatis 5 Fase yang Dijalankan
+
+1. **Fase 1 (Ingest & Cut)**:
+   Mengunduh video via `yt-dlp` atau mengambil MP4 lokal, lalu memotong secara presisi menggunakan FFmpeg H.264 dan mengekstrak audio acuan 24kHz mono.
+2. **Fase 2 (ASR & Cue Breakdown)**:
+   Transkripsi otomatis Whisper Medium dengan *word-level timestamps* dan pemetaan aksi gerakan tulisan tangan atau animasi rumus di layar.
+3. **Fase 3 (Sintesis Suara Marcia)**:
+   Menghasilkan ucapan per segmen menggunakan F5-TTS Indo Finetune V2 (dan alternatif Edge-TTS Studio) serta menyesuaikan tempo (`atempo`) agar durasinya pas dengan visual.
+4. **Fase 4 (Perakitan Master Timeline)**:
+   Menempatkan segmen suara pada koordinat waktu absolut (`adelay`) di atas kanvas audio hening 44.1kHz agar sinkronisasi milidetik tidak meleset.
+5. **Fase 5 (Muxing MP4 & Integrasi Web Studio)**:
+   Menggabungkan video dengan audio baru menjadi berkas MP4 berkualitas tinggi serta mendaftarkannya secara otomatis ke halaman web **`🎬 /Proyek Video`**.
+
+---
+
+## 5. Lokasi Berkas & Cara Melihat Hasil
+
+* **Antarmuka Web Studio**: Buka browser di [http://localhost:8765/#/proyek-video](http://localhost:8765/#/proyek-video)
+* **Daftar Proyek Tersedia**:
+  1. `z5l1_tanya_marcia` (Tanya Marcia: Zone 5 Level 1 — 22.89s)
+  2. `perkalian_2digit_1digit` (Perkalian 2 Digit x 1 Digit — 36.00s)
+* **Folder Proyek**: `video_projects/<project-name>/`
+  - `clip_*.mp4`: Video asli sumber
+  - `video_dubbed_marcia_f5.mp4`: Video hasil dubbing suara Guru Marcia (F5-TTS Voice Clone)
+  - `video_dubbed_marcia_edge.mp4`: Video hasil dubbing suara Guru Marcia (Edge-TTS Studio)
+  - `master_dubbing_f5.mp3`: Trek audio master
+  - `video_project_data.json`: Metadata dan rincian segmen gerakan tulisan
+* **Skill Resmi AI**:
+  - Workspace: `.agents/skills/gds-voiceover-video-cloning/SKILL.md`
+  - Global: `~/.gemini/config/skills/gds-voiceover-video-cloning/SKILL.md`

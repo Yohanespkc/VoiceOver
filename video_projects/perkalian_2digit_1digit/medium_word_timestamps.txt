@@ -1,0 +1,71 @@
+=== SEGMENT [0.00 - 3.90]:  Perkali 2 digit dengan 1 digit
+   0.00 - 1.40:  Perkali
+   1.40 - 1.82:  2
+   1.82 - 2.28:  digit
+   2.28 - 2.60:  dengan
+   2.60 - 2.96:  1
+   2.96 - 3.90:  digit
+=== SEGMENT [3.90 - 7.02]:  Kita lihat di sini 42 x 3
+   3.90 - 4.32:  Kita
+   4.32 - 4.66:  lihat
+   4.66 - 4.90:  di
+   4.90 - 5.14:  sini
+   5.14 - 5.88:  42
+   5.88 - 6.22:  x
+   6.22 - 7.02:  3
+=== SEGMENT [7.02 - 10.92]:  4 ini adalah puluhan 2 satuan
+   7.02 - 7.66:  4
+   7.66 - 8.04:  ini
+   8.04 - 8.40:  adalah
+   8.40 - 9.30:  puluhan
+   9.30 - 9.80:  2
+   9.80 - 10.92:  satuan
+=== SEGMENT [10.92 - 15.52]:  Kita lihat hasilnya adalah ini puluhan ini satuan
+   10.92 - 11.36:  Kita
+   11.36 - 11.72:  lihat
+   11.72 - 12.56:  hasilnya
+   12.56 - 12.86:  adalah
+   12.86 - 13.18:  ini
+   13.18 - 13.88:  puluhan
+   13.88 - 14.26:  ini
+   14.26 - 15.52:  satuan
+=== SEGMENT [15.52 - 19.42]:  4 di kali 3 puluhan yang berarti ada 12
+   15.52 - 16.16:  4
+   16.16 - 16.38:  di
+   16.38 - 16.58:  kali
+   16.58 - 17.10:  3
+   17.10 - 17.58:  puluhan
+   17.58 - 17.86:  yang
+   17.86 - 18.24:  berarti
+   18.24 - 18.62:  ada
+   18.62 - 19.42:  12
+=== SEGMENT [19.42 - 26.70]:  karena 40 x 3 satuan itu adalah hasilnya 12 puluhan
+   19.42 - 20.38:  karena
+   20.38 - 21.00:  40
+   21.00 - 21.42:  x
+   21.42 - 21.90:  3
+   21.90 - 22.36:  satuan
+   22.36 - 23.96:  itu
+   23.96 - 24.28:  adalah
+   24.28 - 24.88:  hasilnya
+   24.88 - 25.52:  12
+   25.52 - 26.70:  puluhan
+=== SEGMENT [26.70 - 32.12]:  kemudian 2 satuan x 3 satuan itu adalah 6 satuan
+   26.70 - 27.86:  kemudian
+   27.86 - 28.22:  2
+   28.22 - 28.74:  satuan
+   28.74 - 29.08:  x
+   29.08 - 29.54:  3
+   29.54 - 30.10:  satuan
+   30.10 - 30.68:  itu
+   30.68 - 31.06:  adalah
+   31.06 - 31.56:  6
+   31.56 - 32.12:  satuan
+=== SEGMENT [32.12 - 35.98]:  jadi 42 x 3 itu 12 puluhan
+   32.12 - 33.30:  jadi
+   33.30 - 34.02:  42
+   34.02 - 34.34:  x
+   34.34 - 34.70:  3
+   34.70 - 35.14:  itu
+   35.14 - 35.84:  12
+   35.84 - 35.98:  puluhan

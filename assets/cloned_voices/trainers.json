@@ -24,29 +24,41 @@
     "description": "Suara tenang, jelas, dan artikulatif Tutor John dari rekaman video pembagian Tanya Marcia."
   },
   {
-    "id": "prof_yosu_asli",
-    "name": "Prof. Yohanes Surya (GASING Asli)",
-    "role": "Pendiri & Mentor Utama GASING",
+    "id": "so_yosu",
+    "name": "Suara Yosu (Prof. Yohanes Surya Asli)",
+    "role": "Pendiri & Mentor Utama GASING (Suara Yosu)",
     "category": "so_character",
     "gender": "Pria",
-    "ref_audio": "/assets/cloned_voices/prof_yosu_ref.wav",
-    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/prof_yosu_ref.wav",
-    "ref_text": "Salam Ksatria Gaber, saya Profesor GASING Yosu dari masa depan.",
+    "ref_audio": "/assets/cloned_voices/yosu_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/yosu_ref.wav",
+    "ref_text": "Perkalian dua digit dengan satu digit. Kita lihat di sini, empat puluh dua kali tiga.",
     "avatar": "👨‍🏫",
-    "description": "Suara asli Prof. Yohanes Surya yang hangat, inspiratif, dan membangkitkan semangat berhitung."
+    "description": "Suara asli Yosu (Prof. Yohanes Surya) dari rekaman resmi YouTube perkalian GASING. Berwibawa, inspiratif, dan artikulatif."
+  },
+  {
+    "id": "prof_yosu_asli",
+    "name": "Prof. Yosu (GASING YouTube Asli)",
+    "role": "Pendiri & Mentor Utama GASING (Suara Yosu)",
+    "category": "so_character",
+    "gender": "Pria",
+    "ref_audio": "/assets/cloned_voices/yosu_ref.wav",
+    "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/yosu_ref.wav",
+    "ref_text": "Perkalian dua digit dengan satu digit. Kita lihat di sini, empat puluh dua kali tiga.",
+    "avatar": "👨‍🏫",
+    "description": "Suara asli Yosu (Prof. Yohanes Surya) dari rekaman resmi YouTube perkalian GASING. Berwibawa, inspiratif, dan artikulatif."
   },
   {
     "id": "at_c04618f8",
-    "name": "AT Marcia Trainer (Master 6 Menit)",
-    "role": "Tutor Matematika Modul GASING",
+    "name": "AT Marcia Trainer (Asli GASING)",
+    "role": "Tutor Matematika Modul GASING (Wanita)",
     "category": "trainer_gasing",
     "gender": "Wanita",
-    "region": "Columbia",
-    "specialty": "Tutor Modul Hitung",
+    "region": "Indonesia",
+    "specialty": "Tutor Modul Hitung GASING",
     "ref_audio": "/assets/cloned_voices/at_marcia_ref.wav",
     "ref_audio_abs": "/Users/yohanessurya/Documents/Development/VoiceOver/assets/cloned_voices/at_marcia_ref.wav",
     "ref_text": "Pertama kita tulis dulu nilai tempat jawabannya, ini ada ratusan, puluhan, dan satuan.",
     "avatar": "👩‍🏫",
-    "description": "Trainer GASING Marcia — Narator modul matematika GASING (suara asli dari video master 6 menit)."
+    "description": "Trainer GASING Marcia — Narator modul matematika GASING (suara asli wanita AT Marcia Trainer)."
   }
 ]
