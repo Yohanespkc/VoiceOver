@@ -171,39 +171,63 @@ class VideoDubbingSprint:
         
         ref_audio = self.voice_profile.get("ref_audio_abs")
         ref_text = self.voice_profile.get("ref_text")
+        is_marcia = self.voice_id in ["so_marcia", "at_c04618f8", "guru_marcia"]
+        synth_speed = 1.05 if is_marcia else 1.0
 
-        for s in segments:
-            sid = s["id"]
-            target_dur = s["end"] - s["start"]
-            raw_wav = os.path.join(self.segments_dir, f"f5_seg_{sid}_raw.wav")
-            aligned_wav = os.path.join(self.segments_dir, f"f5_seg_{sid}_aligned.wav")
-            
-            print(f"  ▶️ Mengenerate Segmen {sid} ({target_dur:.2f}s): \"{s['marcia_text']}\"")
+        # 1. Optimasi GPU: Identifikasi kalimat unik untuk sintesis tunggal (hemat komputasi)
+        unique_phrases = sorted(list(set(s["marcia_text"] for s in segments)))
+        print(f"⚡ [GPU Saving] Ditemukan {len(segments)} segmen visual dengan {len(unique_phrases)} kalimat unik.")
+        
+        phrase_cache = {}
+        import librosa
+        import soundfile as sf
+
+        for idx, phrase in enumerate(unique_phrases):
+            cache_file = os.path.join(self.segments_dir, f"cached_f5_{idx+1}.wav")
+            print(f"  [{idx+1}/{len(unique_phrases)}] Sintesis frasa unik: \"{phrase}\"...", end="", flush=True)
+            t0 = time.time()
             res = engine.generate(
                 ref_audio_path=ref_audio,
                 ref_text=ref_text,
-                gen_text=s["marcia_text"],
-                speed=1.0,
+                gen_text=phrase,
+                speed=synth_speed,
                 nfe_step=32,
                 output_format="wav"
             )
             src_wav = os.path.join(BASE_DIR, res["audio_url"].lstrip("/"))
-            shutil.copyfile(src_wav, raw_wav)
+            
+            # Pangkas trailing silence agar durasi ucapan pas
+            y, sr = librosa.load(src_wav, sr=24000)
+            y_trimmed, _ = librosa.effects.trim(y, top_db=25)
+            sf.write(cache_file, y_trimmed, sr)
+            phrase_cache[phrase] = cache_file
+            print(f" Selesai ({time.time()-t0:.2f}s, durasi aktif: {len(y_trimmed)/sr:.2f}s)")
 
-            raw_dur = get_audio_duration(raw_wav)
+        # 2. Rangkai ke seluruh segmen dengan mastering siar
+        MASTER_FILTER = "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10"
+        for s in segments:
+            sid = s["id"]
+            target_dur = s["end"] - s["start"]
+            base_wav = phrase_cache[s["marcia_text"]]
+            aligned_wav = os.path.join(self.segments_dir, f"f5_seg_{sid}_aligned.wav")
+
+            raw_dur = get_audio_duration(base_wav)
             tempo = raw_dur / target_dur if target_dur > 0 else 1.0
-            tempo = max(0.85, min(1.35, tempo))
+            tempo = max(0.85, min(1.30, tempo))
             atempo = build_atempo_filter(tempo)
 
             cmd_align = [
-                "ffmpeg", "-y", "-i", raw_wav,
-                "-af", f"{atempo},highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=7",
+                "ffmpeg", "-y", "-i", base_wav,
+                "-af", f"{atempo},{MASTER_FILTER}",
                 "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
                 "-t", str(target_dur),
                 aligned_wav
             ]
             subprocess.run(cmd_align, capture_output=True, check=True)
             s["audio_f5"] = f"/video-projects/{self.project_name}/segments/f5_seg_{sid}_aligned.wav"
+
+        # 3. Purge alokasi memori GPU
+        engine.free_gpu_memory()
 
     async def phase_3_synthesize_edge(self, segments: list) -> None:
         print("\n=======================================================")

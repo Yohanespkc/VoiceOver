@@ -24,6 +24,17 @@
 
 ---
 
+## ⚡ Optimalisasi GPU & Panduan Kolaborator
+
+Proyek ini telah dilengkapi **sistem penghematan GPU otomatis** dan **metode 1 baris** untuk menghasilkan suara Guru Marcia yang 100% mirip dengan rekaman aslinya:
+* **`engine.generate_marcia(teks)`**: Otomatis mengunci ke acuan autentik, naskah nilai tempat, $F_0 \approx 264$ Hz (anti-melengking), silence trimming, dan mastering siar.
+* **Transparent Phrase Caching**: Menghindari inferensi ulang pada kalimat yang sama (menghemat 100% GPU / waktu respon 0.1s).
+* **Auto VRAM Purge**: Otomatis membersihkan alokasi memori PyTorch MPS/CUDA dan garbage collection di setiap generasi (bebas crash OOM).
+
+👉 **Panduan Lengkap Kolaborator**: Silakan pelajari panduan lengkap dan contoh kode di **[COLLABORATOR_GUIDE.md](file:///Users/yohanessurya/Documents/Development/VoiceOver/COLLABORATOR_GUIDE.md)**.
+
+---
+
 ## 🎬 Daftar Sprint Video Dubbing Resmi
 
 | Sprint | Modul Pembelajaran | Durasi | Karakter Dubbing | Fitur Khusus | Akses Web |

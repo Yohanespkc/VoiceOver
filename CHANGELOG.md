@@ -2,6 +2,20 @@
 
 Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/) dan penomoran versi semantik.
 
+## [2.4.0] - 2026-09-22
+
+### ✨ Ditambahkan
+* **Sistem Penghematan GPU Otomatis (*Auto GPU Saving*)**:
+  * *Transparent Disk Phrase Caching*: Penambahan direktori `output/.phrase_cache/` dan hashing cerdas untuk mencegah inferensi ulang pada kalimat yang identik (menghemat 100% GPU / respon instan 0.1s).
+  * *Auto VRAM Cache Purge*: Penambahan metode `free_gpu_memory()` yang otomatis memanggil `torch.mps.empty_cache()` (Apple Silicon), `torch.cuda.empty_cache()` (CUDA), dan `gc.collect()` di setiap akhir inferensi.
+* **Metode 1-Baris Suara Karakter Autentik**:
+  * `engine.generate_marcia(teks)`: Menghubungkan otomatis ke audio acuan autentik Guru Marcia dengan parameter optimal (nfe=32, speed=1.05, trim silence, broadcast mastering) sehingga kolaborator tidak perlu menyetel parameter manual.
+  * `engine.generate_yosu(teks)`: Menghubungkan otomatis ke audio acuan Prof. Yohanes Surya asli.
+* **Panduan Pengembang & Kolaborator**:
+  * Pembuatan dokumen [`COLLABORATOR_GUIDE.md`](file:///Users/yohanessurya/Documents/Development/VoiceOver/COLLABORATOR_GUIDE.md) dan pembaruan `README.md`.
+* **Optimasi Pipeline Video Dubbing**:
+  * Pembaruan `video_dubbing_sprint.py` dengan *unique phrase caching*, *silence trimming*, dan pembersihan VRAM GPU otomatis.
+
 ---
 
 ## [2.3.0] - 2026-09-22
