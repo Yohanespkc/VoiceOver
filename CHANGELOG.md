@@ -2,6 +2,44 @@
 
 Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/) dan penomoran versi semantik.
 
+## [2.5.0] - 2026-09-27
+
+### ✨ Ditambahkan
+* **Suite Video Dubbing Lengkap Zona 4 (Pengurangan GASING - 12 Video)**:
+  * **Level 3 (4 Video)**:
+    * `z4l3_1_pengurangan_2d_1d_tanpa_meminjam` (45 - 3 = 42, Pasar Malam India Kuno / `z4l3sb1bermain2_marcia`, 19.93s)
+    * `z4l3_2_pengurangan_puluhan_murni_1d` (40 - 7 = 33, Bowling Kuno India / `z4l3sb1bermain1_marcia`, 25.57s)
+    * `z4l3_3_pengurangan_belasan_1d` (12 - 3 = 9, 15 - 9 = 6, Rahasia Gua Gelap / `z4l3sb2bermain2_marcia`, 40.43s)
+    * `z4l3_4_pengurangan_2d_1d_meminjam` (41 - 5 = 36, Memanah Guci Kerajaan / `z4l3sb2bermain1_marcia`, 60.67s)
+  * **Level 4 (3 Video)**:
+    * `z4l4_1_pengurangan_2d_2d_tanpa_meminjam` (78 - 46 = 32, `z4l4sb1bermain1`, 28.77s)
+    * `z4l4_2_pengurangan_puluhan_murni_2d` (80 - 34 = 46, Cara Biasa & Mencongak, `z4l4sb1bermain2`, 73.90s)
+    * `z4l4_3_pengurangan_2d_2d_meminjam` (82 - 49 = 33, Tiga Cara: Pecah, Bersusun, Mencongak, `z4l4sb2bermain1`, 98.07s)
+  * **Level 5 (4 Video)**:
+    * `z4l5_1_pengurangan_3d_tanpa_meminjam` (389 - 2, 343 - 21, 677 - 324, `z4l5sb1bermain1`, 74.13s)
+    * `z4l5_2a_pengurangan_3d_1d_meminjam` (331 - 9 = 322, Tiga Cara, `z4l5sb2bermain1`, 90.23s)
+    * `z4l5_2b_pengurangan_3d_2d_meminjam` (842 - 59 = 783, Tiga Cara, `z4l5sb2bermain2`, 124.97s)
+    * `z4l5_2c_pengurangan_3d_3d_meminjam` (842 - 187 = 655, Tiga Cara, `z4l5sb2bermain3`, 131.00s)
+  * **Level 6 (1 Master Video)**:
+    * `z4l6_pengurangan_4d_4d_meminjam` (8021 - 1329 = 6692 & 8223 - 5224 = 2999, Lirik Kanan Beruntun & Kasus Nol di Tengah, 31 Segmen, 186.70s)
+* **Normalisasi Angka & Fonetik Penuh (`gasing_pronunciation.py`)**:
+  * Penambahan fungsi `number_to_words_id(n)` untuk mengonversi angka ke kata bahasa Indonesia utuh.
+  * Penambahan fungsi `normalize_numbers(text)` untuk menormalkan bilangan mandiri, akhiran puluhan (`40-an` -> "empat puluhan", `10-an` -> "sepuluhan"), dan simbol aritmatika (`+`, `-`, `=`, `x`). Meniadakan 100% gumaman (*mumbling* / "juang") pada model difusi.
+* **Pipeline Otomatisasi Sprint & Multi-Sync**:
+  * Skrip orkestrasi `execute_zona4_level3_sprint.py` s.d. `execute_zona4_level6_sprint.py`.
+  * Distribusi otomatis hasil dubbing ke 4 direktori: Berkas ringan, Arsip Hasil, Web Studio `/Proyek Video`, dan proyek game Sacred Octagon (`so/web/public/assets/videos/z4l*/`).
+  * Skrip remastering dan tuning presisi: `remaster_zona4_level5.py`, `render_flawless_52c.py`, `update_all_qc_and_remux.py`.
+* **Ekspor Ganda Web-Ready (MP4 + WebM)**:
+  * Optimasi kompresi animasi: MP4 (H.264 tune animation CRF 28, AAC 48k Mono, FastStart) dan WebM (VP9 CRF 36, Opus).
+* **Pembaruan Skil Standar Agentik**:
+  * Sinkronisasi lokal dan global untuk `gds-voiceover-f5tts-studio` dan `gds-voiceover-video-cloning`.
+
+### 🐛 Diperbaiki
+* Mengatasi masalah lonjakan ukuran file WAV uncompressed pada video panjang (>3 menit) dengan menetapkan `-ar 44100` secara eksplisit pada perakitan master timeline audio (mencegah penolakan ukuran file >100MB di GitHub).
+* Mempertahankan integritas video track asli 100% tanpa crop atau masking persegi buatan yang dapat memotong tulisan rumus di sudut visual layar.
+
+---
+
 ## [2.4.0] - 2026-09-22
 
 ### ✨ Ditambahkan

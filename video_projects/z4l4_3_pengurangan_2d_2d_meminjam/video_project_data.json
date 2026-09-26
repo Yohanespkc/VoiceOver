@@ -1,0 +1,203 @@
+{
+  "id": "z4l4_3_pengurangan_2d_2d_meminjam",
+  "title": "Zona 4 Level 4.3: Pengurangan 2D - 2D Meminjam (82 - 49 = 33 Tiga Cara)",
+  "subtitle": "Pengurangan 2 digit meminjam dengan tiga cara: pecah 7 dan 10, pecah puluhan membentuk 12, dan mencongak pasangan 10.",
+  "so_game_name": "Memanah Labu Qutub Minar (z4l4-sb2bermain1)",
+  "so_dest_stem": "z4l4sb2bermain1_marcia",
+  "duration_seconds": 92.33,
+  "source_type": "local_mp4",
+  "original_file": "zona 4 level 4-3.mp4",
+  "original_size_bytes": 4092215,
+  "compressed_mp4_bytes": 827532,
+  "compressed_webm_bytes": 764330,
+  "compression_savings_percent": 79.8,
+  "original_speaker": "Prof. Yohanes Surya (Pria)",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "voice_id": "so_marcia",
+  "acceleration": "F5-TTS nfe_step=32 High-Fidelity + Spelled Out Numbers",
+  "noise_filtering": "Highpass 80Hz + Loudnorm broadcast -16 LUFS",
+  "files": {
+    "original_video": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/video_dubbed_marcia_f5.mp4",
+    "dubbed_video_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/video_dubbed_marcia_edge.mp4",
+    "dubbed_video_f5_ringan": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/master_dubbing_edge.mp3"
+  },
+  "so_files": {
+    "mp4": "/assets/videos/z4l4/z4l4sb2bermain1_marcia.mp4",
+    "webm": "/assets/videos/z4l4/z4l4sb2bermain1_marcia.webm"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.7,
+      "text": "Berikutnya kita hitung delapan puluh dua dikurang empat puluh sembilan.",
+      "display_text": "Berikutnya kita hitung 82 dikurang 49.",
+      "visual": "Menuliskan soal 82 - 49",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 4.56,
+      "end": 12.86,
+      "text": "Kita lihat di sini, satuannya tidak bisa dikurangi, maka puluhannya kita pecah menjadi tujuh dan sepuluh.",
+      "display_text": "Kita lihat di sini, satuannya tidak bisa dikurangi, maka puluhannya kita pecah menjadi 7 dan 10.",
+      "visual": "Cara 1: Memecah puluhan 80 menjadi 70 dan 10",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 13.4,
+      "end": 19.16,
+      "text": "Nah kemudian kita kurangi, tujuh dikurang empat, puluhannya ada tiga.",
+      "display_text": "Nah kemudian kita kurangi, 7 dikurang 4 puluhannya ada 3.",
+      "visual": "Menghitung puluhan 7 - 4 = 3",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 19.58,
+      "end": 24.54,
+      "text": "Lalu satuannya, sepuluh kurang sembilan adalah satu, tapi ingat masih ada dua.",
+      "display_text": "Lalu satuannya 10 kurang 9 adalah 1, tapi ingat masih ada 2.",
+      "visual": "Menghitung 10 - 9 = 1 dan mengingat sisa 2 satuan",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 24.54,
+      "end": 31.34,
+      "text": "Jadi satu tambah dua adalah tiga. Hasilnya delapan puluh dua kurang empat puluh sembilan adalah tiga puluh tiga.",
+      "display_text": "Jadi 1 tambah 2 adalah 3. Hasilnya 82 kurang 49 adalah 33.",
+      "visual": "Menghitung 1 + 2 = 3 dan menulis hasil akhir 33",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 32.3,
+      "end": 36.44,
+      "text": "Cara lain adalah sebagai berikut, di sini delapan puluh dua kurang empat puluh sembilan.",
+      "display_text": "Cara lain adalah sebagai berikut, di sini 82 kurang 49.",
+      "visual": "Beralih ke Cara 2",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 37.34,
+      "end": 44.84,
+      "text": "Satuannya tidak bisa dikurangi, sehingga puluhannya kita pecah menjadi tujuh puluhan dan satu puluhan.",
+      "display_text": "Satuannya tidak bisa dikurangi, sehingga puluhannya kita pecah menjadi 7 puluhan dan 1 puluhan.",
+      "visual": "Memecah 80 menjadi 7 puluhan dan 1 puluhan",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 45.54,
+      "end": 50.8,
+      "text": "Nah kemudian di sini puluhannya kita kurangi, tujuh kurang empat adalah tiga.",
+      "display_text": "Nah kemudian di sini puluhannya kita kurangi, 7 kurang 4 adalah 3.",
+      "visual": "Menghitung puluhan 7 - 4 = 3",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 50.8,
+      "end": 55.94,
+      "text": "Lalu puluhannya ini akan bergabung dengan satuan menjadi dua belas.",
+      "display_text": "Lalu puluhannya ini akan bergabung dengan satuan menjadi 12.",
+      "visual": "Menggabungkan 1 puluhan dan 2 satuan menjadi 12",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 56.32,
+      "end": 59.1,
+      "text": "Dua belas dikurang sembilan adalah tiga.",
+      "display_text": "12 dikurang 9 adalah 3.",
+      "visual": "Menghitung 12 - 9 = 3",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 59.56,
+      "end": 62.38,
+      "text": "Jadi delapan puluh dua dikurang empat puluh sembilan adalah tiga puluh tiga.",
+      "display_text": "Jadi 82 dikurang 49 adalah 33.",
+      "visual": "Menulis hasil 33 pada Cara 2",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 63.34,
+      "end": 65.9,
+      "text": "Nah, berikutnya adalah cara mencongak, cara cepatnya.",
+      "display_text": "Nah berikutnya adalah cara mencongak, cara cepatnya.",
+      "visual": "Beralih ke Cara 3: Mencongak",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 66.26,
+      "end": 71.8,
+      "text": "Delapan puluh dua dikurang empat puluh sembilan. Di sini kita lihat delapan dikurang empat adalah empat.",
+      "display_text": "82 dikurang 49, di sini kita lihat 8 dikurang 4 adalah 4.",
+      "visual": "Menghitung puluhan 8 - 4 = 4",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_13_aligned.wav"
+    },
+    {
+      "id": 14,
+      "start": 72.76,
+      "end": 77.8,
+      "text": "Lirik kanan, satuannya tidak bisa dikurangi, maka kita kurangi satu menjadi tiga.",
+      "display_text": "Lirik kanan, satuannya tidak bisa dikurangi, maka kita kurangi 1 menjadi 3.",
+      "visual": "Melakukan lirik kanan dan mengurangkan 1",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_14_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_14_aligned.wav"
+    },
+    {
+      "id": 15,
+      "start": 77.8,
+      "end": 83.8,
+      "text": "Lalu dua ditambah pasangan sembilan. Pasangan sembilan adalah satu, dua tambah satu adalah tiga.",
+      "display_text": "Lalu 2 ditambah pasangan 9. Pasangan 9 adalah 1, 2 tambah 1 adalah 3.",
+      "visual": "Menghitung 2 + 1 = 3 menggunakan pasangan 9",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_15_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_15_aligned.wav"
+    },
+    {
+      "id": 16,
+      "start": 84.5,
+      "end": 85.94,
+      "text": "Jadi hasilnya tiga puluh tiga.",
+      "display_text": "Jadi hasilnya 33.",
+      "visual": "Menegaskan hasil 33",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_16_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_16_aligned.wav"
+    },
+    {
+      "id": 17,
+      "start": 86.7,
+      "end": 91.64,
+      "text": "Dari mana itu pasangan sembilan? Dari sepuluh kurang sembilan.",
+      "display_text": "Dari mana itu pasangan 9? Dari 10 kurang 9.",
+      "visual": "Menjelaskan asal pasangan 9 adalah 10 - 9",
+      "audio_f5": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/f5_seg_17_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_3_pengurangan_2d_2d_meminjam/segments/edge_seg_17_aligned.wav"
+    }
+  ]
+}

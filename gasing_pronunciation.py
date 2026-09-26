@@ -105,6 +105,60 @@ GASING_PRAISE_RULES = [
     (r"\bLUAR\s+BIASA\b!*\s*", "Luar biasa! "),
 ]
 
+def number_to_words_id(n: int) -> str:
+    """
+    Mengonversi angka bulat menjadi teks bahasa Indonesia lengkap
+    agar model F5-TTS dan Edge-TTS melafalkannya dengan artikulasi sempurna (misal '7' -> 'tujuh', '40' -> 'empat puluh').
+    """
+    satuan = ["", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas"]
+    if n == 0:
+        return "nol"
+    if n < 12:
+        return satuan[n]
+    elif n < 20:
+        return satuan[n - 10] + " belas"
+    elif n < 100:
+        puluh = n // 10
+        sisa = n % 10
+        return (satuan[puluh] + " puluh " + satuan[sisa]).strip()
+    elif n < 200:
+        return ("seratus " + number_to_words_id(n - 100)).strip()
+    elif n < 1000:
+        ratus = n // 100
+        sisa = n % 100
+        return (satuan[ratus] + " ratus " + number_to_words_id(sisa)).strip()
+    elif n < 2000:
+        return ("seribu " + number_to_words_id(n - 1000)).strip()
+    elif n < 1000000:
+        ribu = n // 1000
+        sisa = n % 1000
+        return (number_to_words_id(ribu) + " ribu " + number_to_words_id(sisa)).strip()
+    return str(n)
+
+def normalize_numbers(text: str) -> str:
+    """
+    Menormalkan bilangan, angka, dan akhiran puluhan (-an) ke kata bahasa Indonesia utuh.
+    """
+    # 1. Puluhan/ratusan berakhiran -an (cth: 40-an / 40an -> empat puluhan, 10-an -> sepuluhan)
+    def repl_an(m):
+        val = int(m.group(1))
+        if val == 10:
+            return "sepuluhan"
+        elif val % 10 == 0 and val < 100:
+            return number_to_words_id(val // 10) + " puluhan"
+        elif val == 100:
+            return "ratusan"
+        elif val == 1000:
+            return "ribuan"
+        return number_to_words_id(val) + "-an"
+    text = re.sub(r"\b(\d+)[- ]?an\b", repl_an, text, flags=re.IGNORECASE)
+
+    # 2. Angka mandiri menjadi kata (cth: 7 -> tujuh, 40 -> empat puluh)
+    def repl_num(m):
+        return number_to_words_id(int(m.group(0)))
+    text = re.sub(r"\b\d+\b", repl_num, text)
+    return text
+
 def preprocess_pronunciation(text: str, apply_bilingual: bool = True, apply_gasing_prosody: bool = True) -> str:
     """
     Menormalkan teks masukan agar F5-TTS melafalkannya dengan aksen dan artikulasi sempurna.
@@ -131,7 +185,7 @@ def preprocess_pronunciation(text: str, apply_bilingual: bool = True, apply_gasi
             processed,
             flags=re.IGNORECASE
         )
-        processed = processed.replace("__KASIH_WOW_TOKEN__", "Kasih We, kasih O, kasih We, WOW!")
+        processed.replace("__KASIH_WOW_TOKEN__", "Kasih We, kasih O, kasih We, WOW!")
 
         for pattern, repl in [
             (r"\bhebaa+t\b!*\s*", "hebaat! "),
@@ -154,7 +208,7 @@ def preprocess_pronunciation(text: str, apply_bilingual: bool = True, apply_gasi
             processed = re.sub(pattern, repl, processed)
 
     # 5. Normalisasi angka dan simbol umum
-    processed = re.sub(r"\b0\b", "nol", processed)
+    processed = normalize_numbers(processed)
     processed = re.sub(r"\+", " tambah ", processed)
     processed = re.sub(r"\=", " sama dengan ", processed)
     processed = re.sub(r"\×|\*", " kali ", processed)

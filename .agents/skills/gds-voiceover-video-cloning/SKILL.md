@@ -129,7 +129,39 @@ Gunakan runner script otomatis [`sprint_video_dubbing.sh`](file:///Users/yohanes
    ```
    *Wajib menyertakan `-map 0:v:0 -map 1:a:0` agar FFmpeg tidak memilih audio rekaman sumber asli secara otomatis.*
 
-2. **Metadata & Antarmuka Studio SO**:
+2. **Kompresi Ringan Web-Ready & Dual Format (MP4 + WebM)**:
+   * **MP4 (H.264 tune animation)**:
+     ```bash
+     ffmpeg -y -i input_master.mp4 -c:v libx264 -preset slow -crf 28 -tune animation -pix_fmt yuv420p \
+       -c:a aac -b:a 48k -ac 1 -ar 44100 -movflags +faststart output_ringan.mp4
+     ```
+   * **WebM (VP9 / Opus)**:
+     ```bash
+     ffmpeg -y -i input_master.mp4 -c:v libvpx-vp9 -crf 36 -b:v 0 \
+       -c:a libopus -b:a 48k -ar 48000 output_ringan.webm
+     ```
+   * *FastStart* (`-movflags +faststart`) memindahkan metadata moov atom ke awal berkas untuk playback streaming instan di browser/PWA.
+
+3. **Integritas Video Track 100% (Larangan Artificial Cropping)**:
+   * Dilarang melakukan crop paksa, masking kotak, atau zoom parsial yang berisiko memotong tulisan rumus di sudut layar. Gunakan resolusi asli video sumber dengan pengkodean ulang efisien.
+
+4. **Penyesuaian Durasi Segmen Presisi (*atempo Chaining*)**:
+   * Filter `atempo` FFmpeg memiliki batas minimal 0.5x dan maksimal 2.0x per filter.
+   * Untuk penyesuaian di luar batas tersebut, susun secara berantai (*chained*):
+     ```python
+     def build_atempo_filter(tempo: float) -> str:
+         parts = []
+         while tempo > 2.0:
+             parts.append("atempo=2.0")
+             tempo /= 2.0
+         while tempo < 0.5:
+             parts.append("atempo=0.5")
+             tempo /= 0.5
+         parts.append(f"atempo={tempo:.4f}")
+         return ",".join(parts)
+     ```
+
+5. **Metadata & Antarmuka Studio SO**:
    * Simpan metadata ke `video_projects/<project_name>/video_project_data.json`.
    * Akses melalui antarmuka web tab **`🎬 /Proyek Video`** di `http://localhost:8765/#/proyek-video`.
 
@@ -137,11 +169,23 @@ Gunakan runner script otomatis [`sprint_video_dubbing.sh`](file:///Users/yohanes
 
 ## 4. Daftar Proyek Sprint Video Dubbing Resmi
 
-| ID Sprint | Judul Modul | Durasi | Sumber Asli | Karakter Dubbing | Jumlah Segmen |
-|---|---|---|---|---|---|
-| **`perkalian_2digit_1digit`** | Perkalian 2 Digit x 1 Digit (Sprint 01) | 36.00s | YouTube GASING | Prof. Yohanes Surya (`prof_yosu_asli`) | 8 Segmen Coretan |
-| **`z5l1_tanya_marcia`** | Tanya Marcia Pembagian (Sprint 02) | 22.00s | Tutor John (Game SO) | Guru Marcia (`so_marcia`) | 7 Segmen Dialog |
-| **`sprint_03_z1l1_bilangan_54s`** | Mengenal Bilangan 6–10 (Sprint 03) | 54.00s | Tutor John (Game SO) | Guru Marcia Autentik (`so_marcia`) | 27 Segmen Kartu Pola |
+| ID Sprint / Modul | Judul Modul | Durasi | Sumber Asli | Karakter Dubbing | Segmen | Integrasi SO |
+|---|---|---|---|---|---|---|
+| **`perkalian_2digit_1digit`** | Perkalian 2D x 1D (Sprint 01) | 36.00s | YouTube GASING | Prof. Yohanes Surya | 8 Coretan | Studio |
+| **`z5l1_tanya_marcia`** | Tanya Marcia Pembagian (Sprint 02) | 22.00s | Tutor John | Guru Marcia | 7 Dialog | Studio |
+| **`sprint_03_z1l1_bilangan_54s`** | Mengenal Bilangan 6–10 (Sprint 03) | 54.00s | Tutor John | Guru Marcia | 27 Pola | Studio |
+| **`z4l3_1_pengurangan_2d_1d_tanpa_meminjam`** | Z4L3.1: 2D - 1D Tanpa Meminjam (45-3=42) | 19.93s | Guru Asli | Guru Marcia | 3 Segmen | `z4l3sb1bermain2` |
+| **`z4l3_2_pengurangan_puluhan_murni_1d`** | Z4L3.2: Puluhan Murni - 1D (40-7=33) | 25.57s | Guru Asli | Guru Marcia | 6 Segmen | `z4l3sb1bermain1` |
+| **`z4l3_3_pengurangan_belasan_1d`** | Z4L3.3: Belasan - 1D (12-3=9, 15-9=6) | 40.43s | Guru Asli | Guru Marcia | 9 Segmen | `z4l3sb2bermain2` |
+| **`z4l3_4_pengurangan_2d_1d_meminjam`** | Z4L3.4: 2D - 1D Meminjam (41-5=36) | 60.67s | Guru Asli | Guru Marcia | 11 Segmen | `z4l3sb2bermain1` |
+| **`z4l4_1_pengurangan_2d_2d_tanpa_meminjam`** | Z4L4.1: 2D - 2D Tanpa Meminjam (78-46=32) | 28.77s | Guru Asli | Guru Marcia | 7 Segmen | `z4l4sb1bermain1` |
+| **`z4l4_2_pengurangan_puluhan_murni_2d`** | Z4L4.2: Puluhan Murni - 2D (80-34=46) | 73.90s | Guru Asli | Guru Marcia | 14 Segmen | `z4l4sb1bermain2` |
+| **`z4l4_3_pengurangan_2d_2d_meminjam`** | Z4L4.3: 2D - 2D Meminjam Tiga Cara (82-49=33) | 98.07s | Guru Asli | Guru Marcia | 17 Segmen | `z4l4sb2bermain1` |
+| **`z4l5_1_pengurangan_3d_tanpa_meminjam`** | Z4L5.1: 3D Tanpa Meminjam (389-2, 677-324) | 74.13s | Guru Asli | Guru Marcia | 15 Segmen | `z4l5sb1bermain1` |
+| **`z4l5_2a_pengurangan_3d_1d_meminjam`** | Z4L5.2a: 3D - 1D Meminjam (331-9=322) | 90.23s | Guru Asli | Guru Marcia | 17 Segmen | `z4l5sb2bermain1` |
+| **`z4l5_2b_pengurangan_3d_2d_meminjam`** | Z4L5.2b: 3D - 2D Meminjam (842-59=783) | 124.97s | Guru Asli | Guru Marcia | 22 Segmen | `z4l5sb2bermain2` |
+| **`z4l5_2c_pengurangan_3d_3d_meminjam`** | Z4L5.2c: 3D - 3D Meminjam (842-187=655) | 131.00s | Guru Asli | Guru Marcia | 22 Segmen | `z4l5sb2bermain3` |
+| **`z4l6_pengurangan_4d_4d_meminjam`** | Z4L6: 4D - 4D Meminjam Beruntun (8021-1329) | 186.70s | Guru Asli | Guru Marcia | 31 Segmen | `z4l6_marcia` |
 
 ---
 
@@ -153,3 +197,7 @@ Gunakan runner script otomatis [`sprint_video_dubbing.sh`](file:///Users/yohanes
 | **Suara terdengar melengking/cempreng pada frasa pendek** | Jendela durasi sempit membuat DiT melonjakkan nada $F_0$ | Gunakan `nfe_step=32`, `speed=1.05`, dan pangkas silence dengan librosa |
 | **Suara terasa mendem / artikulasi hilang** | Penggunaan `afftdn=nf=-28` memotong frekuensi >1.500 Hz | Gunakan filter siar `highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10` |
 | **Generasi 20+ segmen memakan waktu lama** | Model difusi dipanggil berulang kali untuk frasa yang sama | Terapkan *Unique Phrase Caching* (3x lebih cepat) |
+| **Kata angka terdengar mumbling / tertukar ("juang")** | Angka mentah dimasukkan tanpa ekspansi fonetik kata | Terapkan `normalize_numbers()` di `gasing_pronunciation.py` |
+| **File WAV master membengkak >100MB saat di-push ke GitHub** | Filter `amix` menghasilkan audio 192kHz uncompressed | Wajib sertakan `-ar 44100` pada perakitan WAV master |
+| **Goresan tangan tidak pas dengan narasi ucapan** | Estimasi durasi ucapan meleset dari durasi animasi visual | Gunakan `build_atempo_filter` untuk menyelaraskan durasi vokal milidetik |
+

@@ -1,0 +1,83 @@
+{
+  "id": "z4l3_2_pengurangan_puluhan_murni_1d",
+  "title": "Zona 4 Level 3.2: Pengurangan Puluhan Murni - 1D (40 - 7 = 33)",
+  "subtitle": "Penjelasan konsep pengurangan puluhan murni dengan 1 digit dengan memecah puluhan menjadi 30 dan 10.",
+  "so_game_name": "Bowling Kuno India (z4l3-sb1bermain1)",
+  "so_dest_stem": "z4l3sb1bermain1_marcia",
+  "duration_seconds": 25.57,
+  "source_type": "local_mp4",
+  "original_file": "zone 4 level 3-2.mp4",
+  "original_size_bytes": 855534,
+  "compressed_mp4_bytes": 209018,
+  "compressed_webm_bytes": 170031,
+  "compression_savings_percent": 75.6,
+  "original_speaker": "Prof. Yohanes Surya (Pria)",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "voice_id": "so_marcia",
+  "acceleration": "F5-TTS nfe_step=32 High-Fidelity + Spelled Out Numbers",
+  "noise_filtering": "Highpass 80Hz + Loudnorm broadcast -16 LUFS",
+  "files": {
+    "original_video": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/video_dubbed_marcia_f5.mp4",
+    "dubbed_video_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/video_dubbed_marcia_edge.mp4",
+    "dubbed_video_f5_ringan": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/master_dubbing_edge.mp3"
+  },
+  "so_files": {
+    "mp4": "/assets/videos/z4l3/z4l3sb1bermain1_marcia.mp4",
+    "webm": "/assets/videos/z4l3/z4l3sb1bermain1_marcia.webm"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.64,
+      "text": "Sekarang kita hitung empat puluh kurang tujuh.",
+      "display_text": "Sekarang kita hitung 40 kurang 7.",
+      "visual": "Menuliskan soal 40 - 7 di papan",
+      "audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.02,
+      "end": 6.9,
+      "text": "Kita lihat dulu, empat puluh terdiri dari empat puluhan dan nol satuan.",
+      "display_text": "Kita lihat dulu, 40 terdiri dari 40-an dan 0 satuan.",
+      "visual": "Menjelaskan nilai tempat bilangan 40 (4 puluhan dan 0 satuan)",
+      "audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.28,
+      "end": 13.78,
+      "text": "Satuannya tidak bisa dikurangi tujuh, maka puluhannya kita pecah menjadi tiga puluhan dan sepuluh satuan.",
+      "display_text": "Satuannya tidak bisa dikurangi 7, maka puluhannya kita pecah menjadi 30-an dan 10 satuan.",
+      "visual": "Memecah 40 menjadi 30 dan 10 karena satuan 0 tidak bisa dikurangi 7",
+      "audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 14.8,
+      "end": 20.26,
+      "text": "Nah puluhannya ada tiga, kita tulis tiga. Satuannya, sepuluh kurang tujuh adalah tiga.",
+      "display_text": "Nah puluhannya ada 3, kita tulis 3. Satuannya, 10 kurang 7 adalah 3.",
+      "visual": "Menuliskan puluhan 3 dan menghitung 10 - 7 = 3",
+      "audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 20.7,
+      "end": 24.54,
+      "text": "Jadi di sini kita lihat, empat puluh kurang tujuh adalah tiga puluh tiga.",
+      "display_text": "Jadi di sini kita lihat, 40 kurang 7 adalah 33.",
+      "visual": "Menegaskan hasil akhir 40 - 7 = 33",
+      "audio_f5": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z4l3_2_pengurangan_puluhan_murni_1d/segments/edge_seg_5_aligned.wav"
+    }
+  ]
+}

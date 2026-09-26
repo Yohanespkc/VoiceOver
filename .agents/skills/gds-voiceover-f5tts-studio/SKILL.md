@@ -125,12 +125,38 @@ Dokumen ini adalah **pedoman resmi arsitektur teknis dan troubleshooting** Voice
     -c:v copy -c:a aac -b:a 192k -shortest output_dubbed.mp4
   ```
 
+### D. Standar Sample Rate Master WAV 44.1kHz (Pencegahan File Bengkak >100MB)
+* **Masalah**: Perakitan *audio mix* dengan filter complex `amix` tanpa argumen `-ar 44100` berisiko mengadopsi sample rate internal 192.000 Hz. Pada video berdurasi >3 menit, file WAV tak terkompresi melonjak hingga 137MB+ dan memicu penolakan *push* oleh GitHub (batas 100MB).
+* **Aturan Baku**: Selalu tentukan `-ar 44100` pada perakitan master WAV:
+  ```bash
+  ffmpeg -y -i silence.wav -i seg1.wav -filter_complex "..." -map "[outa]" -c:a pcm_s16le -ar 44100 master_dubbing.wav
+  ```
+  Ini menjaga ukuran master WAV video 3+ menit tetap aman pada ~31MB.
+
 ---
 
-## 5. Standar Naskah Pujian GASING
+## 5. Standar Normalisasi Angka & Fonetik Penuh (`gasing_pronunciation.py`)
+
+Untuk menjamin artikulasi vokal 100% jernih dan bebas mumbling ("juang", terpotong, atau salah sebut), seluruh naskah matematika wajib melewati ekspansi fonetik:
+
+### A. Fungsi Inti
+* **`number_to_words_id(n: int) -> str`**: Mengonversi integer ke kata fonetik Indonesia utuh (misal `7` -> `"tujuh"`, `40` -> `"empat puluh"`, `324` -> `"tiga ratus dua puluh empat"`).
+* **`normalize_numbers(text: str) -> str`**:
+  1. Menangani puluhan/ratusan berakhiran *-an* (`40-an` / `40an` -> `"empat puluhan"`, `10-an` -> `"sepuluhan"`, `100-an` -> `"ratusan"`).
+  2. Mengonversi angka mandiri menjadi teks fonetik.
+  3. Mengganti simbol operasi (`+` -> `"tambah"`, `=` -> `"sama dengan"`, `x` -> `"kali"`).
+
+### B. Mengapa Wajib Fonetik Utuh?
+* Model difusi F5-TTS dilatih dengan kosakata berbasis karakter/fonem Indonesia. Angka numerik mentah sering menghasilkan desis atau pemenggalan suku kata tak wajar.
+* Dengan ekspansi fonetik penuh, lafal "delapan puluh dua dikurang empat puluh sembilan sama dengan tiga puluh tiga" terdengar fasih dan natural layaknya penutur asli.
+
+---
+
+## 6. Standar Naskah Pujian GASING
 
 Saat menghasilkan audio game GASING, pastikan frasa jingle berikut ditranskripsi sesuai pola:
 * Jingle WOW: `"Kasih We, kasih O, kasih We, WOW! Hebat sekali!"`
 * Ucapan Tepat: `"Jawaban tepat! Kamu luar biasa!"`
 * Anak Cerdas: `"Hebat! Kamu anak cerdas kebanggaan Indonesia!"`
 * Slogan GASING: `"Gampang, Asyik, dan Menyenangkan!"`
+

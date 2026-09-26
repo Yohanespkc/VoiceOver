@@ -1,0 +1,93 @@
+{
+  "id": "z4l4_1_pengurangan_2d_2d_tanpa_meminjam",
+  "title": "Zona 4 Level 4.1: Pengurangan 2D - 2D Tanpa Meminjam (78 - 46 = 32)",
+  "subtitle": "Pengurangan langsung puluhan dikurang puluhan dan satuan dikurang satuan karena satuan bisa langsung dikurangi.",
+  "so_game_name": "Bowling Menara Qutub (z4l4-sb1bermain1)",
+  "so_dest_stem": "z4l4sb1bermain1_marcia",
+  "duration_seconds": 28.67,
+  "source_type": "local_mp4",
+  "original_file": "zona 4 level 4-1.mp4",
+  "original_size_bytes": 945718,
+  "compressed_mp4_bytes": 223198,
+  "compressed_webm_bytes": 191731,
+  "compression_savings_percent": 76.4,
+  "original_speaker": "Prof. Yohanes Surya (Pria)",
+  "dubbed_character": "Guru Marcia (Trainer Marcia Asli)",
+  "voice_id": "so_marcia",
+  "acceleration": "F5-TTS nfe_step=32 High-Fidelity + Spelled Out Numbers",
+  "noise_filtering": "Highpass 80Hz + Loudnorm broadcast -16 LUFS",
+  "files": {
+    "original_video": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/video_dubbed_marcia_f5.mp4",
+    "dubbed_video_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/video_dubbed_marcia_edge.mp4",
+    "dubbed_video_f5_ringan": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/master_dubbing_edge.mp3"
+  },
+  "so_files": {
+    "mp4": "/assets/videos/z4l4/z4l4sb1bermain1_marcia.mp4",
+    "webm": "/assets/videos/z4l4/z4l4sb1bermain1_marcia.webm"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.0,
+      "text": "Berapa tujuh puluh delapan dikurang empat puluh enam?",
+      "display_text": "Berapa 78 dikurang 46?",
+      "visual": "Menuliskan soal 78 - 46 di papan tulis",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.76,
+      "end": 7.0,
+      "text": "Di sini kita lihat bahwa satuannya bisa dikurangi.",
+      "display_text": "Di sini kita lihat bahwa satuannya bisa dikurangi.",
+      "visual": "Menunjuk digit satuan 8 dan 6",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.98,
+      "end": 13.18,
+      "text": "Karena itu kita langsung, puluhan dikurang puluhan, satuan dikurang satuan.",
+      "display_text": "Karena itu kita langsung puluhan dikurang puluhan, satuan kurang satuan.",
+      "visual": "Menjelaskan konsep pengurangan langsung puluhan dan satuan",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 13.74,
+      "end": 18.04,
+      "text": "Puluhan dikurang puluhan, tujuh dikurang empat adalah tiga.",
+      "display_text": "Puluhan dikurang puluhan, 7 dikurang 4 adalah 3.",
+      "visual": "Menghitung 7 - 4 = 3 pada puluhan",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 18.86,
+      "end": 23.1,
+      "text": "Satuan dikurang satuan, delapan kurang enam adalah dua.",
+      "display_text": "Satuan dikurang satuan, 8 kurang 6 adalah 2.",
+      "visual": "Menghitung 8 - 6 = 2 pada satuan",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 23.5,
+      "end": 27.5,
+      "text": "Jadi tujuh puluh delapan dikurang empat puluh enam adalah tiga puluh dua.",
+      "display_text": "Jadi 78 dikurang 46 adalah 32.",
+      "visual": "Menuliskan hasil akhir 32",
+      "audio_f5": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z4l4_1_pengurangan_2d_2d_tanpa_meminjam/segments/edge_seg_6_aligned.wav"
+    }
+  ]
+}
