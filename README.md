@@ -60,6 +60,9 @@ Proyek ini telah dilengkapi **sistem penghematan GPU otomatis** dan **metode 1 b
 | **Z4L5.2b** | Pengurangan 3D - 2D Meminjam (842 - 59 = 783) | 124.97s | Guru Marcia | 22 Segmen | `z4l5sb2bermain2` |
 | **Z4L5.2c** | Pengurangan 3D - 3D Meminjam (842 - 187 = 655) | 131.00s | Guru Marcia | 22 Segmen | `z4l5sb2bermain3` |
 | **Z4L6** | Pengurangan 4D - 4D Meminjam Beruntun (8021-1329) | 186.70s | Guru Marcia | 31 Segmen | `z4l6_marcia` (Master 186.7s) |
+| **Z5L1a** | Pembagian Konkret & Mencongak (8 : 2 = 4) | 61.77s | Guru Marcia | 11 Segmen | `z5l1a_pembagian_8_bagi_2_marcia` |
+| **Z5L1b** | Mencongak Pembagian (54 : 6 = 9) | 11.37s | Guru Marcia | 3 Segmen | `z5l1b_mencongak_54_bagi_6_marcia` |
+| **Z5L1c** | Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6) | 73.43s | Guru Marcia | 15 Segmen | `z5l1c_mencari_kotak_18_bagi_berapa_marcia` |
 
 ---
 
@@ -79,7 +82,8 @@ VoiceOver/
 ├── Hasil/                            # Berkas video hasil akhir dubbing terintegrasi
 │   └── videoMarcia/
 │       ├── z1_bilangan/              # Dubbing Zona 1 (Mengenal Bilangan)
-│       └── z4_pengurangan/           # 12 Video Lengkap Zona 4 (MP4 & WebM)
+│       ├── z4_pengurangan/           # 12 Video Lengkap Zona 4 (MP4 & WebM)
+│       └── z5_pembagian/             # Video Pembagian Zona 5 (MP4 & WebM)
 ├── video_projects/                   # Proyek sprint video dubbing (/Proyek Video)
 │   ├── perkalian_2digit_1digit/      # Sprint 01
 │   ├── z5l1_tanya_marcia/            # Sprint 02
@@ -87,7 +91,8 @@ VoiceOver/
 │   ├── z4l3_1 ... z4l3_4/            # Zona 4 Level 3 (4 Video)
 │   ├── z4l4_1 ... z4l4_3/            # Zona 4 Level 4 (3 Video)
 │   ├── z4l5_1 ... z4l5_2c/           # Zona 4 Level 5 (4 Video)
-│   └── z4l6_pengurangan_4d_4d/       # Zona 4 Level 6 (Master 4D-4D)
+│   ├── z4l6_pengurangan_4d_4d/       # Zona 4 Level 6 (Master 4D-4D)
+│   └── z5l1a ... z5l1c/              # Zona 5 Level 1 (3 Video Pembagian)
 ├── f5_engine.py                      # Engine utama F5-TTS Indo V2
 ├── gasing_pronunciation.py           # Kamus pelafalan, ejaan fonetik & normalisasi angka
 ├── server.py                         # Backend API FastAPI & server antarmuka web
@@ -96,7 +101,8 @@ VoiceOver/
 ├── execute_zona4_level3_sprint.py    # Skrip pipeline otomatis Zona 4 Level 3
 ├── execute_zona4_level4_sprint.py    # Skrip pipeline otomatis Zona 4 Level 4
 ├── execute_zona4_level5_sprint.py    # Skrip pipeline otomatis Zona 4 Level 5
-└── execute_zona4_level6_sprint.py    # Skrip pipeline otomatis Zona 4 Level 6
+├── execute_zona4_level6_sprint.py    # Skrip pipeline otomatis Zona 4 Level 6
+└── execute_zona5_level1_sprint.py    # Skrip pipeline otomatis Zona 5 Level 1
 ```
 
 ---

@@ -1,0 +1,51 @@
+{
+  "id": "z5l1b_mencongak_54_bagi_6",
+  "title": "Zona 5 Level 1b: Mencongak Pembagian (54 : 6 = 9)",
+  "subtitle": "Menghitung 54 dibagi 6 dengan mencongak perkalian 6 x berapa sama dengan 54.",
+  "total_duration": 11.37,
+  "media": {
+    "original_video": "/video-projects/z5l1b_mencongak_54_bagi_6/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l1b_mencongak_54_bagi_6/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l1b_mencongak_54_bagi_6/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 376715,
+    "light_mp4_bytes": 97689,
+    "light_webm_bytes": 79908,
+    "compression_ratio": "74.1%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 2.4,
+      "text": "Berapa lima puluh empat dibagi enam?",
+      "display_text": "Berapa 54 dibagi 6?",
+      "visual": "Menuliskan soal 54 dibagi 6 sama dengan titik-titik",
+      "audio_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 2.6,
+      "end": 7.8,
+      "text": "Ini sama saja dengan menanyakan enam kali berapa sama dengan lima puluh empat.",
+      "display_text": "Ini sama saja dengan menanyakan 6 kali berapa sama dengan 54.",
+      "visual": "Menuliskan relasi perkalian 6 x [ ] = 54",
+      "audio_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 8.5,
+      "end": 10.8,
+      "text": "Jawabnya adalah sembilan.",
+      "display_text": "Jawabnya adalah 9.",
+      "visual": "Menuliskan jawaban angka 9 di kotak jawaban",
+      "audio_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l1b_mencongak_54_bagi_6/segments/edge_seg_3_aligned.wav"
+    }
+  ]
+}

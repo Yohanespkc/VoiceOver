@@ -2,6 +2,32 @@
 
 Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/) dan penomoran versi semantik.
 
+## [2.6.0] - 2026-09-27
+
+### ✨ Ditambahkan
+* **Suite Video Dubbing Zona 5 Level 1 (Pembagian Dasar GASING - 3 Video)**:
+  * **Video 1a: `zona 5 level 1a.mp4` -> `z5l1a_pembagian_konkret_8_bagi_2`** (61.77s):
+    * Penjelasan pembagian konkret 8 benda dibagi adil ke dalam 2 kotak (tiap kotak 4 benda) dan mencongak dengan relasi perkalian $2 \times [\,] = 8$.
+    * 11 segmen ucapan fonetik lengkap dieksekusi dengan F5-TTS Trainer Marcia asli dan Edge-TTS Studio.
+    * Kompresi ringan: 2.8 MB -> 565 KB (MP4) / 532 KB (WebM), hemat **80.0%**.
+  * **Video 1b: `zona 5 level 1b.mp4` -> `z5l1b_mencongak_54_bagi_6`** (11.37s):
+    * Mencongak pembagian $54 : 6 = 9$ melalui relasi $6 \times [\,] = 54$.
+    * 3 segmen ucapan fonetik penuh tanpa mumbling.
+    * Kompresi ringan: 368 KB -> 95 KB (MP4) / 78 KB (WebM), hemat **74.2%**.
+  * **Video 1c: `zona 5 level 1c.mp4` -> `z5l1c_mencari_kotak_18_bagi_berapa`** (73.43s):
+    * Pembagian mencari banyaknya kotak ($18 : [\,] = 6$) dengan simulasi memasukkan 6 benda per kotak dan penegasan struktur perkalian ($3 \times 6 = 18$).
+    * 15 segmen ucapan fonetik lengkap dengan tempo presisi coretan visual.
+    * Kompresi ringan: 3.5 MB -> 675 KB (MP4) / 647 KB (WebM), hemat **80.9%**.
+* **Skrip Otomasi Sprint Zona 5**:
+  * Pembuatan [`execute_zona5_level1_sprint.py`](file:///Users/yohanessurya/Documents/Development/VoiceOver/execute_zona5_level1_sprint.py) yang mengorkestrasi 5 fase dubbing, ekstraksi thumbnail scrubber, perakitan master WAV 44.1kHz, dan sinkronisasi 4 arah.
+* **Sinkronisasi Multi-Tujuan Otomatis**:
+  * `Data VIdeo Marcia/` (`*_ringan.mp4`).
+  * `Hasil/videoMarcia/z5_pembagian/` (MP4 & WebM).
+  * `video_projects/` (terdaftar di Web Studio `/Proyek Video`).
+  * Repositori game Sacred Octagon: `/Users/yohanessurya/Documents/Development/so/web/public/assets/videos/z5l1/`.
+
+---
+
 ## [2.5.0] - 2026-09-27
 
 ### ✨ Ditambahkan

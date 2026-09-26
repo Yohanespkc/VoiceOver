@@ -1,0 +1,171 @@
+{
+  "id": "z5l1c_mencari_kotak_18_bagi_berapa",
+  "title": "Zona 5 Level 1c: Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6)",
+  "subtitle": "Pembagian 18 benda dengan isi tiap kotak 6 benda untuk mencari banyaknya kotak yang dibutuhkan.",
+  "total_duration": 73.43,
+  "media": {
+    "original_video": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 3628351,
+    "light_mp4_bytes": 691643,
+    "light_webm_bytes": 662791,
+    "compression_ratio": "80.9%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.0,
+      "text": "Delapan belas dibagi berapa sama dengan enam.",
+      "display_text": "18 dibagi berapa sama dengan 6.",
+      "visual": "Menuliskan soal 18 : [ ] = 6",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.3,
+      "end": 6.7,
+      "text": "Ini sama saja dengan menanyakan ada delapan belas benda,",
+      "display_text": "Ini sama saja dengan menanyakan ada 18 benda,",
+      "visual": "Menunjuk 18 lingkaran benda di papan",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 6.9,
+      "end": 12.2,
+      "text": "hendak dimasukkan ke dalam berapa kotak agar tiap kotak menerima enam benda.",
+      "display_text": "hendak dimasukkan ke dalam berapa kotak agar tiap kotak menerima 6 benda.",
+      "visual": "Menguraikan pertanyaan mencari banyaknya kotak jika tiap kotak berisi 6",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 12.6,
+      "end": 15.8,
+      "text": "Pertama kita isi dulu kotak pertama dengan enam benda.",
+      "display_text": "Pertama kita isi dulu kotak pertama dengan 6 benda.",
+      "visual": "Enam benda pertama dimasukkan ke kotak 1",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 16.0,
+      "end": 20.8,
+      "text": "Kemudian kotak kedua kita isi dengan enam benda, sudah dua belas.",
+      "display_text": "Kemudian kotak kedua kita isi dengan 6 benda, sudah 12.",
+      "visual": "Enam benda berikutnya dimasukkan ke kotak 2, terhitung 12 benda",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 21.3,
+      "end": 24.4,
+      "text": "Berikutnya kita isi lagi dengan enam benda.",
+      "display_text": "Berikutnya kita isi lagi dengan 6 benda.",
+      "visual": "Enam benda terakhir dimasukkan ke kotak 3",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 24.5,
+      "end": 26.8,
+      "text": "Ternyata sekarang totalnya sudah delapan belas.",
+      "display_text": "Ternyata sekarang totalnya sudah 18.",
+      "visual": "Semua 18 benda telah habis terbagi ke dalam kotak",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 26.8,
+      "end": 34.8,
+      "text": "Jadi di sini dibutuhkan tiga kotak. Jadi jawabnya delapan belas dibagi tiga sama dengan enam.",
+      "display_text": "Jadi di sini dibutuhkan 3 kotak. Jadi jawabnya 18 dibagi 3 sama dengan 6.",
+      "visual": "Menulis angka 3 di dalam kotak titik-titik (18 : 3 = 6)",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 35.2,
+      "end": 42.8,
+      "text": "Nah, sekarang untuk mencongak, pertanyaan yang relevan dengan delapan belas dibagi berapa sama dengan enam,",
+      "display_text": "Nah, sekarang untuk mencongak, pertanyaan yang relevan dengan 18 dibagi berapa sama dengan 6,",
+      "visual": "Menuliskan relasi mencongak di bawah soal pembagian",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 42.8,
+      "end": 48.8,
+      "text": "adalah berapa dikali enam sama dengan delapan belas.",
+      "display_text": "adalah berapa dikali 6 sama dengan 18.",
+      "visual": "Menulis [ ] x 6 = 18",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 49.2,
+      "end": 55.0,
+      "text": "Jadi jawabnya di sini adalah tiga, karena di sini kita menanyakan banyaknya kotak.",
+      "display_text": "Jadi jawabnya di sini adalah 3, karena di sini kita menanyakan banyaknya kotak.",
+      "visual": "Mengisi angka 3 pada perkalian (3 x 6 = 18)",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 55.2,
+      "end": 61.0,
+      "text": "Sekadar mengingatkan, dalam perkalian kalau kita punya tiga kali enam sama dengan delapan belas,",
+      "display_text": "Sekadar mengingatkan, dalam perkalian kalau kita punya 3 x 6 sama dengan 18,",
+      "visual": "Menegaskan kembali struktur perkalian 3 x 6 = 18",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 61.1,
+      "end": 64.6,
+      "text": "ini artinya tiga itu adalah banyaknya kotak.",
+      "display_text": "ini artinya 3 itu adalah banyaknya kotak.",
+      "visual": "Menunjuk angka 3 yang melambangkan banyaknya kotak",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_13_aligned.wav"
+    },
+    {
+      "id": 14,
+      "start": 64.7,
+      "end": 68.2,
+      "text": "Sedangkan enam ini adalah isi tiap kotak.",
+      "display_text": "Sedangkan 6 ini adalah isi tiap kotak.",
+      "visual": "Menunjuk angka 6 yang melambangkan isi tiap kotak",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_14_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_14_aligned.wav"
+    },
+    {
+      "id": 15,
+      "start": 68.4,
+      "end": 73.0,
+      "text": "Dan delapan belas ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
+      "display_text": "Dan 18 ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
+      "visual": "Menunjuk angka 18 yang melambangkan total seluruh benda",
+      "audio_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/f5_seg_15_aligned.wav",
+      "audio_edge": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/segments/edge_seg_15_aligned.wav"
+    }
+  ]
+}

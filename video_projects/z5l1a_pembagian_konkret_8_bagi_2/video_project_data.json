@@ -1,0 +1,131 @@
+{
+  "id": "z5l1a_pembagian_konkret_8_bagi_2",
+  "title": "Zona 5 Level 1a: Pembagian Konkret & Mencongak (8 : 2 = 4)",
+  "subtitle": "Konsep dasar pembagian konkret memasukkan 8 benda ke dalam 2 kotak dan mencongak 2 x berapa = 8.",
+  "total_duration": 61.77,
+  "media": {
+    "original_video": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 2899628,
+    "light_mp4_bytes": 578924,
+    "light_webm_bytes": 544535,
+    "compression_ratio": "80.0%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.4,
+      "text": "Bagaimana menghitung delapan dibagi dua?",
+      "display_text": "Bagaimana menghitung 8 dibagi 2?",
+      "visual": "Menampilkan soal 8 dibagi 2 dan dua kotak kosong",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.8,
+      "end": 6.0,
+      "text": "Kita lihat dulu konkretnya.",
+      "display_text": "Kita lihat dulu konkretnya.",
+      "visual": "Menunjuk deretan 8 benda konkret di atas kotak",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 6.2,
+      "end": 10.4,
+      "text": "Di sini ada delapan benda hendak dimasukkan ke dalam dua kotak.",
+      "display_text": "Di sini ada 8 benda hendak dimasukkan ke dalam 2 kotak.",
+      "visual": "Menghitung 8 benda dan menunjuk ke 2 kotak",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 10.7,
+      "end": 15.0,
+      "text": "Masing-masing kotak akan menerima berapa benda supaya adil.",
+      "display_text": "Masing-masing kotak akan menerima berapa benda supaya adil.",
+      "visual": "Menekankan pembagian adil pada kedua kotak",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 15.2,
+      "end": 23.7,
+      "text": "Jadi kalau kita lihat, ini kita masukkan ke sini, ini kita masukkan ke sini, ini kita masukkan ke sini, dan seterusnya.",
+      "display_text": "Jadi kalau kita lihat, ini kita masukkan ke sini, ini kita masukkan ke sini, ini kita masukkan ke sini, dan seterusnya.",
+      "visual": "Benda-benda berpindah satu demi satu masuk ke kotak kiri dan kanan bergantian",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 23.7,
+      "end": 30.7,
+      "text": "Dan ini yang terakhir di sini, kita lihat bahwa tiap kotak menerima empat benda.",
+      "display_text": "Dan ini yang terakhir di sini, kita lihat bahwa tiap kotak menerima 4 benda.",
+      "visual": "Benda terakhir masuk ke kotak dan masing-masing kotak berisi 4 benda",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 31.0,
+      "end": 33.5,
+      "text": "Jadi delapan dibagi dua adalah empat.",
+      "display_text": "Jadi 8 dibagi 2 adalah 4.",
+      "visual": "Menulis hasil 8 : 2 = 4",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 33.7,
+      "end": 41.2,
+      "text": "Untuk mencongak, delapan dibagi dua sama dengan berapa, itu sama saja dengan menanyakan dua kali berapa sama dengan delapan.",
+      "display_text": "Untuk mencongak, 8 dibagi 2 sama dengan berapa, itu sama saja dengan menanyakan 2 kali berapa sama dengan 8.",
+      "visual": "Menulis relasi mencongak 2 x [ ] = 8 di bawah soal pembagian",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 41.5,
+      "end": 48.8,
+      "text": "Karena di sini ada dua kotak, berapa isi tiap kotak supaya total benda ada delapan.",
+      "display_text": "Karena di sini ada 2 kotak, berapa isi tiap kotak supaya total benda ada 8.",
+      "visual": "Mengaitkan 2 kotak dan isi per kotak dengan total 8 benda",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 49.0,
+      "end": 56.0,
+      "text": "Jadi di sini kita mengubah pembagian ini menjadi soal perkalian.",
+      "display_text": "Jadi di sini kita mengubah pembagian ini menjadi soal perkalian.",
+      "visual": "Menegaskan transformasi pembagian ke perkalian",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 57.0,
+      "end": 61.0,
+      "text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
+      "display_text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
+      "visual": "Kesimpulan bahwa pembagian terasa mudah setelah menguasai perkalian",
+      "audio_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/segments/edge_seg_11_aligned.wav"
+    }
+  ]
+}
