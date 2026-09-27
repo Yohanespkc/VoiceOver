@@ -1,0 +1,151 @@
+{
+  "id": "z5l6_pembagian_pembagi_3digit_38273_bagi_121",
+  "title": "Zona 5 Level 6: Pembagian Bilangan Besar dengan Pembagi 3-Digit (38273 : 121 = 316 sisa 37)",
+  "subtitle": "Metode tabel perkalian bantu 121 untuk membagi bilangan 5 digit: 382 bagi 121 dapat 3 sisa 19, 197 bagi 121 dapat 1 sisa 76, 763 bagi 121 dapat 6 sisa 37.",
+  "total_duration": 105.0,
+  "media": {
+    "original_video": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 5184904,
+    "light_mp4_bytes": 959550,
+    "light_webm_bytes": 919429,
+    "compression_ratio": "81.5%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 5.2,
+      "text": "Sekarang kita hitung tiga puluh delapan ribu dua ratus tujuh puluh tiga dibagi seratus dua puluh satu.",
+      "display_text": "Sekarang kita hitung 38273 dibagi 121.",
+      "visual": "Menuliskan soal 38273 : 121",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 5.4,
+      "end": 9.0,
+      "text": "Tentu pertama kita bikin tabel perkalian seratus dua puluh satu.",
+      "display_text": "Pertama kita buat tabel perkalian 121.",
+      "visual": "Mulai menulis deret penjumlahan 121",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 9.1,
+      "end": 22.0,
+      "text": "Di sini seratus dua puluh satu tambah seratus dua puluh satu, dua ratus empat puluh dua, tambah seratus dua puluh satu, tiga ratus enam puluh tiga, tambah seratus dua puluh satu, empat ratus delapan puluh empat, dan seterusnya.",
+      "display_text": "121 + 121 = 242, + 121 = 363, + 121 = 484, dan seterusnya.",
+      "visual": "Menuliskan kelipatan 121 di sisi papan",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 22.0,
+      "end": 32.0,
+      "text": "Kemudian kita tulis di sini satu, yaitu menunjukkan satu kali seratus dua puluh satu adalah seratus dua puluh satu, ini dua, tiga, dan seterusnya.",
+      "display_text": "Tulis nomor pengali 1, 2, 3, dan seterusnya.",
+      "visual": "Memberi nomor pengali di samping kelipatan",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 32.3,
+      "end": 37.2,
+      "text": "Kemudian kita ambil tiga digit pertama, di sini dibagi seratus dua puluh satu.",
+      "display_text": "Ambil 3 digit pertama (382) dibagi 121.",
+      "visual": "Menandai 3 digit pertama 382",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 37.3,
+      "end": 43.8,
+      "text": "Cari seratus dua puluh satu kali berapa sama dengan tiga ratus delapan puluh dua atau mendekati tiga ratus delapan puluh dua.",
+      "display_text": "Cari kelipatan 121 mendekati 382.",
+      "visual": "Mencocokkan ke tabel perkalian",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 44.0,
+      "end": 46.8,
+      "text": "Nah, di sini yang tepat adalah tiga.",
+      "display_text": "Yang tepat adalah 3 (3 x 121 = 363).",
+      "visual": "Menulis angka 3 pada hasil",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 47.1,
+      "end": 54.4,
+      "text": "Sisanya adalah tiga ratus delapan puluh dua dikurang tiga ratus enam puluh tiga, yaitu sembilan belas.",
+      "display_text": "Sisa: 382 - 363 = 19.",
+      "visual": "Menghitung sisa 19",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 54.6,
+      "end": 59.5,
+      "text": "Nah, kemudian kita punya seratus sembilan puluh tujuh, kita bagi dengan seratus dua puluh satu.",
+      "display_text": "197 dibagi 121.",
+      "visual": "Menggabungkan sisa 19 dengan 7 menjadi 197",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 59.9,
+      "end": 68.0,
+      "text": "Tentu hasilnya satu, sisanya adalah seratus sembilan puluh tujuh dikurang seratus dua puluh satu, yaitu tujuh puluh enam.",
+      "display_text": "Dapat 1, sisa: 197 - 121 = 76.",
+      "visual": "Menulis angka 1 pada hasil dan menghitung sisa 76",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 68.2,
+      "end": 75.3,
+      "text": "Nah, sekarang kita punya tujuh ratus enam puluh tiga dibagi dengan seratus dua puluh satu, tentu hasilnya di sini enam.",
+      "display_text": "763 dibagi 121 adalah 6.",
+      "visual": "Menggabungkan 76 dengan 3 menjadi 763, hasil dapat 6",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 75.3,
+      "end": 84.0,
+      "text": "Kita tulis di sini enam. Nah, sisanya adalah tujuh ratus enam puluh tiga dikurang tujuh ratus dua puluh enam, yaitu tiga puluh tujuh.",
+      "display_text": "Tulis 6. Sisa: 763 - 726 = 37.",
+      "visual": "Menulis angka 6 pada hasil dan menghitung sisa 37",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 84.4,
+      "end": 96.0,
+      "text": "Jadi tiga puluh delapan ribu dua ratus tujuh puluh tiga kalau kita bagi dengan seratus dua puluh satu, hasilnya tiga ratus enam belas, sisanya tiga puluh tujuh.",
+      "display_text": "Jadi 38273 : 121 = 316 sisa 37.",
+      "visual": "Kesimpulan hasil akhir 38273 : 121 = 316 sisa 37",
+      "audio_f5": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z5l6_pembagian_pembagi_3digit_38273_bagi_121/segments/edge_seg_13_aligned.wav"
+    }
+  ]
+}

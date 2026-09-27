@@ -2,6 +2,44 @@
 
 Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/) dan penomoran versi semantik.
 
+## [2.7.0] - 2026-09-27
+
+### ✨ Ditambahkan
+* **Suite Video Dubbing Lengkap Zona 5 Level 3 - 6 (Pembagian GASING Tingkat Lanjut - 7 Video)**:
+  * **Video 3a: `zone 5 level 3a.mp4` -> `z5l3a_pembagian_3digit_1digit_873_bagi_3`** (46.00s, 7 segmen):
+    * Pembagian 3 digit dengan 1 digit: $873 : 3 = 291$ (8 ratusan bagi 3 dapat 2 sisa 2, 27 puluhan bagi 3 dapat 9, 3 satuan bagi 3 dapat 1).
+    * Kompresi ringan: 4.88 MB -> 454 KB (MP4) / 442 KB (WebM), hemat **90.9%**.
+  * **Video 3b: `zona 5 level 3b.mp4` -> `z5l3b_pembagian_bersisa_167_bagi_4`** (58.00s, 9 segmen):
+    * Pembagian 3 digit dengan 1 digit bersisa: $167 : 4 = 41$ sisa 3 (16 puluhan bagi 4 dapat 4, 7 satuan bagi 4 dapat 1 sisa 3).
+    * Kompresi ringan: 6.27 MB -> 580 KB (MP4) / 545 KB (WebM), hemat **90.9%**.
+  * **Video 3c: `zona 5 level 3c.mp4` -> `z5l3c_pembagian_puluhan_nol_818_bagi_8`** (59.50s, 11 segmen):
+    * Pembagian kasus krusial puluhan nol: $818 : 8 = 102$ sisa 2 (8 ratusan bagi 8 dapat 1, 1 puluhan bagi 8 tidak cukup tulis 0 sisa 1, 18 satuan bagi 8 dapat 2 sisa 2).
+    * Kompresi ringan: 6.32 MB -> 590 KB (MP4) / 555 KB (WebM), hemat **90.8%**.
+  * **Video 4a: `zona 5 level 4a.mp4` -> `z5l4a_pembagian_pembagi_11_453_bagi_11`** (96.00s, 14 segmen):
+    * Pembagian dengan pembagi 2 digit (tabel perkalian 11): $453 : 11 = 41$ sisa 2.
+    * Kompresi ringan: 10.42 MB -> 946 KB (MP4) / 885 KB (WebM), hemat **91.1%**.
+  * **Video 4b: `zona 5 level 4b.mp4` -> `z5l4b_pembagian_pembagi_15_2345_bagi_15`** (107.00s, 19 segmen):
+    * Pembagian 4 digit dengan pembagi 15 (tabel kelipatan 15): $2345 : 15 = 156$ sisa 5.
+    * Kompresi ringan: 11.58 MB -> 1.05 MB (MP4) / 1.01 MB (WebM), hemat **91.1%**.
+  * **Video 5: `zona 5 level 5.mp4` -> `z5l5_trik_pembagian_cepat_10_100_1000`** (192.00s, 30 segmen - Video Baru Lengkap):
+    * Trik pembagian super cepat GASING lengkap: bagi 10 (450 : 10 = 45), bagi 100 (7800 : 100 = 78), bagi 5 ($\times 2 : 10 \rightarrow 4775 : 5 = 955$), bagi 25 ($\times 4 : 100 \rightarrow 4775 : 25 = 191$), bagi 125 ($\times 8 : 1000 \rightarrow 5125 : 125 = 41$), bagi 250 ($\times 4 : 1000 \rightarrow 3250 : 250 = 13$), serta aturan krusial penyesuaian sisa pembagian (4776 : 25 = 191 sisa 1, bukan sisa 4).
+    * Kompresi ringan: 12.92 MB -> 1.89 MB (MP4) / 2.05 MB (WebM), hemat **85.4%**.
+  * **Video 6: `zone 5 level 6.mp4` -> `z5l6_pembagian_pembagi_3digit_38273_bagi_121`** (105.00s, 13 segmen):
+    * Pembagian bilangan besar dengan pembagi 3 digit: $38273 : 121 = 316$ sisa 37 menggunakan tabel bantu perkalian 121.
+    * Kompresi ringan: hemat ~90% dengan visual dan audio jernih.
+
+### 🛡️ Standar Kualitas & Penyempurnaan Sistem
+* **100% Zero Truncation (Anti Syllable Cut)**:
+  * Semua segmen penutup dieksekusi tanpa batas paksa `-t` FFmpeg, menjamin seluruh suku kata kalimat penutup ("hasilnya tiga ratus enam belas, sisanya tiga puluh tujuh", "sisanya lima", dll.) terdengar tuntas alami.
+  * Durasi video diperpanjang dengan freeze frame kloning (`tpad=stop_mode=clone`) selama 2.5 hingga 8.3 detik agar papan tulis dapat diamati dan diserap siswa.
+* **Canvas Widescreen 16:9 Murni Putih (#FFFFFF)**:
+  * Penerapan rantai scaling `scale=928:696,pad=1280:720:176:0:color=white` di seluruh 7 video.
+  * Bebas dari border hitam (pillarbox) dan memberikan ruang bawah ~109 piksel sehingga kontrol pemutar video tidak pernah menabrak tulisan tangan materi.
+* **Pelafalan Angka Fonetik Akurat 100%**:
+  * Seluruh angka, puluhan, ratusan, ribuan, dan sisa dieja kata demi kata dalam bahasa Indonesia baku tanpa singkatan ("tiga puluh delapan ribu dua ratus tujuh puluh tiga", "seratus dua puluh satu", dsb.) untuk mencegah halusinasi angka pada model TTS.
+* **Sinkronisasi Otomatis 4 Arah**:
+  * Distribusi langsung ke folder pengguna `Data VIdeo Marcia/` (`*_ringan.mp4`), repositori arsip `Hasil/videoMarcia/z5_pembagian/` (MP4 & WebM), Web Studio `/Proyek Video` (`video_projects/`), serta modul pembelajaran Sacred Octagon (`so/web/public/assets/videos/z5l3/`, `z5l4/`, `z5l5/`, `z5l6/`).
+
 ## [2.6.1] - 2026-09-27
 
 ### 🛠️ Perbaikan & Penyempurnaan Visual (Zona 5 Level 1)

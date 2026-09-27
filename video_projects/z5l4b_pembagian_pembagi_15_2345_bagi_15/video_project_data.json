@@ -1,0 +1,211 @@
+{
+  "id": "z5l4b_pembagian_pembagi_15_2345_bagi_15",
+  "title": "Zona 5 Level 4b: Pembagian 4-Digit dengan Pembagi 15 (2345 : 15 = 156 sisa 5)",
+  "subtitle": "Metode tabel bantu kelipatan 15 untuk pembagian 4 digit: 23 ratusan bagi 15 dapat 1 sisa 8, 84 puluhan bagi 15 dapat 5 sisa 9, 95 satuan bagi 15 dapat 6 sisa 5.",
+  "total_duration": 107.0,
+  "media": {
+    "original_video": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 5461361,
+    "light_mp4_bytes": 994987,
+    "light_webm_bytes": 975065,
+    "compression_ratio": "81.8%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.8,
+      "text": "Kita akan hitung dua ribu tiga ratus empat puluh lima dibagi lima belas.",
+      "display_text": "Kita akan hitung 2345 dibagi 15.",
+      "visual": "Menuliskan soal 2345 : 15",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.9,
+      "end": 7.8,
+      "text": "Langkah pertama adalah kita buat dulu tabel perkalian lima belas.",
+      "display_text": "Langkah pertama: buat tabel perkalian 15.",
+      "visual": "Mulai membuat tabel kelipatan 15",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.9,
+      "end": 11.0,
+      "text": "Caranya ada lima belas ditambah lima belas, tiga puluh.",
+      "display_text": "15 + 15 = 30.",
+      "visual": "Menulis 15 dan 30",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 11.2,
+      "end": 13.8,
+      "text": "Kemudian kita tambahkan lima belas, empat puluh lima.",
+      "display_text": "+ 15 = 45.",
+      "visual": "Menulis 45",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 14.0,
+      "end": 18.0,
+      "text": "Tambahkan lima belas lagi, enam puluh, dan seterusnya.",
+      "display_text": "+ 15 lagi = 60, dan seterusnya.",
+      "visual": "Menulis 60 dan melanjutkan deret",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 18.3,
+      "end": 23.2,
+      "text": "Kemudian kita tulis di sini satu, yang menunjukkan satu kali lima belas sama dengan lima belas.",
+      "display_text": "Tulis 1 (1 x 15 = 15).",
+      "visual": "Memberi nomor pengali 1",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 23.3,
+      "end": 26.0,
+      "text": "Ini dua, kemudian tiga.",
+      "display_text": "Ini 2, kemudian 3.",
+      "visual": "Memberi nomor 2 dan 3",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 26.4,
+      "end": 29.8,
+      "text": "Ini empat kali lima belas sama dengan enam puluh.",
+      "display_text": "4 x 15 = 60.",
+      "visual": "Memberi nomor 4 di samping 60",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 30.2,
+      "end": 34.6,
+      "text": "Lima kali lima belas sama dengan tujuh puluh lima, dan seterusnya.",
+      "display_text": "5 x 15 = 75, dan seterusnya.",
+      "visual": "Melengkapi tabel kelipatan 15",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 34.8,
+      "end": 42.5,
+      "text": "Kemudian kita ambil di sini dua puluh tiga ratusan. Kita bagi dengan lima belas tentu satu, sisanya tentu delapan.",
+      "display_text": "23 ratusan bagi 15 dapat 1, sisa 8.",
+      "visual": "Menulis 1 pada ratusan hasil dan sisa 8",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 42.8,
+      "end": 51.8,
+      "text": "Nah, ini adalah ratusan. Jadi kita punya sisa delapan ratusan akan bergabung dengan empat puluhan membentuk delapan puluh empat puluhan.",
+      "display_text": "Sisa 8 ratusan dan 4 puluhan membentuk 84 puluhan.",
+      "visual": "Menggabungkan sisa 8 dengan 4 menjadi 84",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 52.1,
+      "end": 61.8,
+      "text": "Delapan puluh empat puluhan kalau kita bagi lima belas, cari bilangan yang dikalikan lima belas mendekati delapan puluh empat, jawabannya adalah tujuh puluh lima.",
+      "display_text": "84 bagi 15: cari kelipatan mendekati 84, yaitu 75.",
+      "visual": "Menunjuk angka 75 pada tabel",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 62.2,
+      "end": 66.0,
+      "text": "Jadi di sini lima, berarti puluhannya ada lima.",
+      "display_text": "Jadi di sini 5 (puluhan ada 5).",
+      "visual": "Menulis angka 5 pada puluhan hasil",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_13_aligned.wav"
+    },
+    {
+      "id": 14,
+      "start": 66.2,
+      "end": 71.0,
+      "text": "Nah, kemudian sisanya berapa? Delapan puluh empat dikurang tujuh puluh lima, yaitu sembilan.",
+      "display_text": "Sisa: 84 - 75 = 9.",
+      "visual": "Menghitung sisa 9",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_14_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_14_aligned.wav"
+    },
+    {
+      "id": 15,
+      "start": 71.7,
+      "end": 80.0,
+      "text": "Berikutnya sembilan puluhan ini akan bergabung dengan lima satuan menjadi sembilan puluh lima satuan.",
+      "display_text": "9 puluhan dan 5 satuan menjadi 95 satuan.",
+      "visual": "Menggabungkan sisa 9 dengan 5 menjadi 95",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_15_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_15_aligned.wav"
+    },
+    {
+      "id": 16,
+      "start": 80.3,
+      "end": 87.5,
+      "text": "Kalau kita bagi lima belas, hasilnya adalah di sini, yaitu enam satuan. Sisanya berapa?",
+      "display_text": "95 bagi 15 dapat 6 satuan. Sisanya berapa?",
+      "visual": "Menulis 6 pada satuan hasil",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_16_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_16_aligned.wav"
+    },
+    {
+      "id": 17,
+      "start": 87.9,
+      "end": 93.3,
+      "text": "Tentu sembilan puluh lima dikurang sembilan puluh, yaitu sisanya adalah lima.",
+      "display_text": "95 - 90 = sisa 5.",
+      "visual": "Menghitung sisa 5",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_17_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_17_aligned.wav"
+    },
+    {
+      "id": 18,
+      "start": 93.5,
+      "end": 101.0,
+      "text": "Jadi dua ribu tiga ratus empat puluh lima kalau kita bagi lima belas, hasilnya adalah seratus lima puluh enam,",
+      "display_text": "Jadi 2345 : 15 = 156,",
+      "visual": "Menegaskan hasil 156",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_18_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_18_aligned.wav"
+    },
+    {
+      "id": 19,
+      "start": 101.2,
+      "end": 103.6,
+      "text": "sisanya lima.",
+      "display_text": "sisanya 5.",
+      "visual": "Menuliskan keterangan sisa 5",
+      "audio_f5": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/f5_seg_19_aligned.wav",
+      "audio_edge": "/video-projects/z5l4b_pembagian_pembagi_15_2345_bagi_15/segments/edge_seg_19_aligned.wav"
+    }
+  ]
+}

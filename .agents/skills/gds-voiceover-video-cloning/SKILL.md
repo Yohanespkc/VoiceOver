@@ -189,6 +189,13 @@ Gunakan runner script otomatis [`sprint_video_dubbing.sh`](file:///Users/yohanes
 | **`z5l1a_pembagian_konkret_8_bagi_2`** | Z5L1a: Pembagian Konkret & Mencongak (8 : 2 = 4) | 64.50s | Guru Asli | Guru Marcia | 11 Segmen (16:9 Putih) | `z5l1a_pembagian_8_bagi_2_marcia` |
 | **`z5l1b_mencongak_54_bagi_6`** | Z5L1b: Mencongak Pembagian (54 : 6 = 9) | 14.00s | Guru Asli | Guru Marcia | 3 Segmen (16:9 Putih) | `z5l1b_mencongak_54_bagi_6_marcia` |
 | **`z5l1c_mencari_kotak_18_bagi_berapa`** | Z5L1c: Pembagian Mencari Kotak (18 : [ ] = 6) | 77.00s | Guru Asli | Guru Marcia | 15 Segmen (16:9 Putih) | `z5l1c_mencari_kotak_18_bagi_berapa_marcia` |
+| **`z5l3a_pembagian_3digit_1digit_873_bagi_3`** | Z5L3a: Pembagian 3D : 1D (873 : 3 = 291) | 46.00s | Guru Asli | Guru Marcia | 7 Segmen (16:9 Putih) | `z5l3a_pembagian_873_bagi_3_marcia` |
+| **`z5l3b_pembagian_bersisa_167_bagi_4`** | Z5L3b: Pembagian 3D : 1D Bersisa (167 : 4 = 41 sisa 3) | 58.00s | Guru Asli | Guru Marcia | 9 Segmen (16:9 Putih) | `z5l3b_pembagian_167_bagi_4_marcia` |
+| **`z5l3c_pembagian_puluhan_nol_818_bagi_8`** | Z5L3c: Pembagian Puluhan Nol (818 : 8 = 102 sisa 2) | 59.50s | Guru Asli | Guru Marcia | 11 Segmen (16:9 Putih) | `z5l3c_pembagian_818_bagi_8_marcia` |
+| **`z5l4a_pembagian_pembagi_11_453_bagi_11`** | Z5L4a: Pembagi 2D / Tabel 11 (453 : 11 = 41 sisa 2) | 96.00s | Guru Asli | Guru Marcia | 14 Segmen (16:9 Putih) | `z5l4a_pembagian_453_bagi_11_marcia` |
+| **`z5l4b_pembagian_pembagi_15_2345_bagi_15`** | Z5L4b: Pembagian 4D / Tabel 15 (2345 : 15 = 156 sisa 5) | 107.00s | Guru Asli | Guru Marcia | 19 Segmen (16:9 Putih) | `z5l4b_pembagian_2345_bagi_15_marcia` |
+| **`z5l5_trik_pembagian_cepat_10_100_1000`** | Z5L5: Trik Cepat 10, 100, 5, 25, 125, 250 & Sisa | 192.00s | Guru Asli | Guru Marcia | 30 Segmen (16:9 Putih) | `z5l5_trik_pembagian_cepat_marcia` |
+| **`z5l6_pembagian_pembagi_3digit_38273_bagi_121`** | Z5L6: Pembagi 3D / Tabel 121 (38273 : 121 = 316 sisa 37) | 105.00s | Guru Asli | Guru Marcia | 13 Segmen (16:9 Putih) | `z5l6_pembagian_38273_bagi_121_marcia` |
 
 ---
 

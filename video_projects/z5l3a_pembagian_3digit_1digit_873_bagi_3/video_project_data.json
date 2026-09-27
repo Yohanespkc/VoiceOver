@@ -1,0 +1,101 @@
+{
+  "id": "z5l3a_pembagian_3digit_1digit_873_bagi_3",
+  "title": "Zona 5 Level 3a: Pembagian 3-Digit dengan 1-Digit (873 : 3 = 291)",
+  "subtitle": "Pembagian 3 digit dengan 1 digit secara konkret dan nilai tempat: 800an bagi 3 sisa 200an, 27 puluhan bagi 3 dapat 90an, 3 satuan bagi 3 dapat 1.",
+  "total_duration": 46.0,
+  "media": {
+    "original_video": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 1482836,
+    "light_mp4_bytes": 378621,
+    "light_webm_bytes": 319018,
+    "compression_ratio": "74.5%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.5,
+      "text": "Berapa delapan ratus tujuh puluh tiga dibagi tiga?",
+      "display_text": "Berapa 873 dibagi 3?",
+      "visual": "Menampilkan soal 873 : 3",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.6,
+      "end": 6.8,
+      "text": "Di sini ratusannya ada delapan.",
+      "display_text": "Di sini ratusannya ada 8.",
+      "visual": "Menunjuk angka 8 pada posisi ratusan",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 7.0,
+      "end": 13.8,
+      "text": "Delapan ratusan ini kalau kita bagi tiga, tentu hasilnya dua ratusan, tapi masih sisa dua ratusan.",
+      "display_text": "8 ratusan bagi 3 hasilnya 2 ratusan, sisa 2 ratusan.",
+      "visual": "Menulis angka 2 pada hasil ratusan dan sisa 2",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 13.9,
+      "end": 21.0,
+      "text": "Nah, kemudian dua ratusan ini dengan tujuh puluhan akan membentuk dua puluh tujuh puluhan.",
+      "display_text": "2 ratusan dan 7 puluhan membentuk 27 puluhan.",
+      "visual": "Menggabungkan sisa 2 dengan angka 7 menjadi 27 puluhan",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 21.2,
+      "end": 26.5,
+      "text": "Dua puluh tujuh puluhan ini kalau dibagi tiga, hasilnya adalah sembilan puluhan.",
+      "display_text": "27 puluhan dibagi 3 adalah 9 puluhan.",
+      "visual": "Menulis angka 9 pada posisi puluhan hasil",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 26.8,
+      "end": 31.8,
+      "text": "Nah, kemudian sisanya adalah nol puluhan.",
+      "display_text": "Sisanya adalah 0 puluhan.",
+      "visual": "Menunjukkan sisa pembagian 27 : 3 adalah 0",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 32.0,
+      "end": 37.8,
+      "text": "Kemudian nol puluhan dan tiga satuan membentuk tiga satuan, kalau dibagi tiga hasilnya adalah satu satuan.",
+      "display_text": "3 satuan dibagi 3 hasilnya 1 satuan.",
+      "visual": "Menulis angka 1 pada posisi satuan hasil",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 38.0,
+      "end": 43.5,
+      "text": "Sehingga delapan ratus tujuh puluh tiga dibagi tiga adalah dua ratus sembilan puluh satu.",
+      "display_text": "Sehingga 873 dibagi 3 adalah 291.",
+      "visual": "Kesimpulan hasil akhir 873 : 3 = 291",
+      "audio_f5": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l3a_pembagian_3digit_1digit_873_bagi_3/segments/edge_seg_8_aligned.wav"
+    }
+  ]
+}

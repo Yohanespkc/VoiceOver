@@ -63,6 +63,13 @@ Proyek ini telah dilengkapi **sistem penghematan GPU otomatis** dan **metode 1 b
 | **Z5L1a** | Pembagian Konkret & Mencongak (8 : 2 = 4) | 64.50s | Guru Marcia | 11 Segmen (16:9 Canvas Putih) | `z5l1a_pembagian_8_bagi_2_marcia` |
 | **Z5L1b** | Mencongak Pembagian (54 : 6 = 9) | 14.00s | Guru Marcia | 3 Segmen (16:9 Canvas Putih) | `z5l1b_mencongak_54_bagi_6_marcia` |
 | **Z5L1c** | Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6) | 77.00s | Guru Marcia | 15 Segmen (16:9 Canvas Putih) | `z5l1c_mencari_kotak_18_bagi_berapa_marcia` |
+| **Z5L3a** | Pembagian 3D : 1D (873 : 3 = 291) | 46.00s | Guru Marcia | 7 Segmen (16:9 Canvas Putih) | `z5l3a_pembagian_873_bagi_3_marcia` |
+| **Z5L3b** | Pembagian 3D : 1D Bersisa (167 : 4 = 41 sisa 3) | 58.00s | Guru Marcia | 9 Segmen (16:9 Canvas Putih) | `z5l3b_pembagian_167_bagi_4_marcia` |
+| **Z5L3c** | Pembagian Kasus Puluhan Nol (818 : 8 = 102 sisa 2) | 59.50s | Guru Marcia | 11 Segmen (16:9 Canvas Putih) | `z5l3c_pembagian_818_bagi_8_marcia` |
+| **Z5L4a** | Pembagian Pembagi 2D / Tabel 11 (453 : 11 = 41 sisa 2) | 96.00s | Guru Marcia | 14 Segmen (16:9 Canvas Putih) | `z5l4a_pembagian_453_bagi_11_marcia` |
+| **Z5L4b** | Pembagian 4D / Tabel 15 (2345 : 15 = 156 sisa 5) | 107.00s | Guru Marcia | 19 Segmen (16:9 Canvas Putih) | `z5l4b_pembagian_2345_bagi_15_marcia` |
+| **Z5L5** | Trik Cepat Pembagian 10, 100, 5, 25, 125, 250 & Penentuan Sisa | 192.00s | Guru Marcia | 30 Segmen (16:9 Canvas Putih) | `z5l5_trik_pembagian_cepat_marcia` |
+| **Z5L6** | Pembagian Pembagi 3D / Tabel 121 (38273 : 121 = 316 sisa 37) | 105.00s | Guru Marcia | 13 Segmen (16:9 Canvas Putih) | `z5l6_pembagian_38273_bagi_121_marcia` |
 
 ---
 

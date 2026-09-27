@@ -1,0 +1,151 @@
+{
+  "id": "z5l3b_pembagian_bersisa_167_bagi_4",
+  "title": "Zona 5 Level 3b: Pembagian 3-Digit Bersisa (167 : 4 = 41 sisa 3)",
+  "subtitle": "Pembagian 3 digit dengan 1 digit yang menghasilkan sisa: 16 puluhan bagi 4 dapat 4 puluhan, 7 satuan bagi 4 dapat 1 satuan sisa 3.",
+  "total_duration": 58.0,
+  "media": {
+    "original_video": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 2000981,
+    "light_mp4_bytes": 457937,
+    "light_webm_bytes": 399251,
+    "compression_ratio": "77.1%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.0,
+      "text": "Berapa seratus enam puluh tujuh dibagi empat?",
+      "display_text": "Berapa 167 dibagi 4?",
+      "visual": "Menuliskan soal 167 : 4",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.2,
+      "end": 10.5,
+      "text": "Di sini kita buat dulu nilai tempat hasilnya, yaitu ratusan, puluhan, dan satuan.",
+      "display_text": "Buat nilai tempat: ratusan, puluhan, satuan.",
+      "visual": "Menulis label R P S di atas tempat jawaban",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 10.8,
+      "end": 13.4,
+      "text": "Kita lihat di sini ratusannya.",
+      "display_text": "Kita lihat ratusannya.",
+      "visual": "Menunjuk angka 1 pada ratusan",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 13.6,
+      "end": 17.5,
+      "text": "Ratusannya satu, dibagi empat adalah nol.",
+      "display_text": "1 dibagi 4 adalah 0.",
+      "visual": "Menulis 0 pada ratusan hasil",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 17.8,
+      "end": 20.0,
+      "text": "Sisanya adalah satu ratusan.",
+      "display_text": "Sisanya 1 ratusan.",
+      "visual": "Menulis sisa 1 di samping ratusan",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 20.2,
+      "end": 25.2,
+      "text": "Nah, satu ratusan ini akan bergabung dengan enam puluhan membentuk enam belas puluhan.",
+      "display_text": "1 ratusan dan 6 puluhan membentuk 16 puluhan.",
+      "visual": "Menggabungkan sisa 1 dengan 6 menjadi 16 puluhan",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 25.4,
+      "end": 29.2,
+      "text": "Enam belas puluhan dibagi empat adalah empat puluhan.",
+      "display_text": "16 puluhan dibagi 4 adalah 4 puluhan.",
+      "visual": "Menulis angka 4 pada puluhan hasil",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 29.4,
+      "end": 32.6,
+      "text": "Sisanya adalah nol puluhan.",
+      "display_text": "Sisanya 0 puluhan.",
+      "visual": "Menunjukkan sisa 0 puluhan",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 32.9,
+      "end": 38.0,
+      "text": "Nol puluhan ini akan bergabung dengan tujuh satuan membentuk tujuh satuan.",
+      "display_text": "0 puluhan dan 7 satuan membentuk 7 satuan.",
+      "visual": "Menunjuk angka 7 pada satuan",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 38.2,
+      "end": 42.2,
+      "text": "Dan tujuh satuan dibagi empat adalah satu satuan.",
+      "display_text": "7 satuan dibagi 4 adalah 1 satuan.",
+      "visual": "Menulis angka 1 pada satuan hasil",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 42.5,
+      "end": 45.8,
+      "text": "Sisanya adalah tiga satuan.",
+      "display_text": "Sisanya 3 satuan.",
+      "visual": "Menulis sisa 3",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 46.0,
+      "end": 51.0,
+      "text": "Sehingga seratus enam puluh tujuh dibagi empat adalah empat puluh satu,",
+      "display_text": "Sehingga 167 dibagi 4 adalah 41,",
+      "visual": "Menegaskan hasil 41",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 51.5,
+      "end": 55.2,
+      "text": "sisanya tiga.",
+      "display_text": "sisanya 3.",
+      "visual": "Menuliskan keterangan sisa 3",
+      "audio_f5": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z5l3b_pembagian_bersisa_167_bagi_4/segments/edge_seg_13_aligned.wav"
+    }
+  ]
+}

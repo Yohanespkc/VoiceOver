@@ -1,0 +1,101 @@
+{
+  "id": "z5l3c_pembagian_puluhan_nol_818_bagi_8",
+  "title": "Zona 5 Level 3c: Pembagian Puluhan Nol (818 : 8 = 102 sisa 2)",
+  "subtitle": "Pembagian 3 digit yang menghasilkan angka nol di posisi puluhan: 8 ratusan bagi 8 dapat 1, 1 puluhan bagi 8 dapat 0 sisa 1, 18 satuan bagi 8 dapat 2 sisa 2.",
+  "total_duration": 59.5,
+  "media": {
+    "original_video": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 2067646,
+    "light_mp4_bytes": 499954,
+    "light_webm_bytes": 427293,
+    "compression_ratio": "75.8%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 3.2,
+      "text": "Delapan ratus delapan belas dibagi delapan.",
+      "display_text": "818 dibagi 8.",
+      "visual": "Menuliskan soal 818 : 8",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 3.4,
+      "end": 10.2,
+      "text": "Pertama kita buat dulu nilai tempat hasilnya, yaitu ratusan, puluhan, dan satuan.",
+      "display_text": "Buat nilai tempat: ratusan, puluhan, satuan.",
+      "visual": "Menulis nilai tempat R P S",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 10.6,
+      "end": 19.4,
+      "text": "Lalu kita bagi ratusannya. Delapan ratusan dibagi delapan adalah satu ratusan, sisanya nol ratusan.",
+      "display_text": "8 ratusan bagi 8 adalah 1 ratusan, sisa 0.",
+      "visual": "Menulis 1 pada ratusan hasil",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 19.6,
+      "end": 24.8,
+      "text": "Nah, kemudian nol ratusan dan satu puluhan ini akan bergabung menjadi satu puluhan.",
+      "display_text": "0 ratusan dan 1 puluhan menjadi 1 puluhan.",
+      "visual": "Menunjuk 1 puluhan",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 24.8,
+      "end": 33.2,
+      "text": "Kemudian satu puluhan ini dibagi delapan adalah nol puluhan, sisanya satu puluhan.",
+      "display_text": "1 puluhan bagi 8 adalah 0 puluhan, sisa 1 puluhan.",
+      "visual": "Menulis 0 pada puluhan hasil dan sisa 1",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 33.8,
+      "end": 39.0,
+      "text": "Satu puluhan ini akan bergabung dengan delapan satuan membentuk delapan belas satuan.",
+      "display_text": "1 puluhan dan 8 satuan membentuk 18 satuan.",
+      "visual": "Menggabungkan sisa 1 dengan 8 menjadi 18 satuan",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 39.3,
+      "end": 46.8,
+      "text": "Delapan belas satuan dibagi delapan adalah dua satuan, sisanya dua satuan.",
+      "display_text": "18 satuan bagi 8 adalah 2 satuan, sisa 2 satuan.",
+      "visual": "Menulis angka 2 pada satuan hasil dan sisa 2",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 47.0,
+      "end": 56.2,
+      "text": "Jadi delapan ratus delapan belas kalau kita bagi delapan, hasilnya adalah seratus dua, sisanya dua.",
+      "display_text": "Jadi 818 dibagi 8 hasilnya 102, sisa 2.",
+      "visual": "Kesimpulan hasil akhir 818 : 8 = 102 sisa 2",
+      "audio_f5": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l3c_pembagian_puluhan_nol_818_bagi_8/segments/edge_seg_8_aligned.wav"
+    }
+  ]
+}

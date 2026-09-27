@@ -1,0 +1,321 @@
+{
+  "id": "z5l5_trik_pembagian_cepat_10_100_1000",
+  "title": "Zona 5 Level 5: Trik Pembagian Cepat (10, 100, 5, 25, 125, 250 & Penentuan Sisa)",
+  "subtitle": "Trik cerdas pembagian cepat GASING: bagi 10 & 100 dengan coret nol, bagi 5 (x2 :10), bagi 25 (x4 :100), bagi 125 (x8 :1000), bagi 250 (x4 :1000), serta rumus krusial penyesuaian sisa pembagian.",
+  "total_duration": 192.0,
+  "media": {
+    "original_video": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/clip_original.mp4",
+    "dubbed_video_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/video_dubbed_marcia_f5_ringan.mp4",
+    "dubbed_video_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/video_dubbed_marcia_edge_ringan.mp4",
+    "dubbed_audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/master_dubbing_f5.mp3",
+    "dubbed_audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/master_dubbing_edge.mp3"
+  },
+  "stats": {
+    "original_bytes": 13547762,
+    "light_mp4_bytes": 1978119,
+    "light_webm_bytes": 2153422,
+    "compression_ratio": "85.4%"
+  },
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 4.6,
+      "text": "Sekarang kita lihat beberapa soal yang kita bisa kerjakan dengan cepat.",
+      "display_text": "Trik Pembagian Cepat GASING.",
+      "visual": "Menampilkan deretan soal trik cepat",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_1_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_1_aligned.wav"
+    },
+    {
+      "id": 2,
+      "start": 4.7,
+      "end": 9.0,
+      "text": "Yang pertama pembagian dengan sepuluh. Empat ratus lima puluh dibagi sepuluh.",
+      "display_text": "1. Pembagian dengan 10: 450 : 10.",
+      "visual": "Menunjuk soal 450 : 10",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_2_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_2_aligned.wav"
+    },
+    {
+      "id": 3,
+      "start": 9.1,
+      "end": 13.5,
+      "text": "Nah, di sini nolnya kita bisa coret, yaitu kita bagi sepuluh, ini kita bagi sepuluh.",
+      "display_text": "Coret nol (bagi 10 di kedua sisi).",
+      "visual": "Mencoret angka nol pada 450 dan 10",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_3_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_3_aligned.wav"
+    },
+    {
+      "id": 4,
+      "start": 13.6,
+      "end": 17.4,
+      "text": "Sama dengan empat puluh lima dibagi satu, yaitu empat puluh lima.",
+      "display_text": "= 45 : 1 = 45.",
+      "visual": "Menuliskan hasil 45",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_4_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_4_aligned.wav"
+    },
+    {
+      "id": 5,
+      "start": 18.4,
+      "end": 23.2,
+      "text": "Kemudian tujuh ribu delapan ratus dibagi seratus, ini nolnya kita coret.",
+      "display_text": "2. Pembagian dengan 100: 7800 : 100.",
+      "visual": "Menunjuk soal 7800 : 100",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_5_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_5_aligned.wav"
+    },
+    {
+      "id": 6,
+      "start": 23.3,
+      "end": 27.9,
+      "text": "Nolnya kita coret, kita peroleh tujuh puluh delapan dibagi satu, yaitu tujuh puluh delapan.",
+      "display_text": "Coret dua nol = 78.",
+      "visual": "Mencoret dua angka nol dan menulis hasil 78",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_6_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_6_aligned.wav"
+    },
+    {
+      "id": 7,
+      "start": 27.9,
+      "end": 35.2,
+      "text": "Kemudian empat ribu tujuh ratus tujuh puluh lima dibagi lima, ini sama saja dengan empat ribu tujuh ratus tujuh puluh lima,",
+      "display_text": "3. Pembagian dengan 5: 4775 : 5.",
+      "visual": "Menunjuk soal 4775 : 5",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_7_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_7_aligned.wav"
+    },
+    {
+      "id": 8,
+      "start": 35.5,
+      "end": 38.8,
+      "text": "dikali dua, kemudian kita bagi dengan sepuluh.",
+      "display_text": "= (4775 x 2) : 10.",
+      "visual": "Menuliskan rumus x 2 lalu : 10",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_8_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_8_aligned.wav"
+    },
+    {
+      "id": 9,
+      "start": 38.9,
+      "end": 44.8,
+      "text": "Hasilnya adalah di sini sembilan ribu lima ratus lima puluh dibagi sepuluh.",
+      "display_text": "= 9550 : 10.",
+      "visual": "Menulis hasil perkalian 9550",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_9_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_9_aligned.wav"
+    },
+    {
+      "id": 10,
+      "start": 45.0,
+      "end": 50.5,
+      "text": "Hasilnya nolnya kita coret, yaitu kita dapatkan sembilan ratus lima puluh lima.",
+      "display_text": "Coret nol = 955.",
+      "visual": "Mencoret nol dan menulis hasil akhir 955",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_10_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_10_aligned.wav"
+    },
+    {
+      "id": 11,
+      "start": 52.8,
+      "end": 57.0,
+      "text": "Sekarang empat ribu tujuh ratus tujuh puluh lima dibagi dua puluh lima, ini sama saja.",
+      "display_text": "4. Pembagian dengan 25: 4775 : 25.",
+      "visual": "Menunjuk soal 4775 : 25",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_11_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_11_aligned.wav"
+    },
+    {
+      "id": 12,
+      "start": 58.0,
+      "end": 63.0,
+      "text": "Empat ribu tujuh ratus tujuh puluh lima dikali empat dibagi dengan seratus.",
+      "display_text": "= (4775 x 4) : 100.",
+      "visual": "Menuliskan rumus x 4 lalu : 100",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_12_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_12_aligned.wav"
+    },
+    {
+      "id": 13,
+      "start": 63.3,
+      "end": 69.8,
+      "text": "Hasilnya adalah sembilan belas ribu seratus, kemudian kita bagi seratus.",
+      "display_text": "= 19100 : 100.",
+      "visual": "Menulis hasil perkalian 19100",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_13_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_13_aligned.wav"
+    },
+    {
+      "id": 14,
+      "start": 70.0,
+      "end": 75.2,
+      "text": "Nah, nolnya ini dua kita coret, kita dapatkan seratus sembilan puluh satu.",
+      "display_text": "Coret 2 nol = 191.",
+      "visual": "Mencoret dua nol dan menulis hasil 191",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_14_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_14_aligned.wav"
+    },
+    {
+      "id": 15,
+      "start": 76.0,
+      "end": 85.5,
+      "text": "Berikutnya lima ribu seratus dua puluh lima dibagi seratus dua puluh lima, ini sama saja dengan lima ribu seratus dua puluh lima dikali delapan dibagi dengan seribu.",
+      "display_text": "5. Pembagian dengan 125: 5125 : 125 -> (5125 x 8) : 1000.",
+      "visual": "Menulis trik pembagian 125 dengan x 8 : 1000",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_15_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_15_aligned.wav"
+    },
+    {
+      "id": 16,
+      "start": 85.5,
+      "end": 93.6,
+      "text": "Jadi kalau kita kalikan, di sini kita dapatkan empat puluh satu ribu dibagi dengan seribu.",
+      "display_text": "= 41000 : 1000.",
+      "visual": "Menulis hasil 41000 : 1000",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_16_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_16_aligned.wav"
+    },
+    {
+      "id": 17,
+      "start": 94.0,
+      "end": 98.8,
+      "text": "Hasilnya tiga nol ini kita coret, hasilnya adalah empat puluh satu.",
+      "display_text": "Coret 3 nol = 41.",
+      "visual": "Mencoret tiga nol dan menulis hasil 41",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_17_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_17_aligned.wav"
+    },
+    {
+      "id": 18,
+      "start": 99.4,
+      "end": 102.8,
+      "text": "Nah, bagaimana dengan tiga ribu dua ratus lima puluh dibagi dua ratus lima puluh?",
+      "display_text": "6. Pembagian dengan 250: 3250 : 250.",
+      "visual": "Menunjuk soal 3250 : 250",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_18_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_18_aligned.wav"
+    },
+    {
+      "id": 19,
+      "start": 103.0,
+      "end": 110.0,
+      "text": "Ini kita kalikan tiga ribu dua ratus lima puluh kali empat, kemudian kita bagi dengan seribu.",
+      "display_text": "= (3250 x 4) : 1000.",
+      "visual": "Menuliskan trik x 4 : 1000",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_19_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_19_aligned.wav"
+    },
+    {
+      "id": 20,
+      "start": 110.5,
+      "end": 114.5,
+      "text": "Kalau kita kalikan tiga ribu dua ratus lima puluh kali empat adalah tiga belas ribu.",
+      "display_text": "3250 x 4 = 13000.",
+      "visual": "Menulis hasil perkalian 13000",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_20_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_20_aligned.wav"
+    },
+    {
+      "id": 21,
+      "start": 114.5,
+      "end": 123.0,
+      "text": "Jadi di sini kita bagi dengan seribu, hasilnya adalah nol tiganya coret, hasilnya tiga belas.",
+      "display_text": "13000 : 1000 = 13.",
+      "visual": "Mencoret tiga nol dan menulis 13",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_21_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_21_aligned.wav"
+    },
+    {
+      "id": 22,
+      "start": 123.2,
+      "end": 130.0,
+      "text": "Ini ada catatan bahwa kalau soalnya itu tidak habis dibagi, yaitu ada sisanya,",
+      "display_text": "Catatan Penting: Kasus Pembagian Bersisa.",
+      "visual": "Memberi tanda bintang/catatan penting",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_22_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_22_aligned.wav"
+    },
+    {
+      "id": 23,
+      "start": 130.1,
+      "end": 134.2,
+      "text": "maka kita harus hati-hati dalam menentukan sisa pembagian.",
+      "display_text": "Hati-hati menentukan sisa pembagian!",
+      "visual": "Menegaskan ketelitian sisa",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_23_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_23_aligned.wav"
+    },
+    {
+      "id": 24,
+      "start": 134.4,
+      "end": 139.6,
+      "text": "Misalnya empat ribu tujuh ratus tujuh puluh enam dibagi dua puluh lima.",
+      "display_text": "Contoh: 4776 : 25.",
+      "visual": "Menuliskan soal 4776 : 25",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_24_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_24_aligned.wav"
+    },
+    {
+      "id": 25,
+      "start": 139.6,
+      "end": 150.3,
+      "text": "Kalau pakai konsep ini, kita hitung berarti empat ribu tujuh ratus tujuh puluh enam kita kalikan dengan empat, kemudian kita bagi dengan seratus.",
+      "display_text": "= (4776 x 4) : 100.",
+      "visual": "Menghitung 4776 x 4",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_25_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_25_aligned.wav"
+    },
+    {
+      "id": 26,
+      "start": 150.6,
+      "end": 161.0,
+      "text": "Kita peroleh di sini sembilan belas ribu seratus empat dibagi seratus, yaitu seratus sembilan puluh satu sisa empat.",
+      "display_text": "= 19104 : 100 = 191 sisa 4.",
+      "visual": "Menulis hasil 191 sisa 4",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_26_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_26_aligned.wav"
+    },
+    {
+      "id": 27,
+      "start": 161.2,
+      "end": 165.0,
+      "text": "Nah, perhatikan di sini seratus sembilan puluh satunya benar.",
+      "display_text": "Hasil 191 sudah BENAR.",
+      "visual": "Memberi tanda centang pada 191",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_27_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_27_aligned.wav"
+    },
+    {
+      "id": 28,
+      "start": 165.0,
+      "end": 173.0,
+      "text": "Sisanya di sini harus hati-hati. Ini adalah sisa pembagian dengan seratus, sedangkan kita diminta untuk pembagian dengan dua puluh lima.",
+      "display_text": "Sisa 4 adalah sisa terhadap 100 (bukan 25).",
+      "visual": "Melinkari sisa 4 dan angka pembagi 25",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_28_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_28_aligned.wav"
+    },
+    {
+      "id": 29,
+      "start": 173.2,
+      "end": 177.0,
+      "text": "Jadi kita harus bagi lagi dengan empat, yaitu sisanya satu.",
+      "display_text": "Sisa sebenarnya = 4 : 4 = 1.",
+      "visual": "Menghitung sisa sebenarnya 4 : 4 = 1",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_29_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_29_aligned.wav"
+    },
+    {
+      "id": 30,
+      "start": 177.0,
+      "end": 188.7,
+      "text": "Jadi kalau empat ribu tujuh ratus tujuh puluh enam dibagi dua puluh lima, maka hasilnya seratus sembilan puluh satu sisa satu, bukan sisa empat.",
+      "display_text": "Jadi 4776 : 25 = 191 sisa 1 (Bukan sisa 4).",
+      "visual": "Kesimpulan hasil akhir 191 sisa 1",
+      "audio_f5": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/f5_seg_30_aligned.wav",
+      "audio_edge": "/video-projects/z5l5_trik_pembagian_cepat_10_100_1000/segments_new/edge_seg_30_aligned.wav"
+    }
+  ]
+}
