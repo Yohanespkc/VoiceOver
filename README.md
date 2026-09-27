@@ -109,7 +109,8 @@ VoiceOver/
 ├── execute_zona4_level4_sprint.py    # Skrip pipeline otomatis Zona 4 Level 4
 ├── execute_zona4_level5_sprint.py    # Skrip pipeline otomatis Zona 4 Level 5
 ├── execute_zona4_level6_sprint.py    # Skrip pipeline otomatis Zona 4 Level 6
-└── execute_zona5_level1_sprint.py    # Skrip pipeline otomatis Zona 5 Level 1
+├── execute_zona5_level1_sprint.py    # Skrip pipeline otomatis Zona 5 Level 1
+└── execute_zona5_levels3_to_6_sprint.py # Skrip pipeline otomatis Zona 5 Level 3-6 (7 Video)
 ```
 
 ---

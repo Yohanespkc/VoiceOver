@@ -24,9 +24,12 @@ Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.c
   * **Video 5: `zona 5 level 5.mp4` -> `z5l5_trik_pembagian_cepat_10_100_1000`** (192.00s, 30 segmen - Video Baru Lengkap):
     * Trik pembagian super cepat GASING lengkap: bagi 10 (450 : 10 = 45), bagi 100 (7800 : 100 = 78), bagi 5 ($\times 2 : 10 \rightarrow 4775 : 5 = 955$), bagi 25 ($\times 4 : 100 \rightarrow 4775 : 25 = 191$), bagi 125 ($\times 8 : 1000 \rightarrow 5125 : 125 = 41$), bagi 250 ($\times 4 : 1000 \rightarrow 3250 : 250 = 13$), serta aturan krusial penyesuaian sisa pembagian (4776 : 25 = 191 sisa 1, bukan sisa 4).
     * Kompresi ringan: 12.92 MB -> 1.89 MB (MP4) / 2.05 MB (WebM), hemat **85.4%**.
-  * **Video 6: `zone 5 level 6.mp4` -> `z5l6_pembagian_pembagi_3digit_38273_bagi_121`** (105.00s, 13 segmen):
-    * Pembagian bilangan besar dengan pembagi 3 digit: $38273 : 121 = 316$ sisa 37 menggunakan tabel bantu perkalian 121.
-    * Kompresi ringan: hemat ~90% dengan visual dan audio jernih.
+  * **Video 6: `zona 5 level 6.mp4` -> `z5l6_pembagian_pembagi_3digit_38273_bagi_121`** (123.00s, 26 segmen - Rekaman Revisi Baru):
+    * Pembagian bilangan besar dengan pembagi 3 digit: $38273 : 121 = 316$ sisa 37 menggunakan metode tabel perkalian bantu 121 lengkap (121, 242, 363, 484, ...).
+    * Penjelasan terstruktur per digit: 382 bagi 121 dapat 3 sisa 19 ($382 - 363 = 19$), gabung digit berikutnya jadi 197 bagi 121 dapat 1 sisa 76 ($197 - 121 = 76$), gabung 3 jadi 763 bagi 121 dapat 6 sisa 37 ($763 - 726 = 37$).
+    * Hasil akhir akurat: $38273 : 121 = 316$ sisa 37.
+    * Kompresi ringan: ~6.78 MB -> ~1.1 MB (MP4) / ~1.0 MB (WebM), canvas 16:9 putih murni (#FFFFFF) tanpa border hitam.
+
 
 ### 🛡️ Standar Kualitas & Penyempurnaan Sistem
 * **100% Zero Truncation (Anti Syllable Cut)**:

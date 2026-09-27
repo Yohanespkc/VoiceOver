@@ -195,7 +195,7 @@ Gunakan runner script otomatis [`sprint_video_dubbing.sh`](file:///Users/yohanes
 | **`z5l4a_pembagian_pembagi_11_453_bagi_11`** | Z5L4a: Pembagi 2D / Tabel 11 (453 : 11 = 41 sisa 2) | 96.00s | Guru Asli | Guru Marcia | 14 Segmen (16:9 Putih) | `z5l4a_pembagian_453_bagi_11_marcia` |
 | **`z5l4b_pembagian_pembagi_15_2345_bagi_15`** | Z5L4b: Pembagian 4D / Tabel 15 (2345 : 15 = 156 sisa 5) | 107.00s | Guru Asli | Guru Marcia | 19 Segmen (16:9 Putih) | `z5l4b_pembagian_2345_bagi_15_marcia` |
 | **`z5l5_trik_pembagian_cepat_10_100_1000`** | Z5L5: Trik Cepat 10, 100, 5, 25, 125, 250 & Sisa | 192.00s | Guru Asli | Guru Marcia | 30 Segmen (16:9 Putih) | `z5l5_trik_pembagian_cepat_marcia` |
-| **`z5l6_pembagian_pembagi_3digit_38273_bagi_121`** | Z5L6: Pembagi 3D / Tabel 121 (38273 : 121 = 316 sisa 37) | 105.00s | Guru Asli | Guru Marcia | 13 Segmen (16:9 Putih) | `z5l6_pembagian_38273_bagi_121_marcia` |
+| **`z5l6_pembagian_pembagi_3digit_38273_bagi_121`** | Z5L6 (Revisi): Pembagi 3D / Tabel 121 (38273 : 121 = 316 sisa 37) | 123.00s | Guru Asli | Guru Marcia | 26 Segmen (16:9 Putih) | `z5l6_pembagian_38273_bagi_121_marcia` |
 
 ---
 
