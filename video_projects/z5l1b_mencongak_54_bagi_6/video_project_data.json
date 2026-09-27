@@ -2,7 +2,7 @@
   "id": "z5l1b_mencongak_54_bagi_6",
   "title": "Zona 5 Level 1b: Mencongak Pembagian (54 : 6 = 9)",
   "subtitle": "Menghitung 54 dibagi 6 dengan mencongak perkalian 6 x berapa sama dengan 54.",
-  "total_duration": 11.37,
+  "total_duration": 14.0,
   "media": {
     "original_video": "/video-projects/z5l1b_mencongak_54_bagi_6/clip_original.mp4",
     "dubbed_video_f5": "/video-projects/z5l1b_mencongak_54_bagi_6/video_dubbed_marcia_f5_ringan.mp4",
@@ -12,9 +12,9 @@
   },
   "stats": {
     "original_bytes": 376715,
-    "light_mp4_bytes": 97689,
-    "light_webm_bytes": 79908,
-    "compression_ratio": "74.1%"
+    "light_mp4_bytes": 104142,
+    "light_webm_bytes": 93133,
+    "compression_ratio": "72.4%"
   },
   "segments": [
     {
@@ -40,7 +40,7 @@
     {
       "id": 3,
       "start": 8.5,
-      "end": 10.8,
+      "end": 11.2,
       "text": "Jawabnya adalah sembilan.",
       "display_text": "Jawabnya adalah 9.",
       "visual": "Menuliskan jawaban angka 9 di kotak jawaban",

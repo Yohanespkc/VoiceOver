@@ -60,9 +60,9 @@ Proyek ini telah dilengkapi **sistem penghematan GPU otomatis** dan **metode 1 b
 | **Z4L5.2b** | Pengurangan 3D - 2D Meminjam (842 - 59 = 783) | 124.97s | Guru Marcia | 22 Segmen | `z4l5sb2bermain2` |
 | **Z4L5.2c** | Pengurangan 3D - 3D Meminjam (842 - 187 = 655) | 131.00s | Guru Marcia | 22 Segmen | `z4l5sb2bermain3` |
 | **Z4L6** | Pengurangan 4D - 4D Meminjam Beruntun (8021-1329) | 186.70s | Guru Marcia | 31 Segmen | `z4l6_marcia` (Master 186.7s) |
-| **Z5L1a** | Pembagian Konkret & Mencongak (8 : 2 = 4) | 61.77s | Guru Marcia | 11 Segmen | `z5l1a_pembagian_8_bagi_2_marcia` |
-| **Z5L1b** | Mencongak Pembagian (54 : 6 = 9) | 11.37s | Guru Marcia | 3 Segmen | `z5l1b_mencongak_54_bagi_6_marcia` |
-| **Z5L1c** | Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6) | 73.43s | Guru Marcia | 15 Segmen | `z5l1c_mencari_kotak_18_bagi_berapa_marcia` |
+| **Z5L1a** | Pembagian Konkret & Mencongak (8 : 2 = 4) | 64.50s | Guru Marcia | 11 Segmen (16:9 Canvas Putih) | `z5l1a_pembagian_8_bagi_2_marcia` |
+| **Z5L1b** | Mencongak Pembagian (54 : 6 = 9) | 14.00s | Guru Marcia | 3 Segmen (16:9 Canvas Putih) | `z5l1b_mencongak_54_bagi_6_marcia` |
+| **Z5L1c** | Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6) | 77.00s | Guru Marcia | 15 Segmen (16:9 Canvas Putih) | `z5l1c_mencari_kotak_18_bagi_berapa_marcia` |
 
 ---
 

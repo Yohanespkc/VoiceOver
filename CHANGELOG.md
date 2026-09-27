@@ -2,6 +2,26 @@
 
 Format dokumen ini mengikuti prinsip [Keep a Changelog](https://keepachangelog.com/id-ID/1.0.0/) dan penomoran versi semantik.
 
+## [2.6.1] - 2026-09-27
+
+### 🛠️ Perbaikan & Penyempurnaan Visual (Zona 5 Level 1)
+* **Penyelesaian Audio Akhir 100% Utuh & Bebas Terpotong (Zero Truncation)**:
+  * Memperbaiki durasi target segmen terakhir Video 1c (`18 : [ ] = 6`) dari 4.60s menjadi 6.00s (start 68.40s, end 74.40s) dan menghapus pemotongan `-t` pada segmen penutup.
+  * Kalimat penutup *"Dan delapan belas ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu"* kini tersampaikan 100% utuh tanpa pemotongan suku kata *"kotak itu"*.
+* **Penambahan Freeze Frame Akhir (2.6 - 3.7 Detik)**:
+  * Menggunakan filter `tpad=stop_mode=clone` untuk menahan frame papan tulis yang sudah lengkap:
+    * **1a**: diperpanjang dari 61.77s ke **64.50s** (freeze frame 2.73s).
+    * **1b**: diperpanjang dari 11.37s ke **14.00s** (freeze frame 2.63s).
+    * **1c**: diperpanjang dari 73.43s ke **77.00s** (freeze frame 3.69s).
+  * Video tidak lagi berhenti mendadak tepat saat suara selesai, memberikan waktu bagi penonton untuk menyerap ringkasan materi.
+* **Canvas Widescreen 16:9 Murni Putih (#FFFFFF) & Bebas Border Hitam**:
+  * Mengaplikasikan rantai filter FFmpeg `scale=928:696,pad=1280:720:176:0:color=white` pada video 1a, 1b, dan 1c.
+  * Menghilangkan warna hitam (pillarbox / letterbox) di seluruh sisi video saat diputar pada rasio layar 16:9 standar.
+  * Memberikan margin bawah putih sebesar ~109 piksel sehingga kontrol navigasi pemutar video (play/pause bar, slider waktu) tidak lagi menutupi tulisan tangan *"banyak kotak"* dan *"Isi tiap kotak"*.
+* **Pembaruan Container Pemutar Video (Web & PWA)**:
+  * Mengubah container pemutar video di [`VoiceOver/index.html`](file:///Users/yohanessurya/Documents/Development/VoiceOver/index.html) dari `bg-black` / `bg-slate-950` menjadi `bg-white`.
+  * Memperbarui antarmuka modal video Marcia di repositori Sacred Octagon (`so/web/src/data/marciaVideoRegistry.ts`) dengan container `bg-white` serta kontrol transparan yang tidak menggelapkan papan tulis.
+
 ## [2.6.0] - 2026-09-27
 
 ### ✨ Ditambahkan

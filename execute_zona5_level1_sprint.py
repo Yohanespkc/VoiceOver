@@ -3,21 +3,22 @@
 execute_zona5_level1_sprint.py
 
 Pipeline Dubbing & Voice Cloning Guru Marcia untuk 3 Video Zona 5 Level 1 (Pembagian Dasar):
-1. zona 5 level 1a.mp4 (61.77s) -> Pembagian Konkret & Mencongak (8 : 2 = 4)
-2. zona 5 level 1b.mp4 (11.37s) -> Mencongak Pembagian (54 : 6 = 9)
-3. zona 5 level 1c.mp4 (73.43s) -> Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6)
+1. zona 5 level 1a.mp4 (64.50s) -> Pembagian Konkret & Mencongak (8 : 2 = 4)
+2. zona 5 level 1b.mp4 (14.00s) -> Mencongak Pembagian (54 : 6 = 9)
+3. zona 5 level 1c.mp4 (77.00s) -> Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6)
 
-Standar Kualitas Mutlak:
-1. Suara Karakter: Guru Marcia Asli (at_marcia_ref.wav, F5-TTS Indo V2, nfe=32, speed=1.05) + Edge-TTS Studio (id-ID-GadisNeural).
+Standar Kualitas & Perbaikan Tampilan:
+1. Suara Karakter: Guru Marcia Asli (at_marcia_ref.wav, F5-TTS Indo V2) + Edge-TTS Studio (id-ID-GadisNeural).
 2. Artikulasi Fonetik Penuh: Semua angka dieja 100% lengkap tanpa salah sebut ("delapan", "dua", "empat", "lima puluh empat", "enam", "sembilan", "delapan belas", "tiga", "dua belas", dsb).
-3. Zero-Noise Master: Rantai DSP highpass 80Hz + loudnorm broadcast -16 LUFS (meniadakan desisan & rumble).
-4. Video Track Asli 100%: Menggunakan video track asli tanpa pemotongan / masking buatan agar rumus di layar tetap utuh.
-5. Kompresi Ringan Web-Ready: H.264 tune animation CRF 28 & WebM VP9 CRF 35/36 (FastStart streaming).
-6. Master WAV Standard: -ar 44100 pcm_s16le (mencegah file uncompressed bengkak >100MB).
-7. Distribusi Otomatis ke:
+3. Zero Audio Truncation: Segmen terakhir ("kotak itu", "mudah sekali", "sembilan") diberi durasi alami dan tanpa pemotongan -t sehingga tidak terpotong satu suku kata pun.
+4. Freeze Frame Akhir (2.6 - 3.5s): Menggunakan tpad=stop_mode=clone untuk menahan frame papan tulis lengkap sehingga video tidak berakhir mendadak.
+5. Canvas Widescreen 16:9 Murni Putih (#FFFFFF): Filter scale=928:696,pad=1280:720:176:0:color=white menghilangkan seluruh garis/border hitam di semua sisi serta memberikan margin bawah ~109px agar kontrol player tidak menutupi tulisan ("banyak kotak", "Isi tiap kotak").
+6. Kompresi Ringan Web-Ready: H.264 tune animation CRF 28 & WebM VP9 CRF 35 (FastStart streaming).
+7. Master WAV Standard: -ar 44100 pcm_s16le.
+8. Distribusi Otomatis ke:
    - Data VIdeo Marcia/ (*_ringan.mp4)
    - Hasil/videoMarcia/z5_pembagian/
-   - Proyek SO: /Users/yohanessurya/Documents/Development/so/web/public/assets/videos/z5l1/
+   - Proyek SO: so/web/public/assets/videos/z5l1/
    - Web Studio: video_projects/ (/Proyek Video)
 """
 
@@ -32,8 +33,6 @@ from pathlib import Path
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
-
-from f5_engine import F5IndoEngine
 
 DATA_VIDEO_DIR = os.path.join(BASE_DIR, "Data VIdeo Marcia")
 VIDEO_PROJECTS_DIR = os.path.join(BASE_DIR, "video_projects")
@@ -52,7 +51,7 @@ VIDEOS_CONFIG = [
         "so_dest_stem": "z5l1a_pembagian_8_bagi_2_marcia",
         "title": "Zona 5 Level 1a: Pembagian Konkret & Mencongak (8 : 2 = 4)",
         "subtitle": "Konsep dasar pembagian konkret memasukkan 8 benda ke dalam 2 kotak dan mencongak 2 x berapa = 8.",
-        "duration": 61.77,
+        "duration": 64.50,
         "segments": [
             {
                 "id": 1,
@@ -137,7 +136,7 @@ VIDEOS_CONFIG = [
             {
                 "id": 11,
                 "start": 57.00,
-                "end": 61.00,
+                "end": 61.20,
                 "text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
                 "display_text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
                 "visual": "Kesimpulan bahwa pembagian terasa mudah setelah menguasai perkalian"
@@ -152,7 +151,7 @@ VIDEOS_CONFIG = [
         "so_dest_stem": "z5l1b_mencongak_54_bagi_6_marcia",
         "title": "Zona 5 Level 1b: Mencongak Pembagian (54 : 6 = 9)",
         "subtitle": "Menghitung 54 dibagi 6 dengan mencongak perkalian 6 x berapa sama dengan 54.",
-        "duration": 11.37,
+        "duration": 14.00,
         "segments": [
             {
                 "id": 1,
@@ -173,7 +172,7 @@ VIDEOS_CONFIG = [
             {
                 "id": 3,
                 "start": 8.50,
-                "end": 10.80,
+                "end": 11.20,
                 "text": "Jawabnya adalah sembilan.",
                 "display_text": "Jawabnya adalah 9.",
                 "visual": "Menuliskan jawaban angka 9 di kotak jawaban"
@@ -188,7 +187,7 @@ VIDEOS_CONFIG = [
         "so_dest_stem": "z5l1c_mencari_kotak_18_bagi_berapa_marcia",
         "title": "Zona 5 Level 1c: Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6)",
         "subtitle": "Pembagian 18 benda dengan isi tiap kotak 6 benda untuk mencari banyaknya kotak yang dibutuhkan.",
-        "duration": 73.43,
+        "duration": 77.00,
         "segments": [
             {
                 "id": 1,
@@ -305,7 +304,7 @@ VIDEOS_CONFIG = [
             {
                 "id": 15,
                 "start": 68.40,
-                "end": 73.00,
+                "end": 74.40,
                 "text": "Dan delapan belas ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
                 "display_text": "Dan 18 ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
                 "visual": "Menunjuk angka 18 yang melambangkan total seluruh benda"
@@ -343,7 +342,7 @@ async def synthesize_edge_segment(text: str, output_path: str):
     comm = edge_tts.Communicate(text=text, voice="id-ID-GadisNeural", rate="+4%", pitch="+2Hz")
     await comm.save(output_path)
 
-async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
+async def process_video(cfg, get_engine_fn, marcia_ref, marcia_ref_text):
     vid_id = cfg["id"]
     source_filename = cfg["source_filename"]
     src_file = os.path.join(DATA_VIDEO_DIR, source_filename)
@@ -376,6 +375,11 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
         "-ar", "24000", "-ac", "1", "-c:a", "pcm_s16le",
         orig_wav
     ], "Extract 24k audio")
+    orig_dur = get_audio_duration(orig_wav)
+
+    # Calculate freeze frame duration
+    freeze_dur = max(0.0, total_dur - orig_dur)
+    print(f"   ⏱️ Durasi Asli: {orig_dur:.2f}s | Target Canvas: {total_dur:.2f}s | Freeze Frame Akhir: {freeze_dur:.2f}s")
 
     # 3. Extract 1fps frames
     print("   📷 Mengekstrak frame visual untuk thumbnail scrubber...")
@@ -390,79 +394,87 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
     import soundfile as sf
     MASTER_FILTER = "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10"
 
-    print(f"\n▶ Fase 1: Sintesis F5-TTS Trainer Marcia ({len(segments)} segmen ucapan)...")
+    print(f"\n▶ Fase 1: Sintesis & Alignment F5-TTS Trainer Marcia ({len(segments)} segmen)...")
     for s in segments:
         sid = s["id"]
         text = s["text"]
         target_dur = s["end"] - s["start"]
-        print(f"  [{sid}/{len(segments)}] F5-TTS: \"{text}\"...", end="", flush=True)
-        t0 = time.time()
-
-        res_f5 = engine.generate(
-            ref_audio_path=marcia_ref,
-            ref_text=marcia_ref_text,
-            gen_text=text,
-            speed=1.05,
-            nfe_step=32,
-            output_format="wav"
-        )
-        raw_f5 = os.path.join(BASE_DIR, res_f5["audio_url"].lstrip("/"))
-
-        # Silence trimming
-        y, sr = librosa.load(raw_f5, sr=24000)
-        y_trim, _ = librosa.effects.trim(y, top_db=25)
+        is_last = (sid == segments[-1]["id"])
         trim_f5 = os.path.join(segments_dir, f"f5_seg_{sid}_trimmed.wav")
-        sf.write(trim_f5, y_trim, sr)
+        aligned_f5 = os.path.join(segments_dir, f"f5_seg_{sid}_aligned.wav")
+
+        t0 = time.time()
+        if not os.path.exists(trim_f5):
+            print(f"  [{sid}/{len(segments)}] F5-TTS Synthesizing: \"{text}\"...", end="", flush=True)
+            engine = get_engine_fn()
+            res_f5 = engine.generate(
+                ref_audio_path=marcia_ref,
+                ref_text=marcia_ref_text,
+                gen_text=text,
+                speed=1.05,
+                nfe_step=32,
+                output_format="wav"
+            )
+            raw_f5 = os.path.join(BASE_DIR, res_f5["audio_url"].lstrip("/"))
+            y, sr = librosa.load(raw_f5, sr=24000)
+            y_trim, _ = librosa.effects.trim(y, top_db=25)
+            sf.write(trim_f5, y_trim, sr)
+        else:
+            print(f"  [{sid}/{len(segments)}] F5-TTS Cached: \"{text}\"...", end="", flush=True)
+
+        y_trim, sr = librosa.load(trim_f5, sr=24000)
         trim_dur = len(y_trim) / sr
 
-        # Time alignment & broadcast mastering
         tempo = trim_dur / target_dur if target_dur > 0 else 1.0
         tempo = max(0.80, min(1.35, tempo))
         atempo = build_atempo_filter(tempo)
 
-        aligned_f5 = os.path.join(segments_dir, f"f5_seg_{sid}_aligned.wav")
-        run_ffmpeg([
+        cmd_align = [
             "ffmpeg", "-y", "-i", trim_f5,
             "-af", f"{atempo},{MASTER_FILTER}",
-            "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-            "-t", str(target_dur),
-            aligned_f5
-        ], f"Align F5 seg {sid}")
+            "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le"
+        ]
+        # Segmen terakhir tidak boleh di-hard-clip dengan -t agar suku kata akhir ("kotak itu") tidak terpotong!
+        if not is_last:
+            cmd_align.extend(["-t", str(target_dur)])
+        cmd_align.append(aligned_f5)
 
+        run_ffmpeg(cmd_align, f"Align F5 seg {sid}")
         s["audio_f5"] = f"/video-projects/{vid_id}/segments/f5_seg_{sid}_aligned.wav"
         print(f" ✓ ({time.time()-t0:.2f}s | aktif: {trim_dur:.2f}s -> target: {target_dur:.2f}s)")
 
     # 5. Edge-TTS Synthesis
-    print(f"\n▶ Fase 2: Sintesis Edge-TTS Studio ({len(segments)} segmen)...")
+    print(f"\n▶ Fase 2: Sintesis & Alignment Edge-TTS Studio ({len(segments)} segmen)...")
     for s in segments:
         sid = s["id"]
         text = s["text"]
         target_dur = s["end"] - s["start"]
+        is_last = (sid == segments[-1]["id"])
         raw_edge = os.path.join(segments_dir, f"edge_seg_{sid}_raw.mp3")
         aligned_edge = os.path.join(segments_dir, f"edge_seg_{sid}_aligned.wav")
 
-        await synthesize_edge_segment(text, raw_edge)
+        if not os.path.exists(raw_edge):
+            await synthesize_edge_segment(text, raw_edge)
         edge_dur = get_audio_duration(raw_edge)
 
         tempo = edge_dur / target_dur if target_dur > 0 else 1.0
         tempo = max(0.80, min(1.35, tempo))
         atempo = build_atempo_filter(tempo)
 
-        run_ffmpeg([
+        cmd_align_edge = [
             "ffmpeg", "-y", "-i", raw_edge,
             "-af", f"{atempo},loudnorm=I=-16:TP=-1.5:LRA=7",
-            "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le",
-            "-t", str(target_dur),
-            aligned_edge
-        ], f"Align Edge seg {sid}")
+            "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le"
+        ]
+        if not is_last:
+            cmd_align_edge.extend(["-t", str(target_dur)])
+        cmd_align_edge.append(aligned_edge)
 
+        run_ffmpeg(cmd_align_edge, f"Align Edge seg {sid}")
         s["audio_edge"] = f"/video-projects/{vid_id}/segments/edge_seg_{sid}_aligned.wav"
 
-    # Purge VRAM
-    engine.free_gpu_memory()
-
     # 6. Assemble Master Timelines
-    print(f"\n▶ Fase 3: Merakit Master Timeline Audio ({total_dur:.2f}s)...")
+    print(f"\n▶ Fase 3: Merakit Master Timeline Audio & Video Padded Widescreen ({total_dur:.2f}s)...")
     silence_wav = os.path.join(segments_dir, "silence.wav")
     run_ffmpeg([
         "ffmpeg", "-y", "-f", "lavfi",
@@ -470,6 +482,9 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
         "-t", str(total_dur),
         silence_wav
     ], "Generate silence")
+
+    # Filter canvas 16:9 murni putih (#FFFFFF) dengan freeze frame akhir
+    vf_pad_freeze = f"scale=928:696,pad=1280:720:176:0:color=white,tpad=stop_mode=clone:stop_duration={freeze_dur:.2f}"
 
     output_files = {}
 
@@ -513,36 +528,41 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
             master_mp3
         ], f"MP3 {mode}")
 
-        # Mux standard dubbed video
+        # Mux dubbed video dengan canvas 16:9 putih & freeze frame
         run_ffmpeg([
             "ffmpeg", "-y",
             "-i", clip_orig,
             "-i", master_wav,
+            "-vf", vf_pad_freeze,
             "-map", "0:v:0",
             "-map", "1:a:0",
-            "-c:v", "copy",
+            "-t", str(total_dur),
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "22",
             "-c:a", "aac", "-b:a", "192k",
-            "-shortest",
             "-movflags", "+faststart",
             video_dubbed
         ], f"Mux {mode} video")
 
         output_files[mode] = {
             "video": video_dubbed,
-            "audio": master_mp3
+            "audio": master_mp3,
+            "master_wav": master_wav
         }
 
-    # 7. Kompresi Video Ringan Berkualitas Tinggi Sesuai Standar SO
-    print(f"\n▶ Fase 4: Optimasi Ukuran File Ringan (H.264 Tune Animation & WebM VP9)...")
-    dubbed_master_f5 = output_files["f5"]["video"]
+    # 7. Kompresi Video Ringan Berkualitas Tinggi Sesuai Standar SO (Canvas Putih 16:9)
+    print(f"\n▶ Fase 4: Optimasi Ukuran File Ringan (H.264 Tune Animation & WebM VP9 Canvas Putih)...")
     orig_size = os.path.getsize(src_file)
 
     # 7A. Lightweight MP4 (F5)
     f5_light_mp4 = os.path.join(project_dir, f"video_dubbed_marcia_f5_ringan.mp4")
     run_ffmpeg([
         "ffmpeg", "-y",
-        "-i", dubbed_master_f5,
-        "-af", "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10",
+        "-i", clip_orig,
+        "-i", output_files["f5"]["master_wav"],
+        "-vf", vf_pad_freeze,
+        "-map", "0:v:0",
+        "-map", "1:a:0",
+        "-t", str(total_dur),
         "-c:v", "libx264", "-preset", "slow", "-crf", "28", "-tune", "animation", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-ac", "1", "-b:a", "48k", "-ar", "44100",
         "-movflags", "+faststart",
@@ -560,12 +580,15 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
     ], "Encode F5 lightweight WebM")
 
     # 7C. Lightweight MP4 (Edge Studio)
-    dubbed_master_edge = output_files["edge"]["video"]
     edge_light_mp4 = os.path.join(project_dir, f"video_dubbed_marcia_edge_ringan.mp4")
     run_ffmpeg([
         "ffmpeg", "-y",
-        "-i", dubbed_master_edge,
-        "-af", "highpass=f=80,loudnorm=I=-16:TP=-1.5:LRA=10",
+        "-i", clip_orig,
+        "-i", output_files["edge"]["master_wav"],
+        "-vf", vf_pad_freeze,
+        "-map", "0:v:0",
+        "-map", "1:a:0",
+        "-t", str(total_dur),
         "-c:v", "libx264", "-preset", "slow", "-crf", "28", "-tune", "animation", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-ac", "1", "-b:a", "48k", "-ar", "44100",
         "-movflags", "+faststart",
@@ -630,12 +653,18 @@ async def process_video(cfg, engine, marcia_ref, marcia_ref_text):
 async def main():
     print("="*80)
     print("🎙️ SPRINT VIDEO DUBBING: ZONA 5 LEVEL 1 (PEMBAGIAN DASAR)")
+    print("   Fix: Durasi Akhir Penuh, Bebas Terpotong, Canvas Putih 16:9 Bebas Hitam")
     print("="*80)
 
-    # Inisialisasi F5 Engine
-    print("\n[Init] Memuat Model F5-TTS Indo V2...")
-    engine = F5IndoEngine()
-    print("✓ Model F5-TTS siap digunakan pada:", engine.device)
+    # Lazy F5 Engine Loader
+    engine_holder = {"engine": None}
+    def get_engine():
+        if engine_holder["engine"] is None:
+            print("\n[Init] Memuat Model F5-TTS Indo V2...")
+            from f5_engine import F5IndoEngine
+            engine_holder["engine"] = F5IndoEngine()
+            print("✓ Model F5-TTS siap digunakan pada:", engine_holder["engine"].device)
+        return engine_holder["engine"]
 
     # Identitas Suara Marcia
     marcia_ref = os.path.join(BASE_DIR, "assets", "cloned_voices", "at_marcia_ref.wav")
@@ -644,7 +673,10 @@ async def main():
 
     start_all = time.time()
     for cfg in VIDEOS_CONFIG:
-        await process_video(cfg, engine, marcia_ref, marcia_ref_text)
+        await process_video(cfg, get_engine, marcia_ref, marcia_ref_text)
+
+    if engine_holder["engine"] is not None:
+        engine_holder["engine"].free_gpu_memory()
 
     total_time = time.time() - start_all
     print("\n" + "="*80)

@@ -2,7 +2,7 @@
   "id": "z5l1c_mencari_kotak_18_bagi_berapa",
   "title": "Zona 5 Level 1c: Pembagian Mencari Banyaknya Kotak (18 : [ ] = 6)",
   "subtitle": "Pembagian 18 benda dengan isi tiap kotak 6 benda untuk mencari banyaknya kotak yang dibutuhkan.",
-  "total_duration": 73.43,
+  "total_duration": 77.0,
   "media": {
     "original_video": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/clip_original.mp4",
     "dubbed_video_f5": "/video-projects/z5l1c_mencari_kotak_18_bagi_berapa/video_dubbed_marcia_f5_ringan.mp4",
@@ -12,9 +12,9 @@
   },
   "stats": {
     "original_bytes": 3628351,
-    "light_mp4_bytes": 691643,
-    "light_webm_bytes": 662791,
-    "compression_ratio": "80.9%"
+    "light_mp4_bytes": 716624,
+    "light_webm_bytes": 675756,
+    "compression_ratio": "80.2%"
   },
   "segments": [
     {
@@ -160,7 +160,7 @@
     {
       "id": 15,
       "start": 68.4,
-      "end": 73.0,
+      "end": 74.4,
       "text": "Dan delapan belas ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
       "display_text": "Dan 18 ini adalah jumlah seluruh benda yang ada di dalam semua kotak itu.",
       "visual": "Menunjuk angka 18 yang melambangkan total seluruh benda",

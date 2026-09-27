@@ -2,7 +2,7 @@
   "id": "z5l1a_pembagian_konkret_8_bagi_2",
   "title": "Zona 5 Level 1a: Pembagian Konkret & Mencongak (8 : 2 = 4)",
   "subtitle": "Konsep dasar pembagian konkret memasukkan 8 benda ke dalam 2 kotak dan mencongak 2 x berapa = 8.",
-  "total_duration": 61.77,
+  "total_duration": 64.5,
   "media": {
     "original_video": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/clip_original.mp4",
     "dubbed_video_f5": "/video-projects/z5l1a_pembagian_konkret_8_bagi_2/video_dubbed_marcia_f5_ringan.mp4",
@@ -12,9 +12,9 @@
   },
   "stats": {
     "original_bytes": 2899628,
-    "light_mp4_bytes": 578924,
-    "light_webm_bytes": 544535,
-    "compression_ratio": "80.0%"
+    "light_mp4_bytes": 576957,
+    "light_webm_bytes": 550593,
+    "compression_ratio": "80.1%"
   },
   "segments": [
     {
@@ -120,7 +120,7 @@
     {
       "id": 11,
       "start": 57.0,
-      "end": 61.0,
+      "end": 61.2,
       "text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
       "display_text": "Bagi anak yang sudah belajar perkalian, tentu ini sangat mudah sekali.",
       "visual": "Kesimpulan bahwa pembagian terasa mudah setelah menguasai perkalian",
